@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Roman Vyacheslavovich](https://up.htmlacademy.ru/adaptive/20/user/1461353).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Вашкевич](https://htmlacademy.ru/profile/id116959).
 
 ---
 
