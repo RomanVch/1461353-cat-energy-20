@@ -3,29 +3,29 @@
 <head>
   <meta charset="utf-8">
   <title>Cat Energy каталог товара</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--padding">
     <a href="#" class="page-header__logo">
 
-      <img src="https://via.placeholder.com/150x150" alt="Cat Energy" width="33" height="38">
+      <img src="img/logo-mobile.svg" alt="Cat Energy" width="190" height="38">
     </a>
-    <p class="page-header__name"><span class="page-header__name-bold">cat</span>energy</p>
     <button class="page-header__toggle" type="button">
       <span class="visually-hidden">открыть меню</span>
     </button>
 
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="#">главная</a>
+        <li class="main-nav__item">
+          <a class ="main-nav__links" href="#">главная</a>
         </li>
-        <li class="site-list__item">
-          <a href="catalog.html">каталог продукции</a>
+          <li class="main-nav__item">
+          <a class ="main-nav__links" href="catalog.html">каталог продукции</a>
         </li>
-        <li class="site-list__item">
-          <a href="form.html">подбор программы</a>
+        <li class="main-nav__item">
+          <a class ="main-nav__links" href="form.html">подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -35,7 +35,7 @@
     <h1 сlass="catalog-page-main__title">Каталог продукции</h1>
     <section class="catalog">
       <div class="catalog__card">
-        <img src="https://via.placeholder.com/150x150" alt="изображение товара" width="68" height="86">
+        <img src="img/chicken-small-mobile@1x.jpg" alt="изображение товара" width="68" height="86">
         <h2 class="catalog__title">cat energy pro 500 г</h2>
 
         <table class="catalog__table">
@@ -58,7 +58,7 @@
       </div>
 
       <div class="catalog__card">
-        <img src="https://via.placeholder.com/150x150" alt="изображение товара" width="84" height="101">
+        <img src="img/chicken-big-mobile@1x.jpg" alt="изображение товара" width="84" height="101">
         <h2 class="catalog__title">cat energy pro 1000 г</h2>
 
         <table class="catalog__table">
@@ -82,7 +82,7 @@
 
 
       <div class="catalog__card">
-        <img src="https://via.placeholder.com/150x150" alt="изображение товара" width="68" height="86">
+        <img src="img/fish-small-mobile@1x.jpg" alt="изображение товара" width="68" height="86">
         <h2 class="catalog__title">cat energy pro 500 г</h2>
 
         <table class="catalog__table">
@@ -105,7 +105,7 @@
       </div>
 
       <div class="catalog__card">
-        <img src="https://via.placeholder.com/150x150" alt="изображение товара" width="84" height="101">
+        <img src="img/fish-big-mobile@1x.jpg" alt="изображение товара" width="84" height="101">
         <h2 class="catalog__title">cat energy pro 1000 г</h2>
 
         <table class="catalog__table">
@@ -128,7 +128,7 @@
       </div>
 
       <div class="catalog__card">
-        <img src="https://via.placeholder.com/150x150" alt="изображение товара" width="68" height="86">
+        <img src="img/buckwheat-big-mobile@1x.jpg" alt="изображение товара" width="68" height="86">
         <h2 class="catalog__title">сat energy slim 500 г</h2>
 
         <table class="catalog__table">
@@ -151,7 +151,7 @@
       </div>
 
       <div class="catalog__card">
-        <img src="https://via.placeholder.com/150x150" alt="изображение товара" width="84" height="101">
+        <img src="img/buckwheat-big-mobile@1x.jpg" alt="изображение товара" width="84" height="101">
         <h2 class="catalog__title">cat energy slim 1000 г</h2>
 
         <table class="catalog__table">
@@ -174,7 +174,7 @@
       </div>
 
       <div class="catalog__card">
-        <img src="https://via.placeholder.com/150x150" alt="изображение товара" width="68" height="86">
+        <img src="img/rice-small-mobile@1x.jpg" alt="изображение товара" width="68" height="86">
         <h2 class="catalog__title">сat energy slim 500 г</h2>
 
         <table class="catalog__table">
@@ -198,40 +198,43 @@
 
 
 
-      <div class="catalog__else">
-        <img src="img" alt="плюс" width="30" height="30">
+      <div class="catalog__else catalog__else--margin">
+        <img class="catalog__else-svg" src="img/icon-plus.svg" alt="плюс" width="30" height="30">
         <h2 class="catalog__else-title">Показать еще 100500 товаров</h2>
         <p class="catalog__else-paragraph">На самом деле вкусов гораздо больше!</p>
-        <a class="catalog__else-link" href="#">показать все</a>
+        <a class="catalog__else-link " href="#">показать все</a>
       </div>
 
     </section>
 
   </main>
-  <footer class="page-footer">
-    <p class="page-footer__name"><span class="page-footer__name-bold">cat</span>energy</p>
+  <footer class="page-footer ">
+    <img src="img/logo-footer.svg" alt="логотип энергичной кошки" width="128" height="24"
+    >
     <div class="page-footer__social">
       <ul class="page-footer__list">
         <li class="page-footer__item">
           <a class="page-footer__link" href="#">
-            <img src="https://via.placeholder.com/150x150" alt="вконтакте" width="22" height="12">
+            <img src="img/icon-vk.svg" alt="вконтакте" width="22" height="12">
           </a>
         </li>
         <li class="page-footer__item">
           <a class="page-footer__link" href="#">
-            <img src="https://via.placeholder.com/150x150" alt="инстаграмм" width="16" height="16">
+            <img src="img/icon-insta.svg" alt="инстаграмм" width="16" height="16">
           </a>
         </li>
         <li class="page-footer__item">
           <a class="page-footer__link" href="#">
-            <img src="https://via.placeholder.com/150x150" alt="фэйсбук" width="10" height="18">
+            <img src="img/icon-fb.svg" alt="фэйсбук" width="10" height="18">
           </a>
         </li>
       </ul>
     </div>
     <div class="page-footer__copyright">
-      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <img src="https://via.placeholder.com/150x150" alt="лого-хтмл-академии" width="27" height="34">
+      <a class="page-footer__copyright-link" href="img/https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="page-footer__copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">
+      <img clas src="img/htmlacademy.svg" alt="лого-хтмл-академии" width="27" height="34">
+    </a>
     </div>
   </footer>
 </body>

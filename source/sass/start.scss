@@ -1,0 +1,43 @@
+.start {
+  background: url(../img/index-background-mobile@1x.jpg) no-repeat;
+
+}
+
+.start__title{
+  font-family: 'Oswald';
+  color:#ffffff;
+  font-size: 36px;
+line-height: 36px;
+text-align: center;
+}
+.start__paragraph{
+  font-family: 'Oswald';
+  color:#ffffff;
+  font-size: 14px;
+line-height: 14px;
+text-align: center;
+}
+.start__link{
+font-family: Oswald;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 0px;
+display: block;
+width: 280px;
+height: 40px;
+text-decoration: none;
+color:#ffffff;
+font-size: 14px;
+line-height: 18px;
+text-transform: uppercase;
+padding-top: 7px ;
+padding-bottom: 7px;
+background-color: #68B738;
+text-align: center;
+}
+
+.start--padding{
+padding-top: 27px;
+padding-left:20px ;
+}
