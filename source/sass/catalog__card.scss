@@ -7,3 +7,27 @@ line-height: 20px;
 align-items: center;
 text-transform: uppercase;
 }
+.catalog__links{
+
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px;
+  display: block;
+  width: 280px;
+  text-decoration: none;
+  color:#ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 7px ;
+  padding-bottom: 7px;
+  background-color: #68B738;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.catalog__card{
+  border-top:1px solid #EBEBEB; ;
+  border-bottom:1px solid #EBEBEB; ;
+}
