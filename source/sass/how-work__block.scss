@@ -1,14 +1,15 @@
-.how-work__block{
-  font-family: Arial;
+.how-work__block {
+  font-family: "Arial", "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
   list-style: none;
 }
-.how-work__block-background{
+
+.how-work__block-background {
   width: 60px;
   height: 60px;
-  background-color:#68B738 ;
+  background-color: $basic_green;
 }

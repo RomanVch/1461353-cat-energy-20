@@ -1,10 +1,9 @@
-.page-footer__copyright-link{
+.page-footer__copyright-link {
   text-decoration: none;
-  font-family: Arial;
+  font-family: "Arial", "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
-
+  color: $special_dark-grey;
 }

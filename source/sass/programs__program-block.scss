@@ -1,31 +1,30 @@
 .programs__program-block {
-background-color: #F2F2F2;
-}
-.programs__title{
-  font-family: Oswald;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 37px;
-text-transform: uppercase;
-color: #000000;
+  background-color: $basic_grey;
 }
 
-
-.programs__paragraph{
-font-family: Arial;
-font-size: 14px;
-line-height: 18px;
-color: #444444;
+.programs__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $basic_black;
 }
 
-.programs__link{
-font-family: Oswald;
-font-size: 16px;
-line-height: 16px;
-text-align: center;
-text-transform: uppercase;
-text-decoration: none;
-color: #000000;
-;
+.programs__paragraph {
+  font-family: "Arial", "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
+.programs__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic_black;
 }

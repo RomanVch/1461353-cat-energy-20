@@ -1,12 +1,12 @@
-.main-nav__item{
+.main-nav__item {
   list-style: none;
 }
 
-.main-nav__links{
-font-family: 'Oswald';
-text-decoration:none;
-font-size: 20px;
-line-height: 20px;
-text-transform: uppercase;
-color: #000000;
+.main-nav__links {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic_black;
 }

@@ -1,5 +1,7 @@
 .page-header__name {
-  font-family: 'Oswald';
+  font-family: "Oswald", "Arial", sans-serif;
 }
-.page-header__name-bold{
-color:black;}
+
+.page-header__name-bold {
+  color: $basic_black;
+}
