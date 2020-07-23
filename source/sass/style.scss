@@ -1,3 +1,5 @@
+@import "fonts.scss";
+@import "variables.scss";
 @import "page__body.scss";
 @import "page-header__name.scss";
 @import "main-nav__item.scss";
@@ -20,34 +22,3 @@
 @import "page-header.scss";
 @import "page-footer__social.scss";
 @import "programs__circle.scss";
-
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  src:url('../fonts/oswald-v35-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/oswald-v35-latin_cyrillic-regular.woff') format('woff'); /* Modern Browsers */
-}
-/* oswald-500 - latin_cyrillic */
-@font-face {
-  font-family: 'Oswald-bold';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/oswald-v35-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/oswald-v35-latin_cyrillic-500.woff') format('woff'); /* Modern Browsers */
-
-}
-
-
-
-$basic_green:#68b738;
-$basic_grey: #f2f2f2;
-$special_grey-2:#ebebeb;
-$special_grey:#cdcdcd;
-$special_basic_grey:#666666;
-$special_dark-grey:#444444;
-$special_dark-grey-2:#222222;
-$status_error:#ff8282;
-$basic_green-2:#5eaa2f;
-$basic_grey_e5:#e5e5e5;
-/* oswald-regular - latin_cyrillic */
