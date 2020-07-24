@@ -5,5 +5,17 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  color: $basic_black;
+}
+
+.how-work__block {
+  font-style: normal;
+  font-weight: normal;
+  color: $special_dark-grey;
+  list-style: none;
+}
+
+.how-work__block-background {
+  width: 60px;
+  height: 60px;
+  background-color: $basic_green;
 }

@@ -1,5 +1,10 @@
 .start {
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+
+  &--padding {
+    padding-top: 27px;
+    padding-left: 20px;
+  }
 }
 
 .start__title {
@@ -13,7 +18,6 @@
 .start__paragraph {
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic_white;
-  font-size: 14px;
   line-height: 14px;
   text-align: center;
 }
@@ -23,7 +27,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 0;
+  line-height: 18px;
   display: block;
   width: 280px;
   text-decoration: none;
@@ -33,9 +37,4 @@
   padding-bottom: 7px;
   background-color: $basic_green;
   text-align: center;
-}
-
-.start--padding {
-  padding-top: 27px;
-  padding-left: 20px;
 }

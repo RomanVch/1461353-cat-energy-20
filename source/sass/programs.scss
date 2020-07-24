@@ -9,13 +9,9 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: $basic_black;
 }
 
 .programs__paragraph {
-  font-family: "Arial", "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
   color: $special_dark-grey;
 }
 
@@ -27,4 +23,11 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $basic_black;
+}
+
+.programs__circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: $basic_green;
 }
