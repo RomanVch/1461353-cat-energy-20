@@ -1,10 +1,12 @@
   <!DOCTYPE html>
   <html class="page" lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>Cat Energy форма заказа</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body class="page__body">
     <header class="page-header page-header--padding">
       <a href="#" class="page-header__logo">
@@ -18,17 +20,69 @@
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="main-nav__item">
-            <a class ="main-nav__links" href="#">главная</a>
-          </li>
-            <li class="main-nav__item">
-            <a class ="main-nav__links" href="catalog.html">каталог продукции</a>
+            <a class="main-nav__links" href="#">главная</a>
           </li>
           <li class="main-nav__item">
-            <a class ="main-nav__links" href="form.html">подбор программы</a>
+            <a class="main-nav__links" href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__links" href="form.html">подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
+    <section class="title-form">
+      <h1 class="title-form__title">Подбор программы</h1>
+      <p class="title-form__paragraph">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+    </section>
+    <section class="form">
+      <form name="test" method="post" action="https://echo.htmlacademy.ru">
+        <label for="name">имя:
+          <input type="text" size="40" placeholder="Барсик" name="name" id="name"></label>
+
+        <label for="weight">вес (кг)*
+          <input type="text" size="40" placeholder="7" name="weight" id="weight" required></label>
+
+        <label for="age">возраст(лет):
+          <input type="text" size="40" placeholder="7" name="age" id="age"></label>
+
+        <label><input name="goal" type="radio" value="похудение" checked> похудение</label>
+        <label><input name="goal" type="radio" value="набор массы"> набор массы</label>
+        <label><input name="goal" type="radio" value="не знаю (нужен совет)">не знаю (нужен совет)</label>
+
+        <h2 class="form__title">Контактные данные (владельца кота)</h2>
+        <div class="form__line"></div>
+        <label>email*: <input type="email" name="login" placeholder="kuklachev@gmail.com" required></label>
+        <label>телефон*: <input type="tel" name="tel" placeholder="8 (960) 900-60-90" required></label>
+
+        <h2 class="form__title">Коментарий</h2>
+        <div class="form__line"></div>
+
+        <input type="text" size="80" placeholder="расскажите обо всех повадках кота" name="comment">
+
+        <h2 class="form__title">дополнительно</h2>
+        <div class="form__line"></div>
+        <label><input type="checkbox" name="option1" value="a1" checked>сахарозаменитель</label>
+        <label><input type="checkbox" name="option2" value="a2">питьевая вода</label>
+        <label><input type="checkbox" name="option3" value="a3">молоко</label>
+        <label><input type="checkbox" name="option4" value="a4">витамины</label>
+        <button class="form__button" type="submit">отправить заявку</button>
+        <p>*-Обязательные поля</p>
+      </form>
+    </section>
+    <section class="map">
+      <div class="map__contact">
+        <p class="map__paragraph">приглашаем
+          к сотрудничеству дилеров!</p>
+        <p>ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург</p>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300339!2d30.320858716480416!3d59.938719169053705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595160221169!5m2!1sru!2sru"
+        width="320" height="362"></iframe>
+    </section>
     <footer class="page-footer">
       <img src="img/logo-footer.svg" alt="логотип энергичной кошки" width="128" height="24">
       <div class="page-footer__social">
@@ -53,13 +107,9 @@
       <div class="page-footer__copyright">
         <a class="page-footer__copyright-link" href="img/https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="page-footer__copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class src="img/htmlacademy.svg" alt="лого-хтмл-академии" width="27" height="34">
-      </a>
+          <img class src="img/htmlacademy.svg" alt="лого-хтмл-академии" width="27" height="34">
+        </a>
       </div>
     </footer>
   </body>
-
   </html>
-</body>
-
-</html>
