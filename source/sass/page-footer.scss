@@ -1,0 +1,27 @@
+.page-footer {
+  background-color: $basic_grey;
+
+  &--padding {
+    padding-top: 39px;
+    padding-left: 19px;
+  }
+}
+
+.page-footer__copyright-link {
+  text-decoration: none;
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
+.page-footer__item {
+  list-style: none;
+}
+
+.page-footer__social {
+  border-top: 1px solid $basic_grey_line;
+  border-bottom: 1px solid $basic_grey_line;
+}

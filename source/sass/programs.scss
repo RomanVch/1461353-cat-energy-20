@@ -1,0 +1,33 @@
+.programs__program-block {
+  background-color: $basic_grey;
+}
+
+.programs__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.programs__paragraph {
+  color: $special_dark-grey;
+}
+
+.programs__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic_black;
+}
+
+.programs__circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: $basic_green;
+}
