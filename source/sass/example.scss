@@ -1,0 +1,108 @@
+.example {
+  background-color: $basic_grey_ea;
+}
+
+.example__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__paragraph {
+  color: $special_dark-grey;
+}
+
+.example__item {
+  border: 1px solid $special_grey;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 124px;
+  height: 56px;
+}
+
+.example__item-paragraph {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.example__item-span {
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $special_dark-grey;
+}
+
+.example__title-pay {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example_switch {
+  display: inline;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.example__checkbox {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 84px;
+  height: 14px;
+  background: $basic_white;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  border: 1px solid $special_grey;
+  box-sizing: border-box;
+}
+
+.example__checkbox::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 35px;
+  height: 6px;
+  background: $basic_green;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.example_switch:checked + .example__checkbox {
+  background: $basic_white;
+}
+
+.example_switch:checked + .example__checkbox::after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.example__checkbox:active::after {
+  width: 74px;
+}
+
+.example__span {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic_black;
+}

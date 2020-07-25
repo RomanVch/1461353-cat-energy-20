@@ -1,0 +1,80 @@
+.additionally__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.additionally__line {
+  width: 53px;
+  height: 2px;
+  background-color: $basic_green;
+}
+
+.additionally__items {
+  border-top: 1px solid $special_grey;
+  border-bottom: 1px solid $special_grey;
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+
+.additionally__title-block {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  align-items: center;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+}
+
+.additionally__table {
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+.additionally__links {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  display: block;
+  width: 280px;
+  text-decoration: none;
+  color: $basic_white;
+  text-transform: uppercase;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+  background-color: $basic_green;
+}
+
+.additionally__link-gift {
+  text-decoration: none;
+}
+
+.additionally__gift-block {
+  width: 280px;
+  height: 289px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  margin-bottom: 35px;
+}
+
+.additionally__paragraphe-gift {
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $basic_white;
+}

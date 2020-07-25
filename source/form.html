@@ -38,44 +38,49 @@
     </section>
     <section class="form">
       <form name="test" method="post" action="https://echo.htmlacademy.ru">
-        <label for="name">имя:
-          <input type="text" size="40" placeholder="Барсик" name="name" id="name"></label>
+        <label class="form__text" for="name">имя*:
+          <input class="form__input" type="text" size="40" placeholder="Барсик" name="name" id="name" required></label>
 
-        <label for="weight">вес (кг)*
-          <input type="text" size="40" placeholder="7" name="weight" id="weight" required></label>
+        <label class="form__text" for="weight">вес (кг)*
+          <input class="form__input" type="text" size="40" placeholder="7" name="weight" id="weight" required></label>
 
-        <label for="age">возраст(лет):
-          <input type="text" size="40" placeholder="7" name="age" id="age"></label>
+        <label class="form__text" for="age">возраст(лет):
+          <input class="form__input" type="text" size="40" placeholder="7" name="age" id="age"></label>
 
-        <label><input name="goal" type="radio" value="похудение" checked> похудение</label>
-        <label><input name="goal" type="radio" value="набор массы"> набор массы</label>
-        <label><input name="goal" type="radio" value="не знаю (нужен совет)">не знаю (нужен совет)</label>
+        <input class="form__input-radio" name="goal" id="weight loss" type="radio" value="похудение" checked>
+        <label class="form__text-radio" for="weight loss">Похудение</label>
+
+        <input class="form__input-radio" name="goal" id="weight_gain" type="radio" value="набор массы">
+        <label class="form__text-radio" for="weight_gain"> Набор массы</label>
+
+        <input class="form__input-radio" name="goal" id="advice" type="radio" value="не знаю (нужен совет)">
+        <label class="form__text-radio" for="advice">Не знаю (нужен совет)</label>
 
         <h2 class="form__title">Контактные данные (владельца кота)</h2>
         <div class="form__line"></div>
-        <label>email*: <input type="email" name="login" placeholder="kuklachev@gmail.com" required></label>
-        <label>телефон*: <input type="tel" name="tel" placeholder="8 (960) 900-60-90" required></label>
+        <label class="form__text" for="login">email*: <input class="form__input-email" type="email" id="login" name="login" placeholder="kuklachev@gmail.com" required></label>
+        <label class="form__text" for="tel">телефон*: <input class="form__input-tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required></label>
 
         <h2 class="form__title">Коментарий</h2>
         <div class="form__line"></div>
 
-        <input type="text" size="80" placeholder="расскажите обо всех повадках кота" name="comment">
+        <input class="form__input-comment" type="textarea" size="80" placeholder="расскажите обо всех повадках кота" name="comment">
 
-        <h2 class="form__title">дополнительно</h2>
+        <h2 class="form__title">Дополнительно</h2>
         <div class="form__line"></div>
-        <label><input type="checkbox" name="option1" value="a1" checked>сахарозаменитель</label>
-        <label><input type="checkbox" name="option2" value="a2">питьевая вода</label>
-        <label><input type="checkbox" name="option3" value="a3">молоко</label>
-        <label><input type="checkbox" name="option4" value="a4">витамины</label>
+        <label class="form__text-checkbox" for="sugar"><input type="checkbox" name="option1" value="a1" checked id="sugar">сахарозаменитель</label>
+        <label class="form__text-checkbox" for="water"><input type="checkbox" name="option2" value="a2" id="water">питьевая вода</label>
+        <label class="form__text-checkbox" for="milk"><input type="checkbox" name="option3" value="a3" id="milk">молоко</label>
+        <label class="form__text-checkbox" for="vitamin"><input type="checkbox" name="option4" value="a4" id="vitamin">витамины</label>
         <button class="form__button" type="submit">отправить заявку</button>
-        <p>*-Обязательные поля</p>
+        <small>*-Обязательные поля</small>
       </form>
     </section>
     <section class="map">
-      <div class="map__contact">
+      <div class="map__contact-background-other">
         <p class="map__paragraph">приглашаем
           к сотрудничеству дилеров!</p>
-        <p>ул. Большая
+        <p class="map__paragraph-class">ул. Большая
           Конюшенная, д. 19/8
           Санкт-Петербург</p>
       </div>
