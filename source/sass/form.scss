@@ -38,19 +38,24 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
+
+  &--tel{
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20px 20px;
+
+  }
+
+&--email {
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 20px 20px;
+}
 }
 
 .form__input::placeholder {
-  color: $special_dark-grey;
-  opacity: 1;
-}
-
-.form__input-email::placeholder {
-  color: $special_dark-grey;
-  opacity: 1;
-}
-
-.form__input-tel::placeholder {
   color: $special_dark-grey;
   opacity: 1;
 }
@@ -80,38 +85,6 @@ width: 280px;
   margin-top: 25px;
   padding-top: 25px;
   padding-bottom: 38px;
-}
-.form__input-tel {
-  border: 1px solid $add_gray;
-  box-sizing: border-box;
-  height: 45px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 20px 20px;
-
-}
-
-.form__input-email {
-  border: 1px solid $add_gray;
-  box-sizing: border-box;
-  height: 45px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 20px 20px;
 }
 
 .form__line {
