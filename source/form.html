@@ -46,16 +46,18 @@
 
         <label class="form__text" for="age">возраст(лет):
           <input class="form__input" type="text" size="40" placeholder="7" name="age" id="age"></label>
+        <div class="form__div-radio">
 
-        <input class="form__input-radio" name="goal" id="weight loss" type="radio" value="похудение" checked>
-        <label class="form__text-radio" for="weight loss">Похудение</label>
 
-        <input class="form__input-radio" name="goal" id="weight_gain" type="radio" value="набор массы">
-        <label class="form__text-radio" for="weight_gain"> Набор массы</label>
+          <input class="form__input-radio" name="goal" id="weight-loss" type="radio" value="похудение" checked>
+          <label class="form__text-radio" for="weight-loss">Похудение</label>
 
-        <input class="form__input-radio" name="goal" id="advice" type="radio" value="не знаю (нужен совет)">
-        <label class="form__text-radio" for="advice">Не знаю (нужен совет)</label>
+          <input class="form__input-radio" name="goal" id="weight_gain" type="radio" value="набор массы">
+          <label class="form__text-radio" for="weight_gain"> Набор массы</label>
 
+          <input class="form__input-radio" name="goal" id="advice" type="radio" value="не знаю (нужен совет)">
+          <label class="form__text-radio" for="advice">Не знаю (нужен совет)</label>
+        </div>
         <h2 class="form__title">Контактные данные (владельца кота)</h2>
         <div class="form__line"></div>
         <label class="form__text" for="login">email*: <input class="form__input-email" type="email" id="login" name="login" placeholder="kuklachev@gmail.com" required></label>
@@ -64,7 +66,7 @@
         <h2 class="form__title">Коментарий</h2>
         <div class="form__line"></div>
 
-        <input class="form__input-comment" type="textarea" size="80" placeholder="расскажите обо всех повадках кота" name="comment">
+        <textarea class="form__input-comment" placeholder="расскажите обо всех повадках кота" name="comment"></textarea>
 
         <h2 class="form__title">Дополнительно</h2>
         <div class="form__line"></div>
@@ -117,4 +119,5 @@
       </div>
     </footer>
   </body>
+
   </html>
