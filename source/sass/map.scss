@@ -1,0 +1,25 @@
+.map__paragraph {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.map__paragraph-contact {
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.map__contact-background-other {
+  background-color: $basic_grey;
+  margin: 0;
+}
+
+.map__paragraph-class {
+  margin: 0;
+}
