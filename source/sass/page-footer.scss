@@ -5,6 +5,14 @@
     padding-top: 39px;
     padding-left: 19px;
   }
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media (min-width: $dekstop) {
+    display: flex;
+  }
 }
 
 .page-footer__copyright-link {
@@ -24,4 +32,32 @@
 .page-footer__social {
   border-top: 1px solid $basic_grey_line;
   border-bottom: 1px solid $basic_grey_line;
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
+
+  @media (min-width: $dekstop) {
+    border: none;
+  }
+}
+
+.page-footer__list {
+  display: flex;
+  flex-direction: row;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $dekstop) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
 }

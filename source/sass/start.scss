@@ -5,6 +5,18 @@
     padding-top: 27px;
     padding-left: 20px;
   }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat;
+  }
+
+  @media (min-width: $dekstop) {
+    background: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .start__title {
@@ -13,13 +25,29 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic_black;
+    width: 500px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .start__paragraph {
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic_white;
   line-height: 14px;
-  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic_black;
+  }
 }
 
 .start__link {
@@ -37,4 +65,16 @@
   padding-bottom: 7px;
   background-color: $basic_green;
   text-align: center;
+}
+
+.start__img {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $dekstop) {
+    display: block;
+    align-self: center;
+    order: 1;
+  }
 }

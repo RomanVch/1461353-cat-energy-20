@@ -18,6 +18,10 @@
   border-bottom: 1px solid $special_grey;
   padding-top: 13px;
   padding-bottom: 19px;
+
+  @media (min-width: $dekstop) {
+    display: flex;
+  }
 }
 
 .additionally__title-block {
@@ -76,4 +80,21 @@
   line-height: 20px;
   text-align: center;
   color: $basic_white;
+}
+
+.additionally__items-div {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $dekstop) {
+    display: flex;
+  }
+}
+
+.additionally {
+  @media (min-width: $dekstop) {
+    display: flex;
+  }
 }

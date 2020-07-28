@@ -106,3 +106,25 @@
   text-transform: uppercase;
   color: $basic_black;
 }
+
+.example__div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+
+  @media (min-width: $tablet) {
+
+    display: flex;
+  }
+
+  @media (min-width: $dekstop) {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+}

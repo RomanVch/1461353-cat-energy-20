@@ -6,6 +6,10 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .page-header__name {
@@ -20,4 +24,8 @@
   background-repeat: no-repeat;
   background-color: transparent;
   border: 0;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }

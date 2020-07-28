@@ -13,4 +13,15 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $basic_black;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.main-nav__list {
+  @media (min-width: $tablet) {
+    display: flex;
+  }
 }

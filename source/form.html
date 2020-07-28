@@ -1,10 +1,12 @@
   <!DOCTYPE html>
   <html class="page" lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>Cat Energy форма заказа</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body class="page__body">
     <header class="page-header page-header--padding">
       <a href="index.html" class="page-header__logo">
@@ -34,35 +36,43 @@
     </section>
     <section class="form">
       <form name="test" method="post" action="https://echo.htmlacademy.ru">
-        <label class="form__text" for="name">имя*:
-          <input class="form__input" type="text" size="40" placeholder="Барсик" name="name" id="name" required></label>
-        <label class="form__text" for="weight">вес (кг)*
-          <input class="form__input" type="text" size="40" placeholder="7" name="weight" id="weight" required></label>
-        <label class="form__text" for="age">возраст(лет):
-          <input class="form__input" type="text" size="40" placeholder="7" name="age" id="age"></label>
-        <div class="form__div-radio">
-          <input class="form__input-radio" name="goal" id="weight-loss" type="radio" value="похудение" checked>
-          <label class="form__text-radio" for="weight-loss">Похудение</label>
-          <input class="form__input-radio" name="goal" id="weight_gain" type="radio" value="набор массы">
-          <label class="form__text-radio" for="weight_gain"> Набор массы</label>
-          <input class="form__input-radio" name="goal" id="advice" type="radio" value="не знаю (нужен совет)">
-          <label class="form__text-radio" for="advice">Не знаю (нужен совет)</label>
+        <div class="form__div">
+          <div class="form_div-name">
+            <label class="form__text" for="name">имя*:
+              <input class="form__input" type="text" size="40" placeholder="Барсик" name="name" id="name" required></label>
+            <label class="form__text" for="weight">вес (кг)*
+              <input class="form__input" type="text" size="40" placeholder="7" name="weight" id="weight" required></label>
+            <label class="form__text" for="age">возраст(лет):
+              <input class="form__input" type="text" size="40" placeholder="7" name="age" id="age"></label>
+          </div>
+          <div class="form__div-radio">
+            <input class="form__input-radio" name="goal" id="weight-loss" type="radio" value="похудение" checked>
+            <label class="form__text-radio" for="weight-loss">Похудение</label>
+            <input class="form__input-radio" name="goal" id="weight_gain" type="radio" value="набор массы">
+            <label class="form__text-radio" for="weight_gain"> Набор массы</label>
+            <input class="form__input-radio" name="goal" id="advice" type="radio" value="не знаю (нужен совет)">
+            <label class="form__text-radio" for="advice">Не знаю (нужен совет)</label>
+          </div>
         </div>
         <h2 class="form__title">Контактные данные (владельца кота)</h2>
         <div class="form__line"></div>
-        <label class="form__text" for="login">email*: <input class="form__input form__input--email" type="email" id="login" name="login" placeholder="kuklachev@gmail.com" required></label>
-        <label class="form__text" for="tel">телефон*: <input class="form__input form__input--tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required></label>
+        <div class="form_div-contact">
+          <label class="form__text" for="login">email*: <input class="form__input form__input--email" type="email" id="login" name="login" placeholder="kuklachev@gmail.com" required></label>
+          <label class="form__text" for="tel">телефон*: <input class="form__input form__input--tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required></label>
+        </div>
         <h2 class="form__title">Коментарий</h2>
         <div class="form__line"></div>
         <textarea class="form__input-comment" placeholder="расскажите обо всех повадках кота" name="comment"></textarea>
         <h2 class="form__title">Дополнительно</h2>
         <div class="form__line"></div>
-        <label class="form__text-checkbox" for="sugar"><input type="checkbox" name="option1" value="a1" checked id="sugar">сахарозаменитель</label>
-        <label class="form__text-checkbox" for="water"><input type="checkbox" name="option2" value="a2" id="water">питьевая вода</label>
-        <label class="form__text-checkbox" for="milk"><input type="checkbox" name="option3" value="a3" id="milk">молоко</label>
-        <label class="form__text-checkbox" for="vitamin"><input type="checkbox" name="option4" value="a4" id="vitamin">витамины</label>
-        <button class="form__button" type="submit">отправить заявку</button>
-        <small>*-Обязательные поля</small>
+        <div class="form__checkbox">
+          <label class="form__text-checkbox" for="sugar"><input type="checkbox" name="option1" value="a1" checked id="sugar">сахарозаменитель</label>
+          <label class="form__text-checkbox" for="water"><input type="checkbox" name="option2" value="a2" id="water">питьевая вода</label>
+          <label class="form__text-checkbox" for="milk"><input type="checkbox" name="option3" value="a3" id="milk">молоко</label>
+          <label class="form__text-checkbox" for="vitamin"><input type="checkbox" name="option4" value="a4" id="vitamin">витамины</label>
+          <button class="form__button" type="submit">отправить заявку</button>
+          <small class="form_small">*-Обязательные поля</small>
+        </div>
       </form>
     </section>
     <section class="map">
