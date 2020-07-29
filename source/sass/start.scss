@@ -1,21 +1,7 @@
 .start {
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-
   &--padding {
     padding-top: 27px;
     padding-left: 20px;
-  }
-
-  @media (min-width: $tablet) {
-    display: flex;
-    flex-direction: column;
-    background: url("../img/index-can-tablet@1x.jpg") no-repeat;
-  }
-
-  @media (min-width: $dekstop) {
-    background: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
@@ -68,13 +54,30 @@
 }
 
 .start__img {
-  @media (min-width: $tablet) {
-    display: none;
-  }
-
   @media (min-width: $dekstop) {
     display: block;
     align-self: center;
     order: 1;
+  }
+}
+
+.start__center {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    background: none;
+  }
+
+  @media (min-width: $dekstop) {
+    background: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

@@ -1,0 +1,19 @@
+.form__input-comment::placeholder {
+  color: $special_dark-grey;
+  opacity: 1;
+}
+
+.form__input-comment {
+  border: 1px solid $add_gray;
+  box-sizing: border-box;
+  width: 280px;
+  height: 150px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  vertical-align: top;
+  resize: none;
+}

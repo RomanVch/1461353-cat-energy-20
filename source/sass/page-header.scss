@@ -3,12 +3,6 @@
 
   &--padding {
     padding-top: 11px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  @media (min-width: $tablet) {
-    display: flex;
   }
 }
 
@@ -27,5 +21,17 @@
 
   @media (min-width: $tablet) {
     display: none;
+  }
+}
+
+.page-header__center {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet) {
+    display: flex;
   }
 }

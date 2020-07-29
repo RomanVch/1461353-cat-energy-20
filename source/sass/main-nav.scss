@@ -21,6 +21,8 @@
 }
 
 .main-nav__list {
+  padding: none;
+
   @media (min-width: $tablet) {
     display: flex;
   }

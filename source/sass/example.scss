@@ -2,6 +2,14 @@
   background-color: $basic_grey_ea;
 }
 
+.example__center {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .example__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;

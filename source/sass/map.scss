@@ -5,6 +5,11 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $dekstop) {
+    width: 140px;
+    height: 80px;
+  }
 }
 
 .map__paragraph-contact {
@@ -13,6 +18,11 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $dekstop) {
+    width: 140px;
+    height: 80px;
+  }
 }
 
 .map__contact-background-other {
@@ -22,4 +32,21 @@
 
 .map__paragraph-class {
   margin: 0;
+}
+
+.map_center {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.map__contact {
+  display: flex;
+
+  @media (min-width: $dekstop) {
+    width: 570px;
+    height: 201px;
+  }
 }

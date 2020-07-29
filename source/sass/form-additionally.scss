@@ -1,0 +1,29 @@
+.form__checkbox {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 120px;
+    grid-row-gap: 32px;
+
+    @media (min-width: $dekstop) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 140px;
+      grid-row-gap: 60px;
+    }
+  }
+}
+
+.form__text-checkbox {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
