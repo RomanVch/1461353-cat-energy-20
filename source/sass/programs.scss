@@ -31,3 +31,34 @@
   border-radius: 25px;
   background: $basic_green;
 }
+
+.programs {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $dekstop) {
+    flex-direction: row;
+  }
+}
+
+.how-work_ul {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    grid-template-rows: repeat(2, 280px);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+
+  @media (min-width: $dekstop) {
+    display: flex;
+  }
+}
+
+.programs__center {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
