@@ -1,22 +1,26 @@
 .start {
-  &--padding {
-    padding-top: 27px;
-    padding-left: 20px;
-  }
+  margin-bottom: 22px;
+  @media (min-width: $tablet) {
+    margin-left: 110px;}
 }
-
 .start__title {
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic_white;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
 
+  @media (max-width: $mobile) {
+    padding-top: 27px;
+  }
+
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
     color: $basic_black;
     width: 500px;
+    text-align:left;
 
     br {
       display: none;
@@ -28,15 +32,21 @@
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic_white;
   line-height: 14px;
-
+  text-align: center;
+  @media (max-width: $mobile) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
     color: $basic_black;
+    text-align: left;
   }
 }
 
 .start__link {
+  margin: 0px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -47,13 +57,29 @@
   text-decoration: none;
   color: $basic_white;
   text-transform: uppercase;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   background-color: $basic_green;
   text-align: center;
+  @media (max-width: $mobile) {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .start__img {
+  @media (min-width: $tablet) {
+    display: block;
+    align-self: center;
+    order: 1;
+  }
   @media (min-width: $dekstop) {
     display: block;
     align-self: center;
@@ -65,9 +91,8 @@
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background-position: top;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -79,5 +104,7 @@
     background: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

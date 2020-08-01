@@ -4,7 +4,6 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
 }
 
 .how-work__block {
@@ -12,12 +11,28 @@
   font-weight: normal;
   color: $special_dark-grey;
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+  }
+  @media (min-width: $tablet) {
+    flex-direction: column;
+  }
 }
 
 .how-work__block-background {
   width: 60px;
   height: 60px;
   background-color: $basic_green;
+  @media (max-width: $mobile) {
+    margin-right: 20px;
+  }
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
+  }
 }
 
 .how-work__center {
@@ -28,6 +43,34 @@
   padding-right: 20px;
 }
 
+.how-work__number{
+display: none;
+@media (min-width: $tablet) {
+  display: block;
+  font-family: "Oswald", "Arial", sans-serif;
+font-style: normal;
+font-weight: normal;
+color:$basic_grey;
+font-size: 280px;
+line-height: 280px;
+z-index: -1;
+position: relative;
+bottom:230px;
+left:100px ;
+}
+
+}
 .how-work_ul {
   padding: 0;
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    grid-template-rows: repeat(2, 280px);
+    grid-column-gap: 153px;
+    grid-row-gap: 37px;
+  }
+
+  @media (min-width: $dekstop) {
+    display: flex;
+  }
 }

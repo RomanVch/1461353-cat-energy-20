@@ -64,10 +64,6 @@
       flex-wrap: wrap;
       padding-bottom: 20px;
     }
-    @media (min-width: $tablet) {
-      border:none;
-      background: $special_grey-2;
-    }
   }
 
   .catalog__else-title {
@@ -143,30 +139,13 @@
     }
     @media (min-width: $tablet) {
       display: grid;
-      grid-template-columns: repeat(2, 324px);
-      grid-template-rows: repeat(4, 430px);
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
       grid-column-gap: 60px;
       grid-row-gap: 60px;
     }
-    @media (min-width: $dekstop) {
-      display: grid;
-      grid-template-columns: repeat(4, 245px);
-      grid-template-rows: repeat(2, 431px);
-      grid-column-gap: 80px;
-      grid-row-gap: 60px;
-    }
-  }
+  }}
 
   .catalog-page-main__title {
     text-align: center;
-  }
-
-.abc {
-    @media (min-width: $tablet) {
-  border-bottom: 1px solid $basic_grey_line;
-  margin-left: 37px;
-  margin-right: 37px;
-  display: flex;
-  justify-content: space-between;
-    }
   }
