@@ -6,18 +6,22 @@
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body class="page__body">
   <header class="page-header page-header--padding">
     <div class="page-header__center">
+      <div>
       <a href="#" class="page-header__logo">
-        <img src="img/logo-mobile.svg" alt="Cat Energy" width="190" height="38">
+        <img src="img/logo-mobile.svg" alt="Cat Energy" width="190" height="38" class="page-header__img-logo">
       </a>
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">открыть меню</span>
-      </button>
-      <nav class="main-nav">
+
+    </div>
+      <nav class="main-nav main-nav--nojs main-nav--closed">
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">открыть меню</span>
+        </button>
         <ul class="main-nav__list site-list">
           <li class="main-nav__item">
             <a class="main-nav__links" href="#">главная</a>
@@ -46,6 +50,7 @@
     <section class="programs">
       <div class="programs__center">
       <div class="programs__program-block">
+        <div class="programs__title-flex">
         <div class="programs__circle">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 95 140" style="enable-background:new 0 0 70 97;" xml:space="preserve">
             <g>
@@ -64,11 +69,12 @@
             </g>
           </svg>
         </div>
-        <h2 class="programs__title">похудение</h2>
+        <h2 class="programs__title">похудение</h2></div>
         <p class="programs__paragraph">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="programs__link" href="#">каталог slim</a>
       </div>
       <div class="programs__program-block">
+        <div class="programs__title-flex">
         <div class="programs__circle">
           <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 134 56" style="enable-background:new 0 0 134 56;" xml:space="preserve">
             <g>
@@ -94,7 +100,7 @@
             </g>
           </svg>
         </div>
-        <h2 class="programs__title">набор массы</h2>
+        <h2 class="programs__title">набор массы</h2></div>
         <p class="programs__paragraph">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="programs__link" href="#">каталог pro</a>
       </div>
@@ -109,18 +115,22 @@
           <p>Функциональное питание
             содержит только полезные
             питательные вещества.</p>
+            <span class="how-work__number">1</span>
         </li>
         <li class="how-work__block">
           <img class="how-work__block-background" src="img/advantage-powder@1x.png" alt="в порошке" width="60" height="60">
           <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          <span class="how-work__number">2</span>
         </li>
         <li class="how-work__block">
           <img class="how-work__block-background" src="img/advantage-dining@1x.png" alt="функциональное питание" width="60" height="60">
           <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
+          <span class="how-work__number">3</span>
         </li>
         <li class="how-work__block">
           <img class="how-work__block-background" src="img/advantage-clock@1x.png" alt="за месяц" width="60" height="60">
           <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <span class="how-work__number">4</span>
         </li>
       </ul>
     </div>
@@ -164,8 +174,8 @@
     </section>
   </main>
   <footer class="page-footer page-footer--padding">
-    <div class="page-footer_center">
-    <img src="img/logo-footer.svg" alt="логотип энергичной кошки" width="128" height="24">
+    <div class="page-footer__center">
+    <img class="page-footer__logo"src="img/logo-footer.svg" alt="логотип энергичной кошки" width="128" height="24">
     <div class="page-footer__social">
       <ul class="page-footer__list">
         <li class="page-footer__item">
@@ -193,5 +203,6 @@
     </div>
   </div>
   </footer>
+  <script src="js/menu.js"></script>
 </body>
 </html>

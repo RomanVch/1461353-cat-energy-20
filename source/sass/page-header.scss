@@ -11,27 +11,136 @@
 }
 
 .page-header__toggle {
-  background-image: url("../img/icon-mobile-menu.svg");
-  padding-left: 17px;
-  padding-top: 8px;
-  padding-bottom: 10px;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border: 0;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 16px;
+  background-color: $basic_white;
+  cursor: pointer;
+  border: none;
 
   @media (min-width: $tablet) {
     display: none;
   }
 }
 
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 18px;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::after,
+  &:active::before {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+
+.main-nav--closed .page-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $basic_black;
+  box-shadow: 0 8px 0 0 $basic_black, 0 16px 0 0 $basic_black;
+}
+
+.main-nav--closed .page-header__toggle:active::before {
+  background-color: fade($basic_black, 30%);
+  box-shadow: 0 8px 0 0 fade($basic_black, 30%), 0 16px 0 0 fade($basic_black, 30%);
+}
+
+.main-nav--opened .page-header__toggle {
+  top: 0;
+  right: 40px;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 24px;
+    height: 2px;
+    background-color: $basic_black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::after,
+  &:active::before {
+    background-color: $basic_black;
+  }
+}
+
 .page-header__center {
   width: 100%;
+  display: grid;
   max-width: 1300px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 
+  @media (max-width: $mobile) {
+    padding-left: 0;
+  }
+
   @media (min-width: $tablet) {
     display: flex;
+  }
+}
+
+.main-nav__item {
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet) {
+    padding-top: 15px;
+  }
+}
+
+.page-header__img-logo {
+  padding-left: 20px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    margin-right: 95px;
+  }
+
+  @media (min-width: $dekstop) {
+    margin-right: 551px;
   }
 }

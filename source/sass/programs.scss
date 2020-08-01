@@ -1,5 +1,23 @@
 .programs__program-block {
   background-color: $basic_grey;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $dekstop) {
+    margin-right: 80px;
+  }
 }
 
 .programs__title {
@@ -9,10 +27,33 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (max-width: $mobile) {
+    margin: 5px 0 0 19px;
+  }
 }
 
 .programs__paragraph {
   color: $special_dark-grey;
+
+  @media (max-width: $mobile) {
+    margin-right: 20px;
+    border-bottom: 1px solid $basic_grey_line;
+    padding-bottom: 23px;
+  }
+}
+
+.programs__title-flex {
+  display: flex;
+
+  @media (max-width: $mobile) {
+    padding-top: 21px;
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 
 .programs__link {
@@ -23,6 +64,8 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $basic_black;
+  background-position: right;
+  background-image: url("../img/strel.png") no-repeat;
 }
 
 .programs__circle {
@@ -30,6 +73,22 @@
   height: 50px;
   border-radius: 25px;
   background: $basic_green;
+
+  @media (min-width: $tablet) {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-right: 62px;
+    margin-top: 92px;
+  }
+
+  @media (min-width: $dekstop) {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 62px;
+    margin-top: 92px;
+  }
 }
 
 .programs {
@@ -41,24 +100,15 @@
   }
 }
 
-.how-work_ul {
-  @media (min-width: $tablet) {
-    display: grid;
-    grid-template-columns: repeat(2, 230px);
-    grid-template-rows: repeat(2, 280px);
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-  }
-
-  @media (min-width: $dekstop) {
-    display: flex;
-  }
-}
-
 .programs__center {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $dekstop) {
+    display: flex;
+    flex-direction: row;
+  }
 }
