@@ -22,19 +22,19 @@
   cursor: pointer;
   border: none;
 
-
   @media (min-width: $tablet) {
     display: none;
   }
 }
-/* опен*/
+
+
 .main-nav--opened .main-nav__toggle {
-  top: 0px;
+  top: 0;
   right: auto;
   left: 0;
 
-  &::before,
-  &::after {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
     top: 30px;
@@ -53,17 +53,18 @@
     transform: rotate(-45deg);
   }
 
-  &:active::before,
-  &:active::after {
+  &:active::after,
+  &:active::before {
     background-color: fade(#ffffff, 30%);
   }
 }
-/*клосед*/
+
+
 .main-nav--closed .page-header__toggle::before {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 24px;
   height: 2px;
   background-color: $basic_black;
@@ -72,18 +73,15 @@
 
 .main-nav--closed .page-header__toggle:active::before {
   background-color: fade($basic_black, 30%);
-  box-shadow:
-    0 8px 0 0 fade($basic_black, 30%),
-    0 16px 0 0 fade($basic_black, 30%);
+  box-shadow: 0 8px 0 0 fade($basic_black, 30%), 0 16px 0 0 fade($basic_black, 30%);
 }
 
 .main-nav--opened .page-header__toggle {
-  top: 0px ;
+  top: 0;
   right: 40px;
 
-
-  &::before,
-  &::after {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
     top: 24px;
@@ -102,8 +100,8 @@
     transform: rotate(-45deg);
   }
 
-  &:active::before,
-  &:active::after {
+  &:active::after,
+  &:active::before {
     background-color: $basic_black;
   }
 }
@@ -115,28 +113,34 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+
   @media (max-width: $mobile) {
-    padding-left: 0px;
+    padding-left: 0;
   }
+
   @media (min-width: $tablet) {
     display: flex;
   }
 }
 
-.main-nav__item{
+.main-nav__item {
   padding-top: 23px;
-  padding-bottom:23px;
+  padding-bottom: 23px;
+
   @media (min-width: $tablet) {
-  padding-top: 15px;
+    padding-top: 15px;
   }
 }
-.page-header__img-logo{
-    padding-left: 20px;
-    @media (min-width: $tablet) {
-      display: flex;
-      margin-right: 95px;
-    }
-    @media (min-width: $dekstop) {
-      margin-right: 551px;
-    }
+
+.page-header__img-logo {
+  padding-left: 20px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    margin-right: 95px;
   }
+
+  @media (min-width: $dekstop) {
+    margin-right: 551px;
+  }
+}

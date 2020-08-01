@@ -2,6 +2,7 @@
   background-color: $basic_grey;
   padding-left: 20px;
   padding-right: 20px;
+
   &--padding {
     padding-top: 39px;
   }
@@ -24,7 +25,6 @@
 .page-footer__social {
   border-top: 1px solid $basic_grey_line;
   border-bottom: 1px solid $basic_grey_line;
-
 
   @media (min-width: $tablet) {
     border: none;
@@ -56,8 +56,8 @@
   justify-content: space-between;
 
   @media (max-width: $mobile) {
-      padding-top: 20px;
-    }
+    padding-top: 20px;
+  }
 }
 
 .page-footer__center {
@@ -67,7 +67,6 @@
   padding-right: 20px;
   display: flex;
   flex-direction: column;
-
 
   @media (min-width: $tablet) {
     display: flex;
@@ -82,14 +81,16 @@
     padding-right: 20px;
   }
 }
-.page-footer__logo{
+
+.page-footer__logo {
   padding-bottom: 32px;
   margin: auto;
+
   @media (min-width: $tablet) {
     margin: 0;
   }
 }
 
-.page-footer__link{
-margin-right: 29px;
+.page-footer__link {
+  margin-right: 29px;
 }
