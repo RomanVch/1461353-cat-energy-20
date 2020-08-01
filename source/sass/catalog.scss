@@ -12,16 +12,28 @@
   text-transform: uppercase;
   width: 100px;
   @media (min-width: $tablet) {
-    width: 120px;
+    width: 140px;
     text-align: center;
-  }}
+    margin: auto;
+    margin-top:50px;
+    margin-bottom: 34px;
+    font-size: 20px;
+line-height: 24px;
+  }
+  @media (min-width: $dekstop) {
+
+    line-height: 21px;
+    width: 140px;
+  }
+}
 
   .catalog__else-svg-link {
     align-items: center;
-    @media (max-width: $mobile) {
-      margin: auto;
-    }
-  }
+    margin: auto;
+    @media (min-width: $tablet) {
+  width: 60px;
+  height: 60
+}}
 
   .catalog__links {
     font-family: "Oswald", "Arial", sans-serif;
@@ -42,6 +54,16 @@
     padding-top: 13px;
     padding-bottom: 13px;
     margin: auto;
+    @media (min-width: $tablet) {
+      width: 248px;
+    }
+    @media (min-width: $dekstop) {
+
+      line-height: 21px;
+      width: 140px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
   }
 
   .catalog__img-small {
@@ -78,6 +100,12 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #111111;
+    margin: auto;
+    @media (min-width: $tablet) {
+      width: 130px;
+      text-align: center;
+
+    }
   }
 
   .catalog__else-paragraph {
@@ -86,6 +114,12 @@
     font-size: 12px;
     line-height: 16px;
     color: $special_dark-grey;
+    margin: auto;
+    @media (min-width: $tablet) {
+      width: 150px;
+      text-align: center;
+
+    }
   }
 
   .catalog__else-link {
@@ -104,6 +138,14 @@
     background-color: $basic_grey;
     text-align: center;
     margin: auto;
+    @media (min-width: $tablet) {
+      width: 249px;
+    }
+    @media (min-width: $dekstop) {
+      width: 169px;
+      padding-top: 10px ;
+      padding-bottom: 10px ;
+    }
   }
 
   .catalog__else {
@@ -115,6 +157,10 @@
       padding-top: 26px;
       padding-bottom: 25px;
     }
+    @media (min-width: $tablet) {
+      border:1px solid $special_grey-2;
+
+    }
   }
 
   .catalog__table {
@@ -124,6 +170,9 @@
     line-height: 16px;
     text-align: left;
     color: $special_dark-grey;
+    @media (min-width: $tablet) {
+      margin-bottom: 33px;
+    }
   }
 
   .catalog__links-name {
@@ -161,12 +210,20 @@
     text-align: center;
   }
 
-.abc {
+.catalog__characteristic {
     @media (min-width: $tablet) {
   border-bottom: 1px solid $basic_grey_line;
   margin-left: 37px;
   margin-right: 37px;
   display: flex;
   justify-content: space-between;
+  width: 250px
     }
-  }
+    @media (min-width: $dekstop) {
+
+width: 169px;
+margin-left: 35px;
+margin-right: 30px;
+font-size: 16px;
+line-height: 16px;
+}}

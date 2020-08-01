@@ -10,16 +10,19 @@
   <body class="page__body">
     <header class="page-header page-header--padding">
       <div class="page-header__center">
+        <div>
         <a href="#" class="page-header__logo">
-          <img src="img/logo-mobile.svg" alt="Cat Energy" width="190" height="38">
+          <img src="img/logo-mobile.svg" alt="Cat Energy" width="190" height="38" class="page-header__img-logo">
         </a>
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">открыть меню</span>
-        </button>
-        <nav class="main-nav">
+
+      </div>
+        <nav class="main-nav main-nav--nojs main-nav--closed">
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">открыть меню</span>
+          </button>
           <ul class="main-nav__list site-list">
             <li class="main-nav__item">
-              <a class="main-nav__links" href="index.html">главная</a>
+              <a class="main-nav__links" href="#">главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__links" href="catalog.html">каталог продукции</a>
@@ -29,7 +32,7 @@
             </li>
           </ul>
         </nav>
-      </div>
+    </div>
     </header>
     <section class="title-form">
       <div class="title-form__center">
@@ -101,34 +104,34 @@
       </div>
     </section>
     <footer class="page-footer page-footer--padding">
-      <div class="page-footer_center">
-        <img src="img/logo-footer.svg" alt="логотип энергичной кошки" width="128" height="24">
-        <div class="page-footer__social">
-          <ul class="page-footer__list">
-            <li class="page-footer__item">
-              <a class="page-footer__link" href="#">
-                <img src="img/icon-vk.svg" alt="вконтакте" width="22" height="12">
-              </a>
-            </li>
-            <li class="page-footer__item">
-              <a class="page-footer__link" href="#">
-                <img src="img/icon-insta.svg" alt="инстаграмм" width="16" height="16">
-              </a>
-            </li>
-            <li class="page-footer__item">
-              <a class="page-footer__link" href="#">
-                <img src="img/icon-fb.svg" alt="фэйсбук" width="10" height="18">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <a class="page-footer__copyright-link" href="img/https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="page-footer__copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class src="img/htmlacademy.svg" alt="лого-хтмл-академии" width="27" height="34">
-          </a>
-        </div>
+      <div class="page-footer__center">
+      <img class="page-footer__logo"src="img/logo-footer.svg" alt="логотип энергичной кошки" width="128" height="24">
+      <div class="page-footer__social">
+        <ul class="page-footer__list">
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="#">
+              <img src="img/icon-vk.svg" alt="вконтакте" width="22" height="12">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="#">
+              <img src="img/icon-insta.svg" alt="инстаграмм" width="16" height="16">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="page-footer__link" href="#">
+              <img src="img/icon-fb.svg" alt="фэйсбук" width="10" height="18">
+            </a>
+          </li>
+        </ul>
       </div>
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="img/https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="page-footer__copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class src="img/htmlacademy.svg" alt="лого-хтмл-академии" width="27" height="34">
+        </a>
+      </div>
+    </div>
     </footer>
   </body>
   </html>
