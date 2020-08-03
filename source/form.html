@@ -47,12 +47,12 @@
           <form name="test" method="post" action="https://echo.htmlacademy.ru">
             <div class="form__div">
               <div class="form__div-name">
-                <label class="form__text" for="name">имя*:
-                  <input class="form__input" type="text" size="40" placeholder="Барсик" name="name" id="name" required></label>
-                <label class="form__text" for="weight">вес (кг)*
-                  <input class="form__input" type="text" size="40" placeholder="7" name="weight" id="weight" required></label>
-                <label class="form__text" for="age">возраст(лет):
-                  <input class="form__input" type="text" size="40" placeholder="7" name="age" id="age"></label>
+                <label class="form__text" for="name"><span class="form__span-name">имя*:</span>
+                  <input class="form__input form__input--name" type="text" size="40" placeholder="Барсик" name="name" id="name" required></label>
+                <label class="form__text" for="weight"><span class="form__span-name">вес (кг)*</span>
+                  <input class="form__input form__input--weight" type="text" size="40" placeholder="7" name="weight" id="weight" required></label>
+                <label class="form__text" for="age"><span class="form__span-name">возраст(лет):</span>
+                  <input class="form__input form__input--age" type="text" size="40" placeholder="7" name="age" id="age"></label>
               </div>
               <div class="form__div-radio">
                 <input class="form__input-radio" name="goal" id="weight-loss" type="radio" value="похудение" checked>
@@ -66,8 +66,8 @@
             <div class="form-contact">
             <h2 class="form__title">Контактные данные (владельца кота)</h2>
             <div class="form_div-contact">
-              <label class="form__text" for="login">email*: <input class="form__input form__input--email" type="email" id="login" name="login" placeholder="kuklachev@gmail.com" required></label>
-              <label class="form__text" for="tel">телефон*: <input class="form__input form__input--tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required></label>
+              <label class="form__text" for="login"><span class="form__span-name">email*:</span> <input class="form__input form__input--email" type="email" id="login" name="login" placeholder="kuklachev@gmail.com" required></label>
+              <label class="form__text" for="tel"><span class="form__span-name">телефон*:</span> <input class="form__input form__input--tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required></label>
             </div>
           </div>
           <div class="form-comment">

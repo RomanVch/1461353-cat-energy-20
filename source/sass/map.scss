@@ -5,10 +5,19 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-
+  width: 140px;
+  height: 80px;
+  @media (min-width: $tablet) {
+    width: 140px;
+    height: 80px;
+    font-size: 20px;
+line-height: 21px;
+  }
   @media (min-width: $dekstop) {
     width: 140px;
     height: 80px;
+    margin-right: 87px;
+    margin-top: 65px;
   }
 }
 
@@ -18,10 +27,12 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+  width: 169px;
 
   @media (min-width: $dekstop) {
     width: 140px;
     height: 80px;
+    margin-top: 65px;
   }
 }
 
@@ -44,9 +55,10 @@
 
 .map__contact {
   display: flex;
-
+justify-content: space-around;
   @media (min-width: $dekstop) {
     width: 570px;
     height: 201px;
+justify-content: flex-start;
   }
 }
