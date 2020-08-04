@@ -21,7 +21,7 @@
 
   @media (min-width: $dekstop) {
     display: flex;
-    width:895px;
+    width: 895px;
     justify-content: space-between;
   }
 }
@@ -34,6 +34,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $special_dark-grey-2;
+
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
@@ -67,33 +68,34 @@
   background-color: $basic_green;
 
   @media (min-width: $tablet) {
-width: 632px;
-margin: auto;
-padding-top: 6px;
-padding-bottom: 6px;
+    width: 632px;
+    margin: auto;
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
 
   @media (min-width: $dekstop) {
     width: 244px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin: 0px;
-    height: 0px
+    margin: 0;
+    height: 0;
   }
 }
 
 .additionally__link-gift {
   text-decoration: none;
+
   @media (min-width: $tablet) {
-width:708px;
-display: flex;
+    width: 708px;
+    display: flex;
+    justify-content: space-around;
+  }
 
-justify-content: space-around;
-}
   @media (min-width: $dekstop) {
-flex-direction: column;
-  }}
-
+    flex-direction: column;
+  }
+}
 
 .additionally__gift-block {
   width: 280px;
@@ -107,9 +109,9 @@ flex-direction: column;
     margin-top: 69px;
     width: 708px;
     height: 200px;
-padding-top: 6px;
-padding-bottom: 6px;
-background-image: url("../img/gift-photo-tablet@1x.jpg");
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
 
   @media (min-width: $dekstop) {
@@ -119,7 +121,7 @@ background-image: url("../img/gift-photo-tablet@1x.jpg");
     padding-bottom: 7px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
-    margin-left: 80px
+    margin-left: 80px;
   }
 }
 
@@ -164,25 +166,29 @@ background-image: url("../img/gift-photo-tablet@1x.jpg");
     display: flex;
   }
 }
-.additionally__line-border{
+
+.additionally__line-border {
   @media (min-width: $tablet) {
-border:1px solid $special_grey;
-width:708px;
+    border: 1px solid $special_grey;
+    width: 708px;
   }
+
   @media (min-width: $dekstop) {
-  border:none;
-  width:869px;
+    border: none;
+    width: 869px;
   }
 }
 
-.additionally_svg{
+.additionally_svg {
   margin-left: 110px;
   margin-top: 70px;
   margin-bottom: 20px;
+
   @media (min-width: $tablet) {
-margin: 0px;
-align-self: center;
+    margin: 0;
+    align-self: center;
   }
+
   @media (min-width: $dekstop) {
     margin-left: 90px;
     margin-top: 70px;
@@ -191,8 +197,8 @@ align-self: center;
   }
 }
 
-.additionally_div-border{
+.additionally_div-border {
   @media (min-width: $dekstop) {
-  width: 896px;
+    width: 896px;
   }
 }
