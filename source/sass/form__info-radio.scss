@@ -12,6 +12,13 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+
+  @media (min-width: $dekstop) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__input-radio:checked,
@@ -65,11 +72,24 @@
   text-transform: uppercase;
   color: $special_dark-grey;
 
+  @media (min-width: $tablet) {
+    height: 52px;
+  }
+
   &--tel {
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 20px 20px;
+    width: 204px;
+
+    @media (min-width: $tablet) {
+      width: 531px;
+    }
+
+    @media (min-width: $dekstop) {
+      display: flex;
+    }
   }
 
   &--email {
@@ -77,6 +97,54 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: 20px 20px;
+    width: 219px;
+
+    @media (min-width: $tablet) {
+      width: 551px;
+    }
+
+    @media (min-width: $dekstop) {
+      width: 486px;
+      margin-right: 78px;
+    }
+  }
+
+  &--name {
+    margin-left: 13px;
+    width: 229px;
+
+    @media (min-width: $tablet) {
+      width: 567px;
+    }
+
+    @media (min-width: $dekstop) {
+      width: 506px;
+    }
+  }
+
+  &--weight {
+    margin-left: 13px;
+    width: 204px;
+
+    @media (min-width: $tablet) {
+      width: 536px;
+    }
+
+    @media (min-width: $dekstop) {
+      width: 475px;
+    }
+  }
+
+  &--age {
+    width: 175px;
+
+    @media (min-width: $tablet) {
+      width: 497px;
+    }
+
+    @media (min-width: $dekstop) {
+      width: 436px;
+    }
   }
 }
 
@@ -109,22 +177,45 @@
   padding-bottom: 25px;
 }
 
-
 .form__div-radio {
   border-top: 1px solid $basic_grey_line;
   border-bottom: 1px solid $basic_grey_line;
   margin-top: 25px;
   padding-top: 25px;
-  padding-bottom: 38px;
+  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet) {
+    padding-left: 28px;
+    margin-left: 50px;
+    border: 1px solid $basic_grey_line;
+    width: 600px;
+    padding-bottom: 25px;
+  }
+
   @media (min-width: $dekstop) {
     border: 1px solid $basic_grey_line;
+    margin-top: 0;
+    padding-bottom: 0;
   }
 }
 
 .form__div-name {
   display: flex;
   flex-direction: column;
+  width: 320px;
+
+  @media (min-width: $tablet) {
+    width: 630px;
+    margin-left: 50px;
+  }
+
+  @media (min-width: $dekstop) {
+    width: 630px;
+  }
+}
+
+.form__span-name {
+  margin: auto auto auto 0;
 }

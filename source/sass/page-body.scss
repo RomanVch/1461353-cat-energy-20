@@ -5,4 +5,13 @@
   font-size: 14px;
   line-height: 18px;
   color: $basic_black;
+  width: 320px;
+  margin: 0 auto;
+  @media (min-width: $tablet) {
+    width: 770px;
+  }
+
+  @media (min-width: $dekstop) {
+    width: 1300px;
+  }
 }

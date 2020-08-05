@@ -4,6 +4,12 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
+  margin-top: 69px;
+  margin-bottom: 76px;
+
+  @media (min-width: $tablet) {
+    margin-left: 50px;
+  }
 }
 
 .form__title::after {
@@ -21,8 +27,32 @@
 .form_div-contact {
   display: flex;
   flex-direction: column;
+  width: 281px;
+
+  @media (min-width: $tablet) {
+    width: 635px;
+    margin-left: 50px;
+  }
 
   @media (min-width: $dekstop) {
     flex-direction: row;
+    margin-left: 50px;
+  }
+}
+
+.form__text-login {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+
+  @media (min-width: $dekstop) {
+    margin-bottom: 20px;
   }
 }

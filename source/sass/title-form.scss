@@ -4,6 +4,22 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+  margin-top: 27px;
+  margin-bottom: 37px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-top: 55px;
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  @media (min-width: $dekstop) {
+    margin-top: 65px;
+    margin-bottom: 56px;
+  }
 }
 
 .title-form__paragraph {
@@ -13,6 +29,17 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-bottom: 39px;
+  text-align: center;
+  width: 323px;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 50px;
+  }
 }
 
 .title-form__center {

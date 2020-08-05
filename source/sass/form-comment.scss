@@ -16,4 +16,15 @@
   text-transform: uppercase;
   vertical-align: top;
   resize: none;
+
+  @media (min-width: $tablet) {
+    width: 631px;
+    height: 174px;
+    margin-left: 50px;
+  }
+
+  @media (min-width: $dekstop) {
+    width: 1220px;
+    height: 174px;
+  }
 }

@@ -1,9 +1,6 @@
 .start {
   margin-bottom: 22px;
 
-  @media (min-width: $tablet) {
-    margin-left: 110px;
-  }
 }
 
 .start__title {
@@ -16,6 +13,7 @@
 
   @media (max-width: $mobile) {
     padding-top: 27px;
+
   }
 
   @media (min-width: $tablet) {
@@ -24,10 +22,15 @@
     color: $basic_black;
     width: 500px;
     text-align: left;
-
+    margin-top: 62px;
+margin-left:  97px;
     br {
       display: none;
     }
+  }
+  @media (min-width: $dekstop) {
+    margin-top: 126px;
+margin-left:  170px;
   }
 }
 
@@ -47,6 +50,12 @@
     line-height: 20px;
     color: $basic_black;
     text-align: left;
+    margin-top: 52px;
+    margin-left:  97px;
+  }
+  @media (min-width: $dekstop) {
+    margin-top: 40px;
+margin-left:  170px;
   }
 }
 
@@ -78,6 +87,11 @@
     width: 244px;
     padding-top: 24px;
     padding-bottom: 24px;
+    margin-left:  97px;
+    margin-top: 52px;
+  }
+  @media (min-width: $dekstop) {
+margin-left:  170px;
   }
 }
 
@@ -106,6 +120,8 @@
     display: flex;
     flex-direction: column;
     background: none;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: $dekstop) {
