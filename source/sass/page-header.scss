@@ -4,6 +4,9 @@
   &--padding {
     padding-top: 11px;
   }
+  @media (min-width: $tablet) {
+    border: none;
+  }
 }
 
 .page-header__name {
@@ -120,15 +123,6 @@
 
   @media (min-width: $tablet) {
     display: flex;
-  }
-}
-
-.main-nav__item {
-  padding-top: 23px;
-  padding-bottom: 23px;
-
-  @media (min-width: $tablet) {
-    padding-top: 15px;
   }
 }
 
