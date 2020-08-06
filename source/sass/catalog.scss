@@ -75,6 +75,10 @@
 
 .catalog__div-info {
   margin: auto;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 33px;
+  }
 }
 
 .catalog__card {
@@ -173,10 +177,6 @@
   line-height: 16px;
   text-align: left;
   color: $special_dark-grey;
-
-  @media (min-width: $tablet) {
-    margin-bottom: 33px;
-  }
 }
 
 .catalog__links-name {
@@ -207,7 +207,7 @@
   @media (min-width: $dekstop) {
     display: grid;
     grid-template-columns: repeat(4, 245px);
-    grid-template-rows: repeat(2, 431px);
+    grid-template-rows: repeat(2, max-content);
     grid-column-gap: 80px;
     grid-row-gap: 60px;
   }
