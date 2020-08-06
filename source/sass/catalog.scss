@@ -235,3 +235,27 @@
     line-height: 16px;
   }
 }
+
+.catalog__img-size-small {
+  @media (min-width: $tablet) {
+    width: 161px;
+    height: 172px;
+  }
+
+  @media (min-width: $dekstop) {
+    width: 168px;
+    height: 206px;
+  }
+}
+
+.catalog__img-size-big {
+  @media (min-width: $tablet) {
+    width: 161px;
+    height: 172px;
+  }
+
+  @media (min-width: $dekstop) {
+    width: 172px;
+    height: 202px;
+  }
+}

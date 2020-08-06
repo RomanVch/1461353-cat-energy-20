@@ -231,6 +231,16 @@
 
 .examle__cat {
   margin: auto;
+
+  @media (min-width: $tablet) {
+    width: 505px;
+    height: 505px;
+  }
+
+  @media (min-width: $dekstop) {
+    width: 505px;
+    height: 505px;
+  }
 }
 
 .examle__div-cat {

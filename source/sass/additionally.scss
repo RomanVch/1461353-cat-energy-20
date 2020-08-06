@@ -18,11 +18,13 @@
   border-bottom: 1px solid $special_grey;
   padding-top: 13px;
   padding-bottom: 19px;
+
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
+
   @media (min-width: $dekstop) {
     display: flex;
     width: 895px;
@@ -44,6 +46,7 @@
     line-height: 20px;
     margin-left: 40px;
   }
+
   @media (min-width: $dekstop) {
     width: 270px;
   }
@@ -59,9 +62,12 @@
   line-height: 14px;
   padding-top: 10px;
   padding-bottom: 12px;
+
   @media (min-width: $tablet) {
     align-self: center;
-  margin-right: 40px;}
+    margin-right: 40px;
+  }
+
   @media (min-width: $dekstop) {
     width: 282px;
   }

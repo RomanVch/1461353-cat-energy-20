@@ -1,6 +1,5 @@
 .start {
   margin-bottom: 22px;
-
 }
 
 .start__title {
@@ -13,7 +12,6 @@
 
   @media (max-width: $mobile) {
     padding-top: 27px;
-
   }
 
   @media (min-width: $tablet) {
@@ -23,14 +21,16 @@
     width: 500px;
     text-align: left;
     margin-top: 62px;
-margin-left:  97px;
+    margin-left: 97px;
+
     br {
       display: none;
     }
   }
+
   @media (min-width: $dekstop) {
     margin-top: 126px;
-margin-left:  170px;
+    margin-left: 170px;
   }
 }
 
@@ -51,11 +51,12 @@ margin-left:  170px;
     color: $basic_black;
     text-align: left;
     margin-top: 52px;
-    margin-left:  97px;
+    margin-left: 97px;
   }
+
   @media (min-width: $dekstop) {
     margin-top: 40px;
-margin-left:  170px;
+    margin-left: 170px;
   }
 }
 
@@ -87,11 +88,12 @@ margin-left:  170px;
     width: 244px;
     padding-top: 24px;
     padding-bottom: 24px;
-    margin-left:  97px;
+    margin-left: 97px;
     margin-top: 52px;
   }
+
   @media (min-width: $dekstop) {
-margin-left:  170px;
+    margin-left: 170px;
   }
 }
 
@@ -100,12 +102,17 @@ margin-left:  170px;
     display: block;
     align-self: center;
     order: 1;
+    width: 709px;
+    height: 609px;
+    z-index: 1;
   }
 
   @media (min-width: $dekstop) {
     display: block;
     align-self: center;
     order: 1;
+    width: 552px;
+    height: 499px;
   }
 }
 
