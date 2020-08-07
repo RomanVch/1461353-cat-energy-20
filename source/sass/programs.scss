@@ -1,14 +1,15 @@
 .programs__program-block {
   background-color: $basic_grey;
-  width: 280px;
-  padding-left: 20px;
+  width: 240px;
+  padding-top: 24px;
+  padding-left: 24px;
 
   @media (max-width: $mobile) {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 10px;
-    width: 708px;
+
   }
 
   @media (min-width: $tablet) {
@@ -22,6 +23,11 @@
   @media (min-width: $dekstop) {
     width: 570px;
   }
+}
+
+.programs__svg-cat{
+  margin-left: 9px;
+  margin-top: -2px;
 }
 
 .programs__title {
@@ -39,20 +45,19 @@
 
 .programs__paragraph {
   color: $special_dark-grey;
+  margin-top: 20px;
+  letter-spacing: -0.38px;
 
   @media (max-width: $mobile) {
-    margin-right: 20px;
+    margin-right: 10px;
     border-bottom: 1px solid $basic_grey_line;
     padding-bottom: 23px;
+    margin-bottom: 19px;
   }
 }
 
 .programs__title-flex {
   display: flex;
-
-  @media (max-width: $mobile) {
-    padding-top: 21px;
-  }
 
   @media (min-width: $tablet) {
     flex-direction: row-reverse;
@@ -116,4 +121,12 @@
     flex-direction: row;
     justify-content: space-between;
   }
+}
+.programs__program-block--margin{
+  padding-top: 27px;
+  margin-bottom: 34px;
+}
+.programs__svg-tiger{
+  margin-top: 10px;
+  margin-left:: -9px;
 }

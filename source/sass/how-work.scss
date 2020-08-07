@@ -4,8 +4,15 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-}
+  margin-top: 0px;
+  margin-bottom: 39px;
 
+}
+.how-work__block p {
+  margin:auto;
+  width: 235px;
+  Letter-spacing:-0.1px;
+}
 .how-work__block {
   font-style: normal;
   font-weight: normal;
@@ -15,7 +22,7 @@
   flex-direction: row;
 
   @media (max-width: $mobile) {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: $tablet) {
@@ -43,6 +50,9 @@
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
 }
 
 .how-work__number {
@@ -65,6 +75,7 @@
 
 .how-work_ul {
   padding: 0;
+  margin: 0px;
 
   @media (min-width: $tablet) {
     display: grid;

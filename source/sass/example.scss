@@ -11,8 +11,7 @@
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+
   display: flex;
   flex-direction: column;
 
@@ -20,6 +19,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -29,7 +30,9 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  margin: 27px auto auto;
+  margin-top:27px;
+  margin-left:20px;
+  margin-bottom: 0px;
 
   @media (min-width: $dekstop) {
     grid-area: 1 / 1 / 2 / 2;
@@ -38,10 +41,11 @@
 
 .example__paragraph {
   color: $special_dark-grey;
-  margin: auto;
   padding-right: 30px;
   margin-top: 33px;
   margin-bottom: 26px;
+  padding-left: 20px;
+  Letter-spacing:-0.16px;
 
   @media (min-width: $dekstop) {
     width: 440px;
@@ -63,10 +67,6 @@
     width: 168px;
     height: 72px;
   }
-
-  &--margin {
-    margin-left: 42px;
-  }
 }
 
 .example__title-span {
@@ -82,8 +82,9 @@
   text-align: center;
   font-size: 24px;
   line-height: 24px;
-  margin-top: 10px;
+  margin-top: 13px;
   margin-bottom: 0;
+  text-transform: uppercase;
 
   @media (min-width: $tablet) {
     margin-top: 10px;
@@ -131,6 +132,7 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-top: 35px;
 
   @media (min-width: $dekstop) {
     width: 100%;
@@ -199,12 +201,9 @@
 }
 
 .example__div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0;
-  grid-row-gap: 25px;
-  margin: auto auto 42px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around ;
 
   @media (min-width: $tablet) {
     display: flex;

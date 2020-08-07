@@ -9,6 +9,7 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+  letter-spacing:-2px;
 
   @media (max-width: $mobile) {
     padding-top: 27px;
@@ -39,6 +40,7 @@
   color: $basic_white;
   line-height: 14px;
   text-align: center;
+  text-transform: uppercase;
 
   @media (max-width: $mobile) {
     padding-top: 10px;
@@ -72,10 +74,12 @@
   text-decoration: none;
   color: $basic_white;
   text-transform: uppercase;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   background-color: $basic_green;
   text-align: center;
+  margin-top: -1px;
+  letter-spacing:-1px;
 
   @media (max-width: $mobile) {
     margin-right: 20px;
@@ -98,6 +102,8 @@
 }
 
 .start__img {
+  margin-top: 5px;
+  margin-left: 20px;
   @media (min-width: $tablet) {
     display: block;
     align-self: center;
@@ -105,6 +111,7 @@
     width: 709px;
     height: 609px;
     z-index: 1;
+
   }
 
   @media (min-width: $dekstop) {

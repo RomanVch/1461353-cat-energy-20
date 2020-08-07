@@ -128,7 +128,6 @@
 }
 
 .page-header__img-logo {
-  padding-left: 20px;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -138,4 +137,8 @@
   @media (min-width: $dekstop) {
     margin-right: 551px;
   }
+}
+.page-header__logo-div{
+  padding-left: 20px;
+  padding-bottom: 10px;
 }
