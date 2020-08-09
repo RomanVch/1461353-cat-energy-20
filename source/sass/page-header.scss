@@ -3,10 +3,26 @@
 
   &--padding {
     padding-top: 11px;
+    @media (min-width: $tablet) {
+      padding-top: 25px;
+      border: none;
+    }
   }
 
+  @media (min-width: $dekstop) {
+ padding-top: 55px;
+background-color: transparent;
+  }
+}
+
+.page-header__logo-img{
   @media (min-width: $tablet) {
-    border: none;
+    width: 174px ;
+    height: 52px ;
+  }
+  @media (min-width: $dekstop) {
+    width: 202px;
+    height: 59px;
   }
 }
 
@@ -117,13 +133,21 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  box-sizing: border-box;
 
   @media (max-width: $mobile) {
     padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: $tablet) {
     display: flex;
+
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  @media (min-width: $dekstop) {
+margin-left: 80px ;
   }
 }
 
@@ -141,4 +165,15 @@
 .page-header__logo-div{
   padding-left: 20px;
   padding-bottom: 10px;
+  @media (min-width: $tablet) {
+    margin-right: 85px;
+    padding-left: 30px;
+  }
+  @media (min-width: $dekstop) {
+    margin-right: 531px;
+  }
+}
+
+.page-header__logo{
+
 }

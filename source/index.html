@@ -15,9 +15,9 @@
       <div class="page-header__logo-div">
         <a href="#" class="page-header__logo">
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg 1x">
-            <source media="(min-width: 770px)" srcset="img/logo-tablet.svg 1x">
-              <img  src="img/logo-mobile.svg"  alt="упаковка корма" width="190" height="38">
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 770px)" srcset="img/logo-desktop.svg">
+              <img class="page-header__logo-img"  src="img/logo-mobile.svg"  alt="упаковка корма" width="190" height="38">
           </picture>
         </a>
 
@@ -33,8 +33,8 @@
           <li class="main-nav__item">
             <a class="main-nav__links" href="catalog.html">каталог продукции</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__links" href="form.html">подбор программы</a>
+          <li class="main-nav__item main-nav__item--margin">
+            <a class="main-nav__links " href="form.html">подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -43,10 +43,10 @@
   <main class="page-main">
     <section class="start start--padding">
       <div class="start__center">
-        <h1 class="start__title">Функциональное питание для котов.</h1>
+        <h1 class="start__title">Функциональное питание для котов</h1>
         <p class="start__paragraph">Занялся собой? Займись котом!</p>
 
-        <picture>
+        <picture class="start__picture">
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 770px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
             <img class="start__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="упаковка корма" width="280" height="270">
@@ -113,7 +113,7 @@
             </div>
             <h2 class="programs__title">набор массы</h2>
           </div>
-          <p class="programs__paragraph">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <p class="programs__paragraph programs__paragraph--margin">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="programs__link" href="#">каталог pro</a>
         </div>
       </div>
@@ -123,33 +123,33 @@
         <h2 class="how-work__title">Как это работает</h2>
         <ul class="how-work_ul">
           <li class="how-work__block">
-            <picture>
-            <img class="how-work__block-background" src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x" alt="полезные вещества" width="60" height="60">
-            </picture>
-            <p>Функциональное питание
+            <div class="how-work_block-div">
+            <img class="how-work__block-background" src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x" alt="полезные вещества" width="45" height="45">
+            </div>
+            <p class="how-work__paragraph">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
             <span class="how-work__number">1</span>
           </li>
           <li class="how-work__block">
-            <picture>
-            <img class="how-work__block-background" src="img/advantage-powder@1x.png" srcset="img/advantage-powder@2x.png 2x" alt="в порошке" width="60" height="60">
-          </picture>
-            <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            <div class="how-work_block-div">
+            <img class="how-work__block-background" src="img/advantage-powder@1x.png" srcset="img/advantage-powder@2x.png 2x" alt="в порошке" width="45" height="45">
+          </div>
+            <p class="how-work__paragraph">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             <span class="how-work__number">2</span>
           </li>
           <li class="how-work__block">
-            <picture>
-            <img class="how-work__block-background" src="img/advantage-dining@1x.png"  srcset="img/advantage-dining@2x.png 2x" alt="функциональное питание" width="60" height="60">
-          </picture>
-            <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
+            <div class="how-work_block-div">
+            <img class="how-work__block-background" src="img/advantage-dining@1x.png"  srcset="img/advantage-dining@2x.png 2x" alt="функциональное питание" width="45" height="45">
+          </div>
+            <p class="how-work__paragraph">Замените один-два приема обычной еды на наше функциональное питание.</p>
             <span class="how-work__number">3</span>
           </li>
           <li class="how-work__block">
-            <picture>
-            <img class="how-work__block-background" src="img/advantage-clock@1x.png"  srcset="img/advantage-clock@2x.png 2x" alt="за месяц" width="60" height="60">
-          </picture>
-            <p>Уже через месяц <br> наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <div class="how-work_block-div">
+            <img class="how-work__block-background" src="img/advantage-clock@1x.png"  srcset="img/advantage-clock@2x.png 2x" alt="за месяц" width="45" height="45">
+          </div>
+            <p class="how-work__paragraph">Уже через месяц <br> наслаждайтесь изменениями к лучшему вашего питомца!</p>
             <span class="how-work__number">4</span>
           </li>
         </ul>
@@ -173,10 +173,10 @@
 
         </div>
         <div class="examle__div-cat">
-          <picture>
+          <picture class="examle__picture">
             <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
             <source media="(min-width: 770px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="examle__cat" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="толстый кот" width="311" height="232">
+              <img class="examle__cat" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="толстый кот" width="320" height="238">
           </picture>
           <div class="example__toggle-block"> <span class="example__span">было</span>
             <input class="example_switch" type="checkbox" id="switch">
@@ -199,10 +199,10 @@
       <div class="map_center">
         <div class="map__contact">
           <p class="map__paragraph">приглашаем
-            к сотрудничеству дилеров!</p>
+           <br> к сотрудничеству дилеров!</p>
           <p class="map__paragraph-contact">ул. Большая
             Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+            <span class="map__span">Санкт-Петербург</span></p>
         </div>
         <picture>
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
@@ -222,19 +222,19 @@
       <img class="page-footer__logo" src="img/logo-footer.svg" alt="логотип энергичной кошки" width="128" height="24">
       <div class="page-footer__social">
         <ul class="page-footer__list">
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="#">
-              <img src="img/icon-vk.svg" alt="вконтакте" width="22" height="12">
+          <li class="page-footer__item page-footer__item--margin1">
+            <a class="page-footer__link " href="#">
+              <img class="page-footer__vk" src="img/icon-vk.svg" alt="вконтакте" width="22" height="12">
             </a>
           </li>
-          <li class="page-footer__item">
+          <li class="page-footer__item page-footer__item--margin2">
             <a class="page-footer__link" href="#">
-              <img src="img/icon-insta.svg" alt="инстаграмм" width="16" height="16">
+              <img class="page-footer__inst" src="img/icon-insta.svg" alt="инстаграмм" width="16" height="16">
             </a>
           </li>
-          <li class="page-footer__item">
+          <li class="page-footer__item page-footer__item--margin3">
             <a class="page-footer__link" href="#">
-              <img src="img/icon-fb.svg" alt="фэйсбук" width="10" height="18">
+              <img class="page-footer__fb" src="img/icon-fb.svg" alt="фэйсбук" width="10" height="18">
             </a>
           </li>
         </ul>
@@ -242,7 +242,7 @@
       <div class="page-footer__copyright">
         <a class="page-footer__copyright-link" href="img/https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="page-footer__copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class src="img/htmlacademy.svg" alt="лого-хтмл-академии" width="27" height="34">
+          <img class src="img/htmlacademy.svg" alt="лого-хтмл-академии" width="50" height="40">
         </a>
       </div>
     </div>

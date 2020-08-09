@@ -3,16 +3,22 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 19px;
   text-transform: uppercase;
   width: 140px;
   height: 80px;
+  margin-top: 28px;
+  margin-left: 20px;
+  margin-bottom: 5px;
 
   @media (min-width: $tablet) {
     width: 140px;
     height: 80px;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 23px;
+    margin-left: -78px;
+    Letter-spacing:1px;
+    br {display: none;}
   }
 
   @media (min-width: $dekstop) {
@@ -30,7 +36,16 @@
   font-size: 14px;
   line-height: 20px;
   width: 169px;
-
+  margin-top: 28px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  @media (min-width: $tablet) {
+    text-align: right;
+    margin-top: 25px;
+    margin-right: -75px;
+    font-size: 16px;
+line-height: 20px;
+  }
   @media (min-width: $dekstop) {
     width: 140px;
     height: 80px;
@@ -45,6 +60,7 @@
 
 .map__paragraph-class {
   margin: 0;
+
 }
 
 .map_center {
@@ -57,7 +73,11 @@
 .map__contact {
   display: flex;
   justify-content: space-around;
+  @media (min-width: $tablet) {
+margin-top: 40px;
+padding-bottom: 1
 
+  }
   @media (min-width: $dekstop) {
     width: 570px;
     height: 201px;
@@ -93,5 +113,13 @@
   @media (min-width: $dekstop) {
     top: 410px;
     left: 900px;
+  }
+}
+.map__span{
+
+  @media (min-width: $tablet) {
+display: block;
+margin-top: 17px;
+padding-bottom: 45px;
   }
 }

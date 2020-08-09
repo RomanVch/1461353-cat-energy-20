@@ -7,6 +7,7 @@
   margin-top: 27px;
   margin-bottom: 37px;
   text-align: center;
+    box-sizing: border-box;
 
   @media (min-width: $tablet) {
     margin-top: 55px;
@@ -31,7 +32,6 @@
   text-transform: uppercase;
   margin-bottom: 39px;
   text-align: center;
-  width: 323px;
 
   @media (min-width: $tablet) {
     text-align: left;
