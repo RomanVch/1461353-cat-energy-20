@@ -145,7 +145,7 @@
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
-    height: 837px;
+    min-height: 837px;
   }
 
   @media (min-width: $dekstop) {
@@ -154,7 +154,7 @@
     background-position: 720px 0px  ;
     padding-left: 20px;
     padding-right: 20px;
-    height:auto;
+    min-height:auto;
     padding-bottom: 50px;
   }
 }

@@ -5,8 +5,11 @@
     padding-top: 36px;
     @media (min-width: $tablet) {
     padding-top: 55px;}
+    @media (min-width: $dekstop) {
+    padding-top: 63px;
+    padding-bottom: 30px;
   }
-}
+}}
 
 .page-footer__copyright-link {
   text-decoration: none;
@@ -20,6 +23,11 @@
   margin-top: 7px;
   @media (min-width: $tablet) {
   margin-top: 0px ;
+  }
+  &--form{
+    @media (min-width: $dekstop) {
+      margin-top: 4px;
+    }
   }
 }
 
@@ -37,8 +45,11 @@ margin-right: 30px ;
   }
   &--margin3{
     @media (min-width: $tablet) {
-
+margin-top: -3px;
     }
+      @media (min-width: $dekstop) {
+        margin-top: -4px;
+      }
   }
 }
 
@@ -48,6 +59,16 @@ margin-right: 30px ;
 
   @media (min-width: $tablet) {
     border: none;
+    margin-left: 115px;
+    margin-right: 107px;
+    &--margin{
+      margin-left: 115px;
+      margin-right: 107px;
+      @media (min-width: $dekstop) {
+        margin-left: 374px;
+        margin-right: 398px;
+      }
+    }
   }
 
   @media (min-width: $dekstop) {
@@ -87,6 +108,20 @@ margin-right: 30px ;
   @media (min-width: $tablet) {
     margin-right: -40px;
   }
+  @media (min-width: $dekstop) {
+    margin-right: -220px;
+  }
+&--form {
+  margin-top: 4px;
+    @media (min-width: $tablet) {
+      margin-top: 0px;
+      margin-left: 14px;
+    }
+    @media (min-width: $dekstop) {
+      margin-top: 0px;
+      margin-left: -25px
+    }
+}
 }
 
 .page-footer__center {
@@ -107,15 +142,27 @@ margin-right: 30px ;
     padding-left: 20px;
     padding-right: 20px;
   }
+  &--form{
+    justify-content: flex-start;
+  }
 }
 
-.page-footer__logo {
+.page-footer__link-logo {
   padding-bottom: 29px;
   margin: auto;
 
   @media (min-width: $tablet) {
     margin: 0;
-    margin-left: -30px;
+    margin-left: 28px;
+  }
+  @media (min-width: $dekstop) {
+    margin: 0;
+    margin-left: -100px;
+  }
+  &--form {
+    @media (min-width: $dekstop) {
+      margin-left: 90px;
+    }
   }
 }
 

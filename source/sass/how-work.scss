@@ -11,6 +11,10 @@ margin-top: 7px;
 font-size: 60px;
 line-height: 60px;
 margin-bottom: 73px;
+@media (min-width: $dekstop) {
+  margin-top: 36px;
+
+}
     }
 }
 .how-work__block p {
@@ -32,6 +36,7 @@ margin-bottom: 73px;
 
   @media (min-width: $tablet) {
     flex-direction: column;
+    position: relative;
   }
 }
 .how-work_block-div{
@@ -60,6 +65,10 @@ margin-bottom: 73px;
   @media (min-width: $tablet) {
   padding-left: 30px;
   }
+  @media (min-width: $dekstop) {
+padding-left: 40px;
+padding-bottom: 220px;
+  }
 }
 
 .how-work__number {
@@ -74,9 +83,13 @@ margin-bottom: 73px;
     font-size: 280px;
     line-height: 280px;
     z-index: -1;
-    position: relative;
-    bottom: 230px;
-    left: 110px;
+    position: absolute;
+    left: 115px;
+    bottom: 39px;
+  }
+  @media (min-width: $dekstop) {
+  bottom: -58px;
+  left: 114px;
   }
 }
 
@@ -94,10 +107,7 @@ margin-bottom: 73px;
 
   @media (min-width: $dekstop) {
     display: flex;
-    grid-template-columns: intital;
-grid-template-rows: intital;
-grid-column-gap: intital;
-grid-row-gap: intital;
+    grid-column-gap: 90px;
   }
 }
 .how-work__block-background{

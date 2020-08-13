@@ -11,7 +11,6 @@
   padding-bottom: 20px;
   letter-spacing: 0.7px;
 
-
   @media (min-width: $tablet) {
     border: none;
     margin:0px;
@@ -26,9 +25,31 @@
   @media (min-width: $tablet) {
   margin-right: 0px;
   padding-left: 0px;
+}}
+&--catalog{
+  @media (max-width: $mobile) {
+  padding-top: 21px;
+}}
+&--catalog2{
+  @media (max-width: $mobile) {
+  padding-top: 21px;
 }
 }
+&--form{
+  padding-top: 24px;
+  padding-bottom: 0px;
+  @media (min-width: $tablet) {
+    padding-top:9px;
+  }
+    @media (min-width: $dekstop) {
+      color: $basic_black;
+      padding-top:6px;
+    }
+    }
 }
+
+
+
 
 .main-nav__links {
   font-family: "Oswald", "Arial", sans-serif;
@@ -46,6 +67,41 @@
   line-height: 30px;
   color:$basic_white
 }
+
+  &:focus,
+  &:hover {
+    color: rgba($basic_black, 0.6);
+  }
+
+  &:active {
+    color: rgba($basic_black, 0.3);
+  }
+&--form{
+    @media (min-width: $dekstop) {
+      color:$basic_black;
+      margin-left:-2px;
+      margin-right: 3px;
+      margin-top: -10px;
+    }
+}
+}
+
+.main-nav__links-catalog {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 0;
+  text-transform: uppercase;
+  color: $basic_black;
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  @media (min-width: $dekstop) {
+  font-size: 20px;
+  line-height: 30px;
+  color:$basic_black
+}
   &:focus,
   &:hover {
     color: rgba($basic_black, 0.6);
@@ -55,8 +111,6 @@
     color: rgba($basic_black, 0.3);
   }
 }
-
-
 
 .main-nav__list {
   padding: 0;

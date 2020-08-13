@@ -7,12 +7,25 @@
       padding-top: 25px;
       border: none;
     }
-  }
 
+  }
+  &--padding-catalog{
+    padding-top:5px;
+  }
   @media (min-width: $dekstop) {
  padding-top: 55px;
 background-color: transparent;
   }
+  &--padding-form{
+    padding-top:5px;
+    @media (min-width: $tablet) {
+      padding-top: 25px;
+      border-bottom: none;
+  }
+  @media (min-width: $dekstop) {
+    margin-top: 30px;
+  }
+}
 }
 
 .page-header__logo-img{
@@ -175,5 +188,10 @@ margin-left: 80px ;
 }
 
 .page-header__logo{
-
+&:hover{
+  opacity: 0.8;
+}
+&:active{
+  opacity: 0.6;
+}
 }
