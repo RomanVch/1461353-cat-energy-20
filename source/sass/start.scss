@@ -14,6 +14,7 @@
   line-height: 36px;
   text-align: center;
   letter-spacing:-2px;
+  font-stretch: extra-condensed;
 
   @media (max-width: $mobile) {
     padding-top: 27px;
@@ -86,6 +87,7 @@
   margin-top: -1px;
   letter-spacing:-1px;
 
+
   @media (max-width: $mobile) {
     margin-right: 20px;
     margin-left: 20px;
@@ -104,6 +106,12 @@
 
   @media (min-width: $dekstop) {
     margin-left: 170px;
+  }
+  &:hover{
+    background-color: $basic_green-2
+  }
+  &:active{
+    color:rgba(255, 255, 255, 0.3)
   }
 }
 

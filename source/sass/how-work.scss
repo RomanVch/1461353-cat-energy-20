@@ -4,24 +4,20 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  margin-top: 0px;
+  margin-top: 6px;
   margin-bottom: 39px;
   @media (min-width: $tablet) {
-margin-top: 7px;
+margin-top: 15px;
 font-size: 60px;
 line-height: 60px;
 margin-bottom: 73px;
 @media (min-width: $dekstop) {
-  margin-top: 36px;
+  margin-top: 40px;
 
 }
     }
 }
-.how-work__block p {
-  margin:auto;
-  width: 235px;
-  Letter-spacing:-0.1px;
-}
+
 .how-work__block {
   font-style: normal;
   font-weight: normal;
@@ -64,6 +60,7 @@ margin-bottom: 73px;
   box-sizing: border-box;
   @media (min-width: $tablet) {
   padding-left: 30px;
+  margin-bottom: 40px;
   }
   @media (min-width: $dekstop) {
 padding-left: 40px;
@@ -107,7 +104,7 @@ padding-bottom: 220px;
 
   @media (min-width: $dekstop) {
     display: flex;
-    grid-column-gap: 90px;
+    grid-column-gap: 72px;
   }
 }
 .how-work__block-background{
@@ -117,7 +114,14 @@ padding-bottom: 220px;
   flex-shrink: 0;
   font-size: 14px;
 line-height: 18px;
+width: 200px;
+margin:auto 0;
 @media (min-width: $tablet) {
+  margin:auto;
+  width: 253px;
+  Letter-spacing:-0.1px;
+  margin-top: 0px;
   font-size: 16px;
-  line-height: 24px;}
-}
+  line-height: 24px;
+br {display: none}
+}}

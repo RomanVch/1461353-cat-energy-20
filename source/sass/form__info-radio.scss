@@ -18,7 +18,7 @@
     @media (min-width: $tablet) {
   font-size: 20px;
   line-height: 30px;
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
   @media (min-width: $dekstop) {
@@ -124,6 +124,7 @@ padding-left: 18px;
     width: 220px;
     flex-shrink: 0;
 
+
     @media (min-width: $tablet) {
       width: 551px;
       background-position: 512px 16px;
@@ -175,6 +176,13 @@ padding-left: 18px;
       width: 436px;
     }
   }
+  &:hover,
+  &:focus {
+    border-color: $special_grey
+  }
+  &:active{
+    border-color:$special_dark-grey;
+  }
 }
 
 .form__input::placeholder {
@@ -190,7 +198,7 @@ padding-left: 18px;
   top: 0px;
   width: 28px;
   height: 28px;
-  border: 1px solid #dddddd;
+  border: 1px solid $special_grey;
   border-radius: 100%;
   background: $basic_white;
   @media (min-width: $tablet) {
@@ -198,6 +206,13 @@ padding-left: 18px;
     height: 40px;
     top: 3px;
   }
+}
+
+.form__input-radio + .form__text-radio:hover::before {
+    border-color: #bababa;
+}
+.form__input-radio + .form__text-radio:active::before {
+    opacity: 0.3;
 }
 
 .form__text-radio {
@@ -213,6 +228,7 @@ padding-left: 18px;
       font-size: 20px;
 line-height: 30px;
     }
+
     &--form {
       @media (min-width: $dekstop) {
         padding-bottom: 0px;

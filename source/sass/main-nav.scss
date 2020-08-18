@@ -28,22 +28,31 @@
 }}
 &--catalog{
   @media (max-width: $mobile) {
-  padding-top: 21px;
+  padding-top: 24px;
+  padding-left: 1px;
+  padding-bottom:15px;
 }}
-&--catalog2{
-  @media (max-width: $mobile) {
-  padding-top: 21px;
-}
+
+&--catalog1{
+    @media (max-width: $mobile) {
+padding-bottom: 18px;}
 }
 &--form{
   padding-top: 24px;
-  padding-bottom: 0px;
+  padding-bottom: 21px;
   @media (min-width: $tablet) {
     padding-top:9px;
   }
     @media (min-width: $dekstop) {
       color: $basic_black;
       padding-top:6px;
+    }
+    }
+    &--catalog2{
+      @media (max-width: $mobile) {
+      padding-top: 23px;
+      padding-right: 1px;
+      padding-bottom: 23px;
     }
     }
 }
@@ -122,5 +131,10 @@
   @media (min-width: $tablet) {
     display: flex;
     margin-top: 9px;
+  }
+  &--margin{
+    @media (min-width: $dekstop) {
+      margin-top: 6px;
+    }
   }
 }

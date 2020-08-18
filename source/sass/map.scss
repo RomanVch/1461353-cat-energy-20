@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 21px;
   text-transform: uppercase;
   width: 140px;
   height: 80px;
@@ -54,9 +54,7 @@
     margin-right: -75px;
     font-size: 16px;
 line-height: 20px;
-&--margin{
-  margin-right: -65px;
-}
+
   }
   @media (min-width: $dekstop) {
     width: 140px;
@@ -68,8 +66,14 @@ line-height: 20px;
     br {display: none;}
 
   }
+  &--margin{
+    margin-right: -65px;
 }
-
+&--margin1{
+  @media (min-width: $dekstop) {
+  margin-top: 22px;}
+}
+}
 .map__contact-background-other {
   background-color: $basic_grey;
   margin: 0;
@@ -107,7 +111,7 @@ line-height: 20px;
   display: flex;
   justify-content: space-around;
   @media (min-width: $tablet) {
-margin-top: 40px;
+margin-top: 0px;
 padding-top: 40px;
 
   }
@@ -117,7 +121,7 @@ padding-top: 40px;
     justify-content: flex-start;
     background-color: $basic_white;
     position: absolute;
-    top:55px;
+    top:97px;
     left: 110px;
   }
 }

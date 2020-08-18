@@ -4,12 +4,13 @@
   padding-top: 24px;
   padding-left: 24px;
 
+
   @media (max-width: $mobile) {
 
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 
   }
 
@@ -29,6 +30,14 @@
     padding: 0px;
     padding-left: 50px;
     padding-bottom: 35px;
+  }
+  &--margin{
+    @media (min-width: $dekstop) {
+  padding: 0px;
+  padding-left: 50px;
+  margin-right: 20px;
+  padding-bottom: 35px;
+    }
   }
 }
 
@@ -75,7 +84,8 @@ margin-right: 0px;
 .programs__paragraph {
   color: $special_dark-grey;
   margin-top: 20px;
-  letter-spacing: -0.38px;
+  letter-spacing: -0.15px;
+  width: 240px;
 
   @media (max-width: $mobile) {
     margin-right: 10px;
@@ -129,12 +139,17 @@ justify-content: flex-start;
   text-decoration: none;
   color: $basic_black;
   background-position: right;
-  background-image: url("../img/strel.png") no-repeat;
+  background-image: url("../img/icon.svg");
+  background-repeat: no-repeat;
+  background-position: 101px 7px;
+
+ padding-right: 50px;
   @media (min-width: $tablet) {
     font-size: 20px;
 line-height: 30px;
+background-position: 130px 10px;
   }
-
+&:active{opacity: 0.3}
 }
 
 .programs__circle {
@@ -188,16 +203,6 @@ padding-left: 30px;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 40px;
-  }
-}
-.programs__program-block--margin{
-  padding-top: 27px;
-  margin-bottom: 34px;
-  @media (min-width: $dekstop) {
-padding: 0px;
-padding-left: 50px;
-margin-right: 20px;
-padding-bottom: 35px;
   }
 }
 .programs__svg-tiger{

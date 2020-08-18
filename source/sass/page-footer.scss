@@ -1,12 +1,13 @@
 .page-footer {
   background-color: $basic_grey;
+  margin-top: -5px;
 
   &--padding {
-    padding-top: 36px;
+    padding-top: 41px;
     @media (min-width: $tablet) {
-    padding-top: 55px;}
+    padding-top: 60px;}
     @media (min-width: $dekstop) {
-    padding-top: 63px;
+    padding-top: 68px;
     padding-bottom: 30px;
   }
 }}
@@ -59,8 +60,8 @@ margin-top: -3px;
 
   @media (min-width: $tablet) {
     border: none;
-    margin-left: 115px;
-    margin-right: 107px;
+    margin-left: 116px;
+    margin-right: 120px;
     &--margin{
       margin-left: 115px;
       margin-right: 107px;
@@ -73,6 +74,8 @@ margin-top: -3px;
 
   @media (min-width: $dekstop) {
     border: none;
+    margin-left: 375px;
+    margin-right: 370px;
   }
 }
 
@@ -133,7 +136,7 @@ margin-top: -3px;
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin: 0;
   }
 
@@ -153,7 +156,7 @@ margin-top: -3px;
 
   @media (min-width: $tablet) {
     margin: 0;
-    margin-left: 28px;
+    margin-left: 30px;
   }
   @media (min-width: $dekstop) {
     margin: 0;
@@ -164,6 +167,8 @@ margin-top: -3px;
       margin-left: 90px;
     }
   }
+  &:hover{ opacity: 0.6}
+  &:active{opacity: 0.3}
 }
 
 .page-footer__link {

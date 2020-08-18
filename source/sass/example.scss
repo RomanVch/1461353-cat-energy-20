@@ -18,9 +18,6 @@
 
   display: flex;
   flex-direction: column;
-  @media (min-width: $tablet) {
-margin-left: 30px;
-  }
   @media (min-width: $dekstop) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -40,16 +37,16 @@ margin-left: 30px;
   margin-left:20px;
   margin-bottom: 0px;
   @media (min-width: $tablet) {
-margin-left: 0px;
+margin-left: 30px;
 font-size: 60px;
 line-height: 60px;
-margin-top:10px;
+margin-top:40px;
 margin-bottom: 32px;
   }
   @media (min-width: $dekstop) {
     grid-area: 1 / 1 / 2 / 2;
     margin-top: -135px;
-    margin-left: 60px;
+    margin-left: 40px;
   }
 }
 
@@ -69,13 +66,14 @@ margin-bottom: 32px;
 line-height: 24px;
 Letter-spacing: -0.1px;
 margin-bottom: 50px;
+margin-left:30px;
   }
 
   @media (min-width: $dekstop) {
     grid-area: 2 / 1 / 3 / 2;
     margin-top: -84px;
     width: 440px;
-    margin-left: 60px;
+    margin-left: 40px;
   }
 }
 
@@ -92,17 +90,18 @@ margin-bottom: 50px;
   }
   &--margin{
     @media (min-width: $tablet) {
-    margin-left: -127px;
+    margin-right:: 160px;
+    margin-left: 42px;
     }
       @media (min-width: $dekstop) {
-        margin-left: 40px;
+        margin-left: 41px;
       }
   }
 }
 
 .example__title-span {
   @media (min-width: $dekstop) {
-    margin-left: 63px;
+    margin-left: 60px;
   }
 }
 
@@ -181,12 +180,13 @@ margin-left: 10px;
     width: 180px;
     text-align: right;
     margin-top: 10px;
-    margin-right: 35px;
+margin-right: 10px;
 }
   @media (min-width: $dekstop) {
     width: 100%;
     font-size: 20px;
-    margin-left: -235px;
+    margin-left: -257px;
+    margin-top: 4px;
   }
 }
 
@@ -267,10 +267,12 @@ margin-right:5px ;
 
   @media (min-width: $tablet) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0 0 42px;
     padding-right: 25px;
-    padding-bottom: 200px;
+    padding-bottom: 195px;
+    margin-left: 30px;
+    margin-top: 5px;
   }
 
   @media (min-width: $dekstop) {
@@ -279,8 +281,8 @@ margin-right:5px ;
     justify-content: flex-start;
     padding-bottom: 0px;
     margin: 0px;
-    margin-top: -72px;
-    margin-left: 60px;
+    margin-top: -71px;
+    margin-left: 41px;
   }
 }
 
@@ -301,16 +303,16 @@ margin-right:5px ;
   @media (min-width: $tablet) {
     width: 685px;
     height: 530px;
-    margin-left: 25px;
+    margin-left: 50px;
     position: absolute;
-    bottom: -17px;
+    bottom: -35px;
   }
 
   @media (min-width: $dekstop) {
     width: 680px;
     height: 520px;
-    bottom: 10px;
-    left:-40px;
+    bottom: 0px;
+    left:-80px;
   }
 }
 
@@ -323,7 +325,8 @@ margin-right:5px ;
   margin-left: -5px;
   @media (min-width: $tablet) {
   padding-top: 320px;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
+margin-top: 5px;
   }
   @media (min-width: $dekstop) {
     grid-area: 1 / 2 / 4 / 3;
@@ -394,12 +397,13 @@ margin-right:5px ;
 
   @media (min-width: $tablet) {
     display: flex;
-    padding-top:35px;
-    padding-bottom: 67px;
-    margin-left: 57px;
+    padding-top:55px;
+    padding-bottom: 46px;
+    margin-left: 85px;
   }
   @media (min-width: $dekstop) {
-margin-left: 45px;
+margin-left: 29px;
+padding-top:48px;
   }
 }
 .examle__picture{
