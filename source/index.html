@@ -28,13 +28,13 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="main-nav__item">
-            <a class="main-nav__links" href="#">главная</a>
+            <a class="main-nav__links main-nav__links--index" href="#">главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__links" href="catalog.html">каталог продукции</a>
+            <a class="main-nav__links main-nav__links--index" href="catalog.html">каталог продукции</a>
           </li>
-          <li class="main-nav__item main-nav__item--margin">
-            <a class="main-nav__links " href="form.html">подбор программы</a>
+          <li class="main-nav__item main-nav__item--margin ">
+            <a class="main-nav__links main-nav__links--index" href="form.html">подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -173,22 +173,31 @@
 
         </div>
         <div class="examle__div-cat">
+          <div class="examle__div-cat-fat">
           <picture class="examle__picture">
             <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
             <source media="(min-width: 770px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
               <img class="examle__cat" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="толстый кот" width="320" height="238">
-          </picture>
+          </picture></div>
+          <div class="examle__div-cat-slim">
+            <picture class="examle__picture">
+              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 770px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="examle__cat examle__cat--slim" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="толстый кот" width="320" height="238">
+            </picture>
+          </div>
+
           <div class="example__toggle-block"> <span class="example__span">было</span>
             <input class="example_switch" type="checkbox" id="switch">
             <label class="example__checkbox" for="switch">Toggle</label>
             <span class="example__span">cтало</span></div>
           <div class="pupkin">
-            <span class="example__span">было</span>
+            <a href=# class="example__link-slider">было</a>
             <div class="examle__slider-wrapper"></div>
             <div class="examle__slider-js">
               <div class="examle__slider-handle"></div>
             </div>
-            <span class="example__span">стало</span>
+            <a href=# class="example__link-slider">стало</a>
           </div>
         </div>
 

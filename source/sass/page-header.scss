@@ -17,7 +17,7 @@
 background-color: transparent;
   }
   &--padding-form{
-    padding-top:10px;
+    padding-top:2px;
     @media (min-width: $tablet) {
       padding-top: 25px;
       border-bottom: none;
@@ -57,6 +57,9 @@ background-color: transparent;
 
   @media (min-width: $tablet) {
     display: none;
+  }
+  &--form{
+    margin-top: -10px;
   }
 }
 
@@ -185,12 +188,16 @@ margin-left: 80px ;
   @media (min-width: $dekstop) {
     margin-right: 531px;
   }
+  &--form{
+    padding-bottom: 15px;
+  }
 }
 
 .page-header__logo{
 &:hover{
   opacity: 0.8;
 }
+&:focus{opacity: 0.7}
 &:active{
   opacity: 0.6;
 }

@@ -76,12 +76,11 @@
       margin: auto;
     }
   }
-.form__text-box:hover::after{
-  opacity: 0.3;
+.form__text-box:hover{
+  border-color: #bababa;
 }
-
-.flex {
-  display: flex;
+.form__text-box:active{
+  opacity: 0.3
 }
 
 .form__text-paragraph {
@@ -123,11 +122,11 @@ line-height: 30px;
     font-size: 36px;
     line-height: 36px;
     margin-top: 66px;
-    margin-left: 70px;
+    margin-left: 50px;
     margin-bottom: 43px;
   }
   @media (min-width: $dekstop) {
-  margin-left: 40px;
+  margin-left: 20px;
   margin-top: 67px;
   }
   &::before {

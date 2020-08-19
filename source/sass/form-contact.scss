@@ -1,17 +1,4 @@
-.form__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 26px;
-  margin-top: 69px;
-  margin-bottom: 76px;
 
-  @media (min-width: $tablet) {
-    margin-left: 50px;
-  }
-
-}
 
 .form__title-span{
   background-color: $basic_white;
@@ -19,12 +6,23 @@
   padding-left: 20px;
   padding-right: 11px;
 width: 190px;
-
+@media (min-width: $tablet) {
+  width: 544px;
+br{
+  display: none;
+}
+}
 &--coment{
   width:130px;
+    @media (min-width: $tablet) {
+      padding-right: 39px;
+    }
 }
 &--add{
 width:153px;
+@media (min-width: $tablet) {
+  padding-right: 40px;
+}
 }
 }
 
@@ -88,12 +86,12 @@ width:153px;
     font-size: 36px;
 line-height: 36px;
 width: auto;
-margin-top: 73px;
-margin-left: 69px;
+margin-top: 74px;
+margin-left: 49px;
 margin-bottom: 77px;
   }
   @media (min-width: $dekstop) {
-    margin-left:39px;
+    margin-left:20px;
     margin-top: 48px;
 
   }
@@ -109,7 +107,7 @@ margin-bottom: 77px;
   border: solid #FFF;
   border-width: 0 10px;
   position: absolute;
-  top: 33%;
+  top: 65%;
   z-index: -1;
   }
 }

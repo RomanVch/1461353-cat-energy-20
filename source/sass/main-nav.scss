@@ -93,6 +93,15 @@ padding-bottom: 18px;}
       margin-top: -10px;
     }
 }
+&--index{
+  @media (min-width: $dekstop) {
+    &:hover,&:focus{color:rgba($basic_white,0.6)
+    }
+&:active{
+  color:rgba($basic_white,0.3)
+}
+  }
+}
 }
 
 .main-nav__links-catalog {

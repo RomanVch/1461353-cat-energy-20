@@ -149,6 +149,10 @@ justify-content: flex-start;
 line-height: 30px;
 background-position: 130px 10px;
   }
+  &:focus{
+    opacity: 0.6;
+
+  }
 &:active{opacity: 0.3}
 }
 

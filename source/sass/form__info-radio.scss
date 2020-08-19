@@ -214,6 +214,9 @@ padding-left: 18px;
 .form__input-radio + .form__text-radio:active::before {
     opacity: 0.3;
 }
+.form__input-radio + .form__text-radio:hover::before {
+    border-color: $add_gray;
+}
 
 .form__text-radio {
   font-family: "Oswald", "Arial", sans-serif;

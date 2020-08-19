@@ -127,6 +127,9 @@ margin-left: 40px;
   &:active{
     color:rgba(255, 255, 255, 0.3)
   }
+  &:focus{
+    background-color: adjust-hue($basic_green-2, 10);
+  }
 }
 
 
@@ -323,6 +326,9 @@ letter-spacing: 0px;
   &:active{
     color:rgba(0, 0, 0, 0.3);
   }
+ &:focus{
+      background-color: adjust-hue($special_grey-2, 10);
+    }
 }
 
 .catalog__else {

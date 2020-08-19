@@ -30,6 +30,8 @@
       margin-top: 4px;
     }
   }
+  &:focus{opacity: 0.6}
+  &:active{opacity: 0.3}
 }
 
 .page-footer__item {
@@ -61,21 +63,19 @@ margin-top: -3px;
   @media (min-width: $tablet) {
     border: none;
     margin-left: 116px;
-    margin-right: 120px;
-    &--margin{
-      margin-left: 115px;
-      margin-right: 107px;
-      @media (min-width: $dekstop) {
-        margin-left: 374px;
-        margin-right: 398px;
-      }
-    }
-  }
+    margin-right: 120px;}
+
 
   @media (min-width: $dekstop) {
     border: none;
     margin-left: 375px;
     margin-right: 370px;
+  }
+  &--margin{
+    @media (min-width: $dekstop) {
+      margin-left: 374px;
+      margin-right: 398px;
+    }
   }
 }
 
@@ -115,7 +115,7 @@ margin-top: -3px;
     margin-right: -220px;
   }
 &--form {
-  margin-top: 4px;
+  margin-top: 0px;
     @media (min-width: $tablet) {
       margin-top: 0px;
       margin-left: 14px;
@@ -168,6 +168,7 @@ margin-top: -3px;
     }
   }
   &:hover{ opacity: 0.6}
+  &:focus{ opacity: 0.5}
   &:active{opacity: 0.3}
 }
 
