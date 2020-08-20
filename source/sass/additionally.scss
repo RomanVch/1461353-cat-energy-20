@@ -344,5 +344,7 @@ left: calc((100vw - 100%) / -2);
   padding-left: 10px;
   padding-right:22px ;
   position: absolute;
-
+@media (min-width: $tablet) {
+  padding-right:35px ;
+}
 }

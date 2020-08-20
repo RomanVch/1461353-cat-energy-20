@@ -147,4 +147,9 @@ padding-bottom: 18px;}
       margin-top: 6px;
     }
   }
+  &--index{
+    @media (min-width: $dekstop) {
+      margin-top: 6px;
+    }
+  }
 }
