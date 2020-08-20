@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 20px;
   text-transform: uppercase;
   width: 140px;
   height: 80px;
@@ -13,12 +13,13 @@
 
 
   @media (min-width: $tablet) {
-    width: 140px;
+    width: 180px;
     height: 80px;
     font-size: 20px;
     line-height: 23px;
-    margin-left: -78px;
-    Letter-spacing:1px;
+    margin-left: 70px;
+    margin-right: 267px;
+    Letter-spacing:0px;
   }
 
   @media (min-width: $dekstop) {
@@ -37,8 +38,7 @@
     margin-left: 70px;
     margin-top: 23px;
       line-height: 25px;
-      margin-right: 307px;
-    br{display: none;}
+      margin-right: 268px;
   }
   @media (min-width: $dekstop) {
     margin-left: 75px;
@@ -59,7 +59,7 @@
   @media (min-width: $tablet) {
     text-align: right;
     margin-top: 25px;
-    margin-right: -75px;
+    margin-right: -50px;
     font-size: 16px;
 line-height: 20px;
 
@@ -124,6 +124,7 @@ line-height: 20px;
   @media (min-width: $tablet) {
 margin-top: 0px;
 padding-top: 40px;
+justify-content: flex-start;
 
   }
   @media (min-width: $dekstop) {
@@ -182,4 +183,12 @@ padding-bottom: 45px;
     @media (min-width: $tablet) {
 background-color: $basic_grey;
     }
+}
+.map__br{
+&--br1{
+  display: none;
+    @media (min-width: $tablet) {
+      display: none;
+    }
+}
 }

@@ -45,8 +45,8 @@ background-color: transparent;
 
 .page-header__toggle {
   position: absolute;
-  top: 25px;
-  right: 20px;
+  top: 12px;
+  left: 276px;
   z-index: 2;
   display: block;
   width: 24px;
@@ -150,6 +150,8 @@ background-color: transparent;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+  position: relative;
+
 
   @media (max-width: $mobile) {
     padding-left: 0;

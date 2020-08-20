@@ -149,6 +149,10 @@ justify-content: flex-start;
 line-height: 30px;
 background-position: 130px 10px;
   }
+    @media (min-width: $dekstop) {
+      background-position: 135px 10px;
+      padding-right: 70px;
+    }
   &:focus{
     opacity: 0.6;
 

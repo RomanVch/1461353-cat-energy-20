@@ -135,7 +135,7 @@ line-height: 30px;
   vertical-align: middle;
   height: 2px;
   box-sizing: border-box;
-  width: 100%;
+  width: 100vw;
   height: 2px;
   background: #6CBD83;
   border: solid #FFF;
@@ -143,5 +143,6 @@ line-height: 30px;
   position: absolute;
   top: 55%;
   z-index: -1;
+  left: calc((100vw - 100%) / -2)
   }
 }

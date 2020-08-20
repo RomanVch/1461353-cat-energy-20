@@ -38,6 +38,8 @@ margin-bottom: 15px;
 margin-bottom: 21px;
 }
 .catalog__else-svg{
+  @media(max-width:$mobile){
+  margin-left: -10px;}
   @media (min-width: $tablet) {
   width: 60px;
   height: 60px;
@@ -147,8 +149,13 @@ margin-left: 40px;
   }
   &--margin1{
     margin-top: 25px;
-    margin-left: 19px;
+    margin-left: 30px;
     margin-right: 10px;
+    @media(max-width: $mobile){
+    margin-bottom: -2px;}
+    @media (min-width: $tablet) {
+      margin-left: 20px;
+  }
   }
   &--margin3{
     margin-top: 16px;
@@ -251,14 +258,15 @@ margin-top: 5px ;
   color: #111111;
   margin: auto;
   margin-bottom: 5px;
-
+  margin-left: 49px;
+margin-top:-1px;
   @media (min-width: $tablet) {
     width: 160px;
     text-align: center;
     font-size: 20px;
 line-height: 22px;
 margin-top: 45px;
-margin-left: 90px;
+margin-left: 80px;
   @media (min-width: $dekstop) {
     margin-left: 42px;
     margin-top: 46px;
@@ -273,6 +281,7 @@ margin-left: 90px;
   line-height: 16px;
   color: $special_dark-grey;
   margin: auto;
+  margin-left: 37px;
 
   @media (min-width: $tablet) {
     width: 190px;
@@ -280,7 +289,7 @@ margin-left: 90px;
     font-size: 16px;
 line-height: 18px;
 margin-top: 22px;
-margin-left:75px;
+margin-left:65px;
 letter-spacing: 0px;
   }
     @media (min-width: $dekstop) {
@@ -307,11 +316,14 @@ letter-spacing: 0px;
   text-align: center;
   margin: auto;
   margin-top: 22px;
+  padding-right: 0px;
+  margin-right:20px;
 
   @media (min-width: $tablet) {
     width: 249px;
     margin-top: 89px;
-    margin-left: 48px;
+    margin-left: 38px;
+    padding-right: 0px;
   }
 
   @media (min-width: $dekstop) {
@@ -421,11 +433,10 @@ margin-bottom: 3px;
 
 .catalog__center {
   width: 100%;
-  max-width: 1300px;
+  max-width: 100%;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-
   @media (max-width: $mobile) {
     padding-left: 0;
     padding-right: 0;
@@ -475,7 +486,13 @@ padding-top: 7px;
     font-size: 16px;
     line-height: 16px;
   }
-}
+  &--price{
+    @media(max-width: $mobile){
+      margin-top: -10px;
+    }
+  }
+  }
+
 
 .catalog__img-size-small {
   @media (min-width: $tablet) {

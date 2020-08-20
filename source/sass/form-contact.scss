@@ -101,14 +101,18 @@ margin-bottom: 77px;
   vertical-align: middle;
   height: 2px;
   box-sizing: border-box;
-  width: 100%;
+  width: 100vw;
   height: 2px;
   background: #6CBD83;
   border: solid #FFF;
   border-width: 0 10px;
   position: absolute;
-  top: 65%;
+  top: 35%;
   z-index: -1;
+left: calc((100vw - 100%) / -2);
+  @media (min-width: $tablet) {
+    top: 60%;
+  }
   }
 }
 .form__span-mail{

@@ -7,6 +7,7 @@
   text-align: left;
   margin-bottom: 32px;
   position: relative;
+  margin-left: -11px;
   @media (min-width: $tablet) {
     font-size: 36px;
 line-height: 45px;
@@ -23,11 +24,12 @@ margin-bottom: 5px;
 vertical-align: middle;
 height: 2px;
 box-sizing: border-box;
-width: 100%;
+width: 100vw;
 height: 2px;
 background: #6CBD83;
 border: solid #FFF;
 border-width: 0 10px;
+left: calc((100vw - 100%) / -2);
   @media (min-width: $dekstop) {
 
   }
@@ -236,9 +238,9 @@ border-width: 0 10px;
   text-align: center;
   color: $basic_white;
   margin-left: 40px;
-  width: 161px;
+  width: 190px;
   align-self: center;
-  margin-left: 60px;
+  margin-left: 41px;
   @media (min-width: $tablet) {
     margin-left: 62px;
     text-align: left;
@@ -297,8 +299,8 @@ border-width: 0 10px;
 }
 
 .additionally_svg {
-  margin-left: 110px;
-  margin-top: 70px;
+  margin-left: 111px;
+  margin-top: 66px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet) {
@@ -340,7 +342,7 @@ border-width: 0 10px;
 .additionally__span{
   background-color: $basic_white;
   padding-left: 10px;
-  padding-right:10px ;
+  padding-right:22px ;
   position: absolute;
 
 }

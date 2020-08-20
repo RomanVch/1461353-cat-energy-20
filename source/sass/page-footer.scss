@@ -5,7 +5,8 @@
   &--padding {
     padding-top: 41px;
     @media (min-width: $tablet) {
-    padding-top: 60px;}
+    padding-top: 60px;
+  overflow:hidden;}
     @media (min-width: $dekstop) {
     padding-top: 68px;
     padding-bottom: 30px;
@@ -72,6 +73,10 @@ margin-top: -3px;
     margin-right: 370px;
   }
   &--margin{
+    @media (min-width: $tablet) {
+      border: none;
+      margin-left: 116px;
+      margin-right: 105px;}
     @media (min-width: $dekstop) {
       margin-left: 374px;
       margin-right: 398px;
@@ -132,6 +137,7 @@ margin-top: -3px;
   max-width: 1300px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 
   @media (min-width: $tablet) {
     display: flex;
