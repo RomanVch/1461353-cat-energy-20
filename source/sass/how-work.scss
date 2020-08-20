@@ -4,6 +4,18 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
+  margin-top: 6px;
+  margin-bottom: 39px;
+  @media (min-width: $tablet) {
+margin-top: 15px;
+font-size: 60px;
+line-height: 60px;
+margin-bottom: 73px;
+@media (min-width: $dekstop) {
+  margin-top: 40px;
+
+}
+    }
 }
 
 .how-work__block {
@@ -20,29 +32,40 @@
 
   @media (min-width: $tablet) {
     flex-direction: column;
+    position: relative;
   }
 }
-
-.how-work__block-background {
+.how-work_block-div{
   width: 60px;
   height: 60px;
   background-color: $basic_green;
-
-  @media (max-width: $mobile) {
-    margin-right: 20px;
-  }
-
+  display: flex;
+  margin-right: 20px;
+  flex-shrink: 0;
   @media (min-width: $tablet) {
     width: 80px;
     height: 80px;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
   }
 }
+
 
 .how-work__center {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  @media (min-width: $tablet) {
+  padding-left: 30px;
+  margin-bottom: 40px;
+  }
+  @media (min-width: $dekstop) {
+padding-left: 40px;
+padding-bottom: 220px;
+  }
 }
 
 .how-work__number {
@@ -57,14 +80,19 @@
     font-size: 280px;
     line-height: 280px;
     z-index: -1;
-    position: relative;
-    bottom: 230px;
-    left: 100px;
+    position: absolute;
+    left: 115px;
+    bottom: 39px;
+  }
+  @media (min-width: $dekstop) {
+  bottom: -58px;
+  left: 114px;
   }
 }
 
 .how-work_ul {
   padding: 0;
+  margin: 0px;
 
   @media (min-width: $tablet) {
     display: grid;
@@ -76,5 +104,34 @@
 
   @media (min-width: $dekstop) {
     display: flex;
+    grid-column-gap: 72px;
+  }
+}
+.how-work__block-background{
+  margin: auto;
+}
+.how-work__paragraph{
+  flex-shrink: 0;
+  font-size: 14px;
+line-height: 18px;
+width: 200px;
+margin:auto 0;
+@media (min-width: $tablet) {
+  margin:auto;
+  width: 253px;
+  Letter-spacing:-0.1px;
+  margin-top: 0px;
+  font-size: 16px;
+  line-height: 24px;
+}}
+.how-work__br{
+  @media (min-width: $tablet) {
+    display: none;
+  }
+  &--br1{
+    display: none;
+    @media (min-width: $tablet) {
+      display: inline;
+    }
   }
 }

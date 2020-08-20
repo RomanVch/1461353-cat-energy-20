@@ -4,7 +4,38 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
+  margin-bottom: 32px;
+  position: relative;
+  margin-left: -11px;
+  margin-top: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+line-height: 45px;
+margin-top: 36px;
+margin-left: 36px;
+margin-bottom: 5px;
+  }
+  @media (min-width: $dekstop) {
+    margin-top: 42px;
+    margin-left: 11px;
+  }
+  &::after {content: " ";
+    display: inline-block;
+vertical-align: middle;
+height: 2px;
+box-sizing: border-box;
+width: 100vw;
+height: 2px;
+background: #6CBD83;
+border: solid #FFF;
+border-width: 0 10px;
+left: calc((100vw - 100%) / -2);
+  @media (min-width: $dekstop) {
+
+  }
+}
 }
 
 .additionally__line {
@@ -17,7 +48,8 @@
   border-top: 1px solid $special_grey;
   border-bottom: 1px solid $special_grey;
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 15px;
+
 
   @media (min-width: $tablet) {
     display: flex;
@@ -27,8 +59,9 @@
 
   @media (min-width: $dekstop) {
     display: flex;
-    width: 895px;
+    width: 905px;
     justify-content: space-between;
+    padding-bottom: 3px;
   }
 }
 
@@ -40,15 +73,20 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $special_dark-grey-2;
+  margin-top: 0px;
+  margin-bottom:0px;
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
-    margin-left: 40px;
+    margin-left: 39px;
+    margin-top:12px;
   }
 
   @media (min-width: $dekstop) {
-    width: 270px;
+    width: 325px;
+    margin-left: 0px;
+    margin-top:13px;
   }
 }
 
@@ -60,16 +98,42 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
-  padding-top: 10px;
-  padding-bottom: 12px;
+  padding-top: 0px;
+  padding-bottom: 1px;
 
   @media (min-width: $tablet) {
     align-self: center;
-    margin-right: 40px;
+    margin-right: 37px;
+    margin-top: 5px;
+    width: 225px;
+    letter-spacing: 1px;
   }
 
   @media (min-width: $dekstop) {
-    width: 282px;
+    width: 288px;
+  margin-right: 36px;
+  margin-top: 0px;
+  }
+  &--size {
+    @media (min-width: $tablet) {
+    width: 160px}
+    @media (min-width: $dekstop) {
+      width: 288px;
+    }
+  }
+  &--size1 {
+    @media (min-width: $tablet) {
+    width: 143px}
+    @media (min-width: $dekstop) {
+      width: 290px;
+    }
+  }
+  &--size2 {
+    @media (min-width: $tablet) {
+    width: 218px}
+    @media (min-width: $dekstop) {
+      width: 290px;
+    }
   }
 }
 
@@ -84,24 +148,36 @@
   text-decoration: none;
   color: $basic_white;
   text-transform: uppercase;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   text-align: center;
+  margin-left: 1px;
   background-color: $basic_green;
 
   @media (min-width: $tablet) {
     width: 632px;
     margin: auto;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 11px;
+    margin-bottom: 12px;
   }
 
   @media (min-width: $dekstop) {
     width: 244px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 0;
-    height: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-top: 2px;
+    margin-left:0px;
+  }
+  &:hover{
+    background-color: $basic_green-2
+  }
+  &:active{
+    color:rgba(255, 255, 255, 0.3)
+  }
+  &:focus{
+    background-color: adjust-hue($basic_green-2, 10);
   }
 }
 
@@ -112,10 +188,13 @@
     width: 708px;
     display: flex;
     justify-content: space-around;
+    margin-left: -5px;
+    margin-top: 5px;
   }
 
   @media (min-width: $dekstop) {
     flex-direction: column;
+    display: block;
   }
 }
 
@@ -125,15 +204,18 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   margin-bottom: 35px;
   display: flex;
+  margin-top: 40px;
 
   @media (min-width: $tablet) {
     flex-direction: row;
-    margin-top: 69px;
+    margin-top: 68px;
     width: 708px;
     height: 200px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+    margin-left: 10px;
+    margin-bottom:75px;
   }
 
   @media (min-width: $dekstop) {
@@ -143,9 +225,11 @@
     padding-bottom: 7px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
-    margin-left: 80px;
+    margin-left: 99px;
+    margin-top: 162px;
   }
 }
+
 
 .additionally__paragraphe-gift {
   font-family: "Arial", "Tahoma", sans-serif;
@@ -156,8 +240,20 @@
   text-align: center;
   color: $basic_white;
   margin-left: 40px;
-  width: 161px;
+  width: 190px;
   align-self: center;
+  margin-left: 41px;
+  @media (min-width: $tablet) {
+    margin-left: 62px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    width: 180px;
+    @media (min-width: $dekstop) {
+      text-align: center;
+      margin-top: 20px;
+      margin-left: 40px;
+    }
+  }
 }
 
 .additionally__items-div {
@@ -172,6 +268,8 @@
 }
 
 .additionally {
+  overflow: hidden;
+
   @media (min-width: $dekstop) {
     display: flex;
   }
@@ -183,7 +281,7 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-
+   box-sizing: border-box;
   @media (min-width: $dekstop) {
     display: flex;
   }
@@ -193,17 +291,20 @@
   @media (min-width: $tablet) {
     border: 1px solid $special_grey;
     width: 708px;
+    margin-top: 75px;
+    margin-left: 10px;
   }
 
   @media (min-width: $dekstop) {
     border: none;
     width: 869px;
+    margin-left: 21px;
   }
 }
 
 .additionally_svg {
-  margin-left: 110px;
-  margin-top: 70px;
+  margin-left: 111px;
+  margin-top: 66px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet) {
@@ -212,8 +313,8 @@
   }
 
   @media (min-width: $dekstop) {
-    margin-left: 90px;
-    margin-top: 70px;
+    margin-left: 100px;
+    margin-top: 50px;
     margin-bottom: 20px;
     align-self: flex-start;
   }
@@ -223,4 +324,31 @@
   @media (min-width: $dekstop) {
     width: 896px;
   }
+}
+.additionally__price{
+  margin-top: 6px;
+  @media (min-width: $tablet) {
+    margin-top: 10px;
+  }
+    @media (min-width: $dekstop) {
+      margin-top: 12px;
+    }
+}
+.additionally__price1{
+  @media (min-width: $dekstop) {
+  margin-right: 6px;
+}}
+.additionally__price2{
+  @media (min-width: $dekstop) {
+  margin-top:10px;
+
+}}
+.additionally__span{
+  background-color: $basic_white;
+  padding-left: 10px;
+  padding-right:22px ;
+  position: absolute;
+@media (min-width: $tablet) {
+  padding-right:35px ;
+}
 }

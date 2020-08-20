@@ -1,28 +1,60 @@
 .programs__program-block {
   background-color: $basic_grey;
-  width: 280px;
-  padding-left: 20px;
+  width: 240px;
+  padding-top: 24px;
+  padding-left: 24px;
+
 
   @media (max-width: $mobile) {
+
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    padding-bottom: 10px;
-    width: 708px;
+    padding-bottom: 20px;
+
   }
 
   @media (min-width: $tablet) {
-    margin-bottom: 20px;
+    position: relative;
+    margin-bottom: 30px;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 53px;
     padding-bottom: 10px;
     width: 708px;
+    min-height: 338px;
+    width: 635px;
   }
 
   @media (min-width: $dekstop) {
-    width: 570px;
+    width: 520px;
+    padding: 0px;
+    padding-left: 50px;
+    padding-bottom: 35px;
+  }
+  &--margin{
+    @media (min-width: $dekstop) {
+  padding: 0px;
+  padding-left: 50px;
+  margin-right: 20px;
+  padding-bottom: 35px;
+    }
   }
 }
+
+.programs__svg-cat{
+  margin-left: 9px;
+  margin-top: -2px;
+  @media (min-width: $tablet) {
+  width: 191px;
+  margin-left: 30px;
+  margin-top: -13px;
+}
+
+  @media (min-width: $dekstop) {
+    width: 100px;
+    margin-top: -7px;
+    margin-left:15px ;
+  }}
 
 .programs__title {
   font-family: "Oswald", "Arial", sans-serif;
@@ -35,28 +67,69 @@
   @media (max-width: $mobile) {
     margin: 5px 0 0 19px;
   }
+  @media (min-width: $tablet) {
+    font-size: 36px;
+line-height: 36px;
+margin-bottom: 10px;
+margin-top: 30px;
+margin-right: 200px;
+  }
+  @media (min-width: $dekstop) {
+
+    margin-top: 50px;
+margin-right: 0px;
+  }
 }
 
 .programs__paragraph {
   color: $special_dark-grey;
+  margin-top: 20px;
+  letter-spacing: -0.15px;
+  width: 240px;
+  box-sizing: border-box;
+  padding-right: 10px;
 
   @media (max-width: $mobile) {
-    margin-right: 20px;
+    margin-right: 10px;
     border-bottom: 1px solid $basic_grey_line;
     padding-bottom: 23px;
+    margin-bottom: 19px;
   }
+  @media (min-width: $tablet) {
+    line-height: 24px;
+    font-size: 16px;
+    margin-top: 15px;
+    width: 375px;
+    letter-spacing: -0.1px;
+    margin-bottom: 50px;
+    padding-right: 0;
+  }
+
+  @media (min-width: $dekstop) {
+    width: 470px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+&--margin{
+  @media (min-width: $tablet) {
+width: 340px;
+  }
+  @media (min-width: $dekstop) {
+    width: 470px;
+    letter-spacing: 0px;
+  }
+}
 }
 
 .programs__title-flex {
   display: flex;
 
-  @media (max-width: $mobile) {
-    padding-top: 21px;
-  }
-
   @media (min-width: $tablet) {
-    flex-direction: row-reverse;
     justify-content: space-between;
+    margin-top: 23px;
+  }
+  @media (min-width: $dekstop) {
+justify-content: flex-start;
   }
 }
 
@@ -69,7 +142,25 @@
   text-decoration: none;
   color: $basic_black;
   background-position: right;
-  background-image: url("../img/strel.png") no-repeat;
+  background-image: url("../img/icon.svg");
+  background-repeat: no-repeat;
+  background-position: 101px 7px;
+
+ padding-right: 50px;
+  @media (min-width: $tablet) {
+    font-size: 20px;
+line-height: 30px;
+background-position: 130px 10px;
+  }
+    @media (min-width: $dekstop) {
+      background-position: 135px 10px;
+      padding-right: 70px;
+    }
+  &:focus{
+    opacity: 0.6;
+
+  }
+&:active{opacity: 0.3}
 }
 
 .programs__circle {
@@ -84,14 +175,18 @@
     border-radius: 100px;
     margin-right: 62px;
     margin-top: 92px;
+    position: absolute;
+    right: 0px;
+    top:0px;
   }
 
   @media (min-width: $dekstop) {
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    margin-right: 62px;
-    margin-top: 92px;
+    margin-top: 23px;
+    margin-left:0px ;
+    position: static ;
   }
 }
 
@@ -110,10 +205,28 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-
+  box-sizing: border-box;
+  @media (min-width: $tablet) {
+padding-left: 30px;
+  }
   @media (min-width: $dekstop) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 40px;
+  }
+}
+.programs__svg-tiger{
+  margin-top: 10px;
+  margin-left:-9px;
+  @media (min-width: $tablet) {
+    margin-top: 42px;
+    margin-left:-35px;
+width:270px;
+  }
+  @media (min-width: $dekstop) {
+width: 137px;
+margin-top: 18px;
+margin-left: -20px;
   }
 }

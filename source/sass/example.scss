@@ -5,21 +5,25 @@
     background-color: $basic_white;
     border-top: 1px solid $add_gray_border;
   }
+  @media (min-width: $dekstop) {
+    border-top:none;
+    background-color:$basic_grey ;
+  }
 }
 
 .example__center {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+
   display: flex;
   flex-direction: column;
-
   @media (min-width: $dekstop) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -29,26 +33,47 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  margin: 27px auto auto;
-
+  margin-top:27px;
+  margin-left:20px;
+  margin-bottom: 0px;
+  @media (min-width: $tablet) {
+margin-left: 30px;
+font-size: 60px;
+line-height: 60px;
+margin-top:6px;
+margin-bottom: 32px;
+  }
   @media (min-width: $dekstop) {
     grid-area: 1 / 1 / 2 / 2;
+    margin-top: -135px;
+    margin-left: 40px;
   }
 }
 
 .example__paragraph {
   color: $special_dark-grey;
-  margin: auto;
   padding-right: 30px;
   margin-top: 33px;
   margin-bottom: 26px;
+  padding-left: 20px;
+  Letter-spacing:-0.16px;
 
-  @media (min-width: $dekstop) {
-    width: 440px;
+  @media (min-width: $tablet) {
+    width: 670px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 16px;
+line-height: 24px;
+Letter-spacing: -0.1px;
+margin-bottom: 50px;
+margin-left:30px;
   }
 
   @media (min-width: $dekstop) {
     grid-area: 2 / 1 / 3 / 2;
+    margin-top: -84px;
+    width: 430px;
+    margin-left: 40px;
   }
 }
 
@@ -60,18 +85,23 @@
   height: 56px;
 
   @media (min-width: $tablet) {
-    width: 168px;
+    width: 161px;
     height: 72px;
   }
-
-  &--margin {
+  &--margin{
+    @media (min-width: $tablet) {
+    margin-right: auto;
     margin-left: 42px;
+    }
+      @media (min-width: $dekstop) {
+        margin-left: 41px;
+      }
   }
 }
 
 .example__title-span {
   @media (min-width: $dekstop) {
-    margin-left: 63px;
+    margin-left: 60px;
   }
 }
 
@@ -82,11 +112,12 @@
   text-align: center;
   font-size: 24px;
   line-height: 24px;
-  margin-top: 10px;
+  margin-top: 13px;
   margin-bottom: 0;
+  text-transform: uppercase;
 
   @media (min-width: $tablet) {
-    margin-top: 10px;
+    margin-top: 14px;
     font-size: 30px;
     line-height: 37px;
     text-align: center;
@@ -108,20 +139,31 @@
 
   @media (min-width: $tablet) {
     background: $basic_white;
-    margin-top: 15px;
+    margin-top: 13px;
+    font-size: 14px;
+    line-height: 14px;
+    width: 130px;
 
     br {
       display: none;
     }
   }
+  @media (min-width: $dekstop) {
+background: $basic_grey;
+  }
 }
 
 .example__item-span--margin {
   margin-left: 28px;
-}
+    @media (min-width: $tablet) {
+margin-left: 10px;
+}}
 
 .example__item-span--margin2 {
   margin-left: 28px;
+  @media (min-width: $tablet) {
+margin-left: 10px;
+}
 }
 
 .example__title-pay {
@@ -131,10 +173,20 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-
+  margin-top: 35px;
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 27px;
+    width: 180px;
+    text-align: right;
+    margin-top: 10px;
+margin-right: 10px;
+}
   @media (min-width: $dekstop) {
     width: 100%;
     font-size: 20px;
+    margin-left: -257px;
+    margin-top: 4px;
   }
 }
 
@@ -194,35 +246,83 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic_black;
-  margin-right: 12px;
-  margin-left: 18px;
+  margin-right: 8px;
+  margin-left: 16px;
+  Letter-spacing:-0.5px;
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom:  1px dotted $special_grey ;
+    margin-top: -10px;
+  }
+  @media (min-width: $dekstop) {
+margin-right:5px ;
+  }
 }
-
+.example__link-slider{
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic_black;
+  margin-right: 8px;
+  margin-left: 16px;
+  Letter-spacing:-0.5px;
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom:  1px dotted $special_grey ;
+    margin-top: -10px;
+    text-decoration: none;
+  }
+  @media (min-width: $dekstop) {
+margin-right:5px ;
+  }
+  &:hover {
+    border-bottom:  1px solid;
+    border-color: rgba(0,0,0,0.4);
+  }
+  &:active{
+    border-bottom:none;
+    margin-bottom: 1px;
+  }
+    &:focus{background-color: $add_gray_dc}
+}
 .example__div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0;
-  grid-row-gap: 25px;
-  margin: auto auto 42px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around ;
 
   @media (min-width: $tablet) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0 0 42px;
     padding-right: 25px;
+    padding-bottom: 195px;
+    margin-left: 30px;
+    margin-top: 5px;
   }
 
   @media (min-width: $dekstop) {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-bottom: 0px;
+    margin: 0px;
+    margin-top: -71px;
+    margin-left: 41px;
   }
 }
 
 .example__toggle-block {
   display: flex;
   margin: 25px auto;
+  margin-top:30px;
 
   @media (min-width: $tablet) {
     display: none;
@@ -231,15 +331,36 @@
 
 .examle__cat {
   margin: auto;
+  margin-left: 5px;
 
   @media (min-width: $tablet) {
-    width: 505px;
-    height: 505px;
+    width: 675px;
+    height: 515px;
+    margin-left: 50px;
+    position: absolute;
+    bottom: -520px;
+    left:-40px;
   }
 
   @media (min-width: $dekstop) {
-    width: 505px;
-    height: 505px;
+    width: 680px;
+    height: 520px;
+    left:-70px;
+    bottom: -535px;
+  }
+  &--slim{
+      @media (min-width: $tablet) {
+height: 515px;
+        left:-386px;
+        bottom: -530px;
+        width: 685px;
+      }
+      @media (min-width: $dekstop) {
+        height: 515px;
+                left:-410px;
+                bottom: -535px;
+                width: 685px;
+      }
   }
 }
 
@@ -247,9 +368,18 @@
   background: $basic_grey_ea;
   display: flex;
   flex-direction: column;
-
+  margin-top:20px;
+  padding-bottom: 10px;
+  margin-left: -5px;
+  @media (min-width: $tablet) {
+  padding-top: 320px;
+  padding-bottom: 20px;
+margin-top: 5px;
+position: relative;
+  }
   @media (min-width: $dekstop) {
     grid-area: 1 / 2 / 4 / 3;
+    background-color: $basic_grey;
   }
 }
 
@@ -284,7 +414,7 @@
   @media (min-width: $tablet) {
     display: block;
     position: absolute;
-    left: 0;
+    left: 195px;
     height: 30px;
     width: 30px;
     box-shadow: 0 2px 10px rgba(48, 56, 77, 0.5);
@@ -316,8 +446,45 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 67px;
-    margin-left: 97px;
+    padding-top:55px;
+    padding-bottom: 46px;
+    margin-left: 85px;
+  }
+  @media (min-width: $dekstop) {
+margin-left: 29px;
+padding-top:48px;
+  }
+}
+.examle__picture{
+  position: relative;
+}
+.examle__div-cat-slim{
+  display: none;
+  @media (min-width: $tablet) {
+display: block;
+width: 342px;
+height: 530px;
+overflow: hidden;
+position: absolute;
+bottom:115px;
+left:386px;
+}
+@media (min-width: $dekstop) {
+left: 330px;
+bottom:140px;
+}
+}
+.examle__div-cat-fat{
+  @media (min-width: $tablet) {
+overflow:hidden;
+width: 342px;
+height: 530px;
+position: absolute;
+bottom:110px;
+left:44px;
+}
+  @media (min-width: $dekstop) {
+left: -12px;
+bottom:140px;
   }
 }

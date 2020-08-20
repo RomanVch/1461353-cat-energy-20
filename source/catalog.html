@@ -11,12 +11,12 @@
 <body class="page__body">
   <header class="page-header page-header--padding">
     <div class="page-header__center">
-      <div>
-        <a href="#" class="page-header__logo">
+      <div class="page-header__logo-div">
+        <a href="index.html" class="page-header__logo">
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg 1x">
-            <source media="(min-width: 770px)" srcset="img/logo-tablet.svg 1x">
-              <img  src="img/logo-mobile.svg"  alt="упаковка корма" width="190" height="38">
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
+              <img class="page-header__logo-img"  src="img/logo-mobile.svg"  alt="упаковка корма" width="190" height="38">
           </picture>
         </a>
 
@@ -25,15 +25,15 @@
         <button class="page-header__toggle" type="button">
           <span class="visually-hidden">открыть меню</span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="main-nav__item">
-            <a class="main-nav__links" href="index.html">главная</a>
+        <ul class="main-nav__list site-list main-nav__list--margin">
+          <li class="main-nav__item main-nav__item--catalog1">
+            <a class="main-nav__links-catalog" href="index.html">главная</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__links" href="catalog.html">каталог продукции</a>
+          <li class="main-nav__item main-nav__item--catalog">
+            <a class="main-nav__links-catalog" href="catalog.html">каталог продукции</a>
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__links" href="form.html">подбор программы</a>
+          <li class="main-nav__item main-nav__item--catalog2">
+            <a class="main-nav__links-catalog" href="form.html">подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -49,24 +49,24 @@
           <a class="catalog__img-small" href="#">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
-              <source media="(min-width: 770px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-                <img class="catalog__img-size-small" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="изображение товара" width="68" height="86">
+              <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                <img class="catalog__img-size-small" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="изображение товара" width="140" height="140">
             </picture>
             </a>
           <div class="catalog__div-info">
             <h2 class="catalog__title"><a class="catalog__links-name" href="#">cat energy pro 500 г</a></h2>
             <table class="catalog__table">
               <tr class="catalog__characteristic">
-                <td>объем</td>
-                <td>500 г</td>
+                <td class="catalog__table-left">Масса</td>
+                <td class="catalog__table-right">500 г</td>
               </tr>
               <tr class="catalog__characteristic">
-                <td>вкус</td>
-                <td>курица</td>
+                <td class="catalog__table-left">Вкус</td>
+                <td class="catalog__table-right">Курица</td>
               </tr>
               <tr class="catalog__characteristic">
-                <td>цена</td>
-                <td>700 Р.</td>
+                <td class="catalog__table-left">Цена</td>
+                <td class="catalog__table-right">700 Р.</td>
               </tr>
             </table>
           </div>
@@ -80,55 +80,55 @@
           <a class="catalog__img-big" href="#">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
-              <source media="(min-width: 770px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
-                <img class="catalog__img-size-big" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="толстый кот" width="84" height="101">
+              <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                <img class="catalog__img-size-big" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="толстый кот" width="140" height="140">
             </picture>
           </a>
-          <div class="catalog__div-info">
+          <div class="catalog__div-info catalog__div-info--margin">
             <h2 class="catalog__title"> <a href="#" class="catalog__links-name">cat energy pro 1000 г</a></h2>
-            <table class="catalog__table">
+            <table class="catalog__table catalog__table--margin">
               <tr class="catalog__characteristic">
-                <td>объем</td>
-                <td>1000 г.</td>
+                <td class="catalog__table-left">Масса</td>
+                <td class="catalog__table-right">1000 г</td>
               </tr>
               <tr class="catalog__characteristic">
-                <td>вкус</td>
-                <td>курица</td>
+                <td class="catalog__table-left">Вкус</td>
+                <td class="catalog__table-right">Курица</td>
               </tr>
               <tr class="catalog__characteristic">
-                <td>цена</td>
-                <td>1000 Р.</td>
+                <td class="catalog__table-left">Цена</td>
+                <td class="catalog__table-right">1000 Р.</td>
               </tr>
             </table>
           </div>
-          <a class="catalog__links" href="#">
+          <a class="catalog__links catalog__links--margin" href="#">
             заказать
           </a>
         </div>
         <div class="catalog__card">
-          <a class="catalog__img-small" href="#"><picture>
+          <a class="catalog__img-small catalog__img-small--margin" href="#"><picture>
             <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
-            <source media="(min-width: 770px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
-              <img class="catalog__img-size-small" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="изображение товара" width="68" height="86">
+            <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+              <img class="catalog__img-size-small" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="изображение товара" width="130" height="130">
           </picture></a>
-          <div class="catalog__div-info">
+          <div class="catalog__div-info catalog__div-info--margin1">
             <h2 class="catalog__title"><a href="#" class="catalog__links-name">cat energy pro 500 г</a></h2>
-            <table class="catalog__table">
+            <table class=" catalog__table catalog__table--margin1">
               <tr class="catalog__characteristic">
-                <td>объем</td>
-                <td>500 г</td>
+                <td class="catalog__table-left">Масса</td>
+                <td class="catalog__table-right">500 г</td>
               </tr>
               <tr class="catalog__characteristic">
-                <td>вкус</td>
-                <td>рыба</td>
+                <td class="catalog__table-left">Вкус</td>
+                <td class="catalog__table-right">Рыба</td>
               </tr>
               <tr class="catalog__characteristic">
-                <td>цена</td>
-                <td>700 Р.</td>
+                <td class="catalog__table-left">Цена</td>
+                <td class="catalog__table-right">700 Р.</td>
               </tr>
             </table>
           </div>
-          <a class="catalog__links" href="#">
+          <a class="catalog__links  catalog__links--margin1" href="#">
             заказать
           </a>
         </div>
@@ -136,110 +136,110 @@
           <a class="catalog__img-big" href="#">
             <picture>
             <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
-            <source media="(min-width: 770px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
-              <img class="catalog__img-size-big" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="толстый кот" width="84" height="101">
+            <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+              <img class="catalog__img-size-big catalog__img-size-big--size" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="толстый кот" width="140" height="140">
           </picture></a>
-          <div class="catalog__div-info">
-            <h2 class="catalog__title"><a href="#" class="catalog__links-name">cat energy pro 1000 г</a></h2>
-            <table class="catalog__table">
+          <div class="catalog__div-info catalog__div-info--margin2">
+            <h2 class="catalog__title"><a href="#" class="catalog__links-name catalog__links-name">cat energy pro 1000 г</a></h2>
+            <table class="catalog__table catalog__table--margin2">
               <tr class="catalog__characteristic">
-                <td>объем</td>
-                <td>1000 г</td>
+                <td class="catalog__table-left">Масса</td>
+                <td class="catalog__table-right">1000 г</td>
               </tr>
               <tr class="catalog__characteristic">
-                <td>вкус</td>
-                <td>рыба</td>
+                <td class="catalog__table-left">Вкус</td>
+                <td class="catalog__table-right">Рыба</td>
               </tr>
               <tr class="catalog__characteristic">
-                <td>цена</td>
-                <td>1000 Р.</td>
+                <td class="catalog__table-left">Цена</td>
+                <td class="catalog__table-right">1000 Р.</td>
               </tr>
             </table>
           </div>
-          <a class="catalog__links" href="#">
+          <a class="catalog__links catalog__links--margin2" href="#">
             заказать
           </a>
         </div>
         <div class="catalog__card">
-          <a class="catalog__img-small" href="#">
+          <a class="catalog__img-small catalog__img-small--margin1" href="#">
             <picture>
             <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
-            <source media="(min-width: 770px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
-              <img class="catalog__img-size-small" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="изображение товара" width="68" height="86">
+            <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+              <img class="catalog__img-size-small" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="изображение товара" width="120" height="130">
           </picture>
         </a>
-          <div class="catalog__div-info">
+          <div class="catalog__div-info catalog__div-info--margin3">
             <h2 class="catalog__title"><a href="#" class="catalog__links-name">сat energy slim 500 г</a></h2>
-            <table class="catalog__table">
+            <table class="catalog__table catalog__table--margin3">
               <tr class="catalog__characteristic">
-                <td>объем</td>
-                <td>500 г</td>
+                <td class="catalog__table-left">Масса</td>
+                <td class="catalog__table-right">500 г</td>
               </tr>
               <tr class="catalog__characteristic">
-                <td>вкус</td>
-                <td>гречка</td>
+                <td class="catalog__table-left">Вкус</td>
+                <td class="catalog__table-right">Гречка</td>
               </tr>
               <tr class="catalog__characteristic">
-                <td>цена</td>
-                <td>400 Р.</td>
+                <td class="catalog__table-left">Цена</td>
+                <td class="catalog__table-right">400 Р.</td>
               </tr>
             </table>
           </div>
-          <a class="catalog__links" href="#">
+          <a class="catalog__links catalog__links--margin3" href="#">
             заказать
           </a>
         </div>
         <div class="catalog__card">
           <a class="catalog__img-big" href="#"><picture>
             <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
-            <source media="(min-width: 770px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
-              <img class="catalog__img-size-big" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="толстый кот" width="84" height="101">
+            <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+              <img class="catalog__img-size-big catalog__img-size-big--size" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="толстый кот" width="140" height="140">
           </picture></a>
-          <div class="catalog__div-info">
+          <div class="catalog__div-info catalog__div-info--margin4">
             <h2 class="catalog__title"><a class="catalog__links-name" href="#">cat energy slim 1000 г</a></h2>
-            <table class="catalog__table">
+            <table class="catalog__table catalog__table--margin4">
               <tr class="catalog__characteristic">
-                <td>объем</td>
-                <td>1000 г</td>
+                <td class="catalog__table-left">Масса</td>
+                <td class="catalog__table-right">1000 г</td>
               </tr>
               <tr class="catalog__characteristic">
-                <td>вкус</td>
-                <td>гречка</td>
+                <td class="catalog__table-left">Вкус</td>
+                <td class="catalog__table-right">Гречка</td>
               </tr>
               <tr class="catalog__characteristic">
-                <td>цена</td>
-                <td>700 Р.</td>
+                <td class="catalog__table-left">Цена</td>
+                <td class="catalog__table-right">700 Р.</td>
               </tr>
             </table>
           </div>
-          <a class="catalog__links" href="#">
+          <a class="catalog__links catalog__links--margin4" href="#">
             заказать
           </a>
         </div>
         <div class="catalog__card">
-          <a class="catalog__img-small" href="#"><picture>
+          <a class="catalog__img-small catalog__img-small--margin3" href="#"><picture>
             <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
-            <source media="(min-width: 770px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
-              <img class="catalog__img-size-small" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="изображение товара" width="68" height="86">
+            <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+              <img class="catalog__img-size-small " src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="изображение товара" width="130" height="137">
           </picture></a>
-          <div class="catalog__div-info">
+          <div class="catalog__div-info  catalog__div-info--margin5">
             <h2 class="catalog__title"> <a href="#" class="catalog__links-name">сat energy slim 500 г</a></h2>
-            <table class="catalog__table">
+            <table class="catalog__table catalog__table--margin5">
               <tr class="catalog__characteristic">
-                <td>объем</td>
-                <td>500 г</td>
+                <td class="catalog__table-left">Масса</td>
+                <td class="catalog__table-right catalog__table-right--margin1">500 г</td>
               </tr>
               <tr class="catalog__characteristic">
-                <td>вкус</td>
-                <td>рис</td>
+                <td class="catalog__table-left">Вкус</td>
+                <td class="catalog__table-right">Рис</td>
               </tr>
-              <tr class="catalog__characteristic">
-                <td>цена</td>
-                <td>500 Р.</td>
+              <tr class="catalog__characteristic catalog__characteristic--price">
+                <td class="catalog__table-left">Цена</td>
+                <td class="catalog__table-right">500 Р.</td>
               </tr>
             </table>
           </div>
-          <a class="catalog__links" href="#">
+          <a class="catalog__links catalog__links--margin5" href="#">
             заказать
           </a>
         </div>
@@ -258,7 +258,7 @@
 
           <div>
             <h2 class="additionally__title">
-              Дополнительные товары
+              <span class="additionally__span">Дополнительные товары</span>
             </h2>
           </div>
           <div class="additionally__line-border">
@@ -274,9 +274,9 @@
             </div>
             <div class="additionally__items">
               <h3 class="additionally__title-block">питьевая вода</h3>
-              <div class="additionally__table">
+              <div class="additionally__table additionally__table--size">
                   <p>5 литров</p>
-                  <p>50 Р.</p>
+                  <p class="additionally__price1">50 Р.</p>
             </div>
             <a class="additionally__links" href="#">
               заказать
@@ -284,9 +284,9 @@
           </div>
           <div class="additionally__items">
             <h3 class="additionally__title-block">молоко</h3>
-            <div class="additionally__table">
+            <div class="additionally__table additionally__table--size1">
                 <p>1 литр</p>
-                <p>100 Р.</p>
+                <p class="additionally__price">100 Р.</p>
           </div>
           <a class="additionally__links" href="#">
             заказать
@@ -295,11 +295,11 @@
 
         <div class="additionally__items">
           <h3 class="additionally__title-block">витамины</h3>
-          <div class="additionally__table">
+          <div class="additionally__table additionally__table--size2">
               <p>1 упаковка (30 г)</p>
-              <p>300 Р.</p>
+              <p class="additionally__price2">300 Р.</p>
         </div>
-        <a class="additionally__links" href="#">
+        <a class="additionally__links " href="#">
           заказать
         </a>
       </div>
@@ -320,24 +320,24 @@
             c0.4,0,0.7,0.3,0.7,0.7V24.7z" />
             </svg>
             <p class="additionally__paragraphe-gift">Закажите все
-              и получите чехол для
+              <br> и  получите чехол для
               кота в подарок!</p>
           </a>
         </div>
       </div>
     </section>
     <section class="map">
-      <div class="map_center">
+      <div class="map_center-catalog">
         <div class="map__contact">
-          <p class="map__paragraph">приглашаем
-            к сотрудничеству дилеров!</p>
-          <p class="map__paragraph-contact">ул. Большая
+          <p class="map__paragraph">приглашаем <br class="map__br">
+            к <br class="map__br--br1"> сотрудничеству дилеров!</p>
+          <p class="map__paragraph-contact map__paragraph-contact--margin1">ул. Большая
             Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+            <span class="map__span">Санкт-Петербург</span></p>
         </div>
         <picture>
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-          <source media="(min-width: 770px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
             <img class="map_img" src="img/bg-map-mobile@1x.png"srcset="img/bg-map-mobile@2x.png 2x" alt="карта" width="100%" height="362">
         </picture>
 
@@ -350,22 +350,24 @@
   </main>
   <footer class="page-footer page-footer--padding">
     <div class="page-footer__center">
+      <a href="index.html" class="page-footer__link-logo page-footer__link-logo--form">
       <img class="page-footer__logo" src="img/logo-footer.svg" alt="логотип энергичной кошки" width="128" height="24">
+    </a>
       <div class="page-footer__social">
         <ul class="page-footer__list">
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="#">
-              <img src="img/icon-vk.svg" alt="вконтакте" width="22" height="12">
+          <li class="page-footer__item page-footer__item--margin1">
+            <a class="page-footer__link " href="#">
+              <img class="page-footer__vk" src="img/icon-vk.svg" alt="вконтакте" width="22" height="12">
             </a>
           </li>
-          <li class="page-footer__item">
+          <li class="page-footer__item page-footer__item--margin2">
             <a class="page-footer__link" href="#">
-              <img src="img/icon-insta.svg" alt="инстаграмм" width="16" height="16">
+              <img class="page-footer__inst" src="img/icon-insta.svg" alt="инстаграмм" width="16" height="16">
             </a>
           </li>
-          <li class="page-footer__item">
+          <li class="page-footer__item page-footer__item--margin3">
             <a class="page-footer__link" href="#">
-              <img src="img/icon-fb.svg" alt="фэйсбук" width="10" height="18">
+              <img class="page-footer__fb" src="img/icon-fb.svg" alt="фэйсбук" width="10" height="18">
             </a>
           </li>
         </ul>
@@ -373,7 +375,7 @@
       <div class="page-footer__copyright">
         <a class="page-footer__copyright-link" href="img/https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="page-footer__copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class src="img/htmlacademy.svg" alt="лого-хтмл-академии" width="27" height="34">
+          <img class src="img/htmlacademy.svg" alt="лого-хтмл-академии" width="50" height="40">
         </a>
       </div>
     </div>

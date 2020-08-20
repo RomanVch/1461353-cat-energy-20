@@ -16,15 +16,65 @@
   text-transform: uppercase;
   vertical-align: top;
   resize: none;
+  margin-top: 14.5px;
+  margin-left: 20px;
+  padding-top: 13px;
+  padding-left: 14px;
 
   @media (min-width: $tablet) {
     width: 631px;
     height: 174px;
-    margin-left: 50px;
+    margin-left: 70px;
+    margin-top: 45px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-left: 17px;
+
   }
 
   @media (min-width: $dekstop) {
     width: 1220px;
     height: 174px;
+    margin-left: 40px;
+    margin-top: 47px;
   }
+}
+.form__title-coment{
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  margin-top: 12px;
+  margin-left: 19px;
+  position: relative;
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+    @media (min-width: $tablet) {
+      font-size: 36px;
+line-height: 36px;
+margin-top: 45px;
+margin-left: 50px;}
+  @media (min-width: $dekstop) {
+    margin-left: 20px;
+    margin-top: 46px;
+    }
+    &::before {
+      content: " ";
+        display: inline-block;
+    vertical-align: middle;
+    height: 2px;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 2px;
+    background: #6CBD83;
+    border: solid #FFF;
+    border-width: 0 10px;
+    position: absolute;
+    top: 56%;
+    z-index: -1;
+    left: calc((100vw - 100%) / -2);
+    }
 }
