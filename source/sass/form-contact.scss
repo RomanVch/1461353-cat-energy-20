@@ -118,7 +118,9 @@ left: calc((100vw - 100%) / -2);
 .form__span-mail{
   display: block;
   margin-top: 11px;
-  margin-right: 11px;
+  margin-right: 21px;
+  white-space: nowrap;
+
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;

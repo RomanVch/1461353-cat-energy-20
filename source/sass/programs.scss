@@ -86,6 +86,8 @@ margin-right: 0px;
   margin-top: 20px;
   letter-spacing: -0.15px;
   width: 240px;
+  box-sizing: border-box;
+  padding-right: 10px;
 
   @media (max-width: $mobile) {
     margin-right: 10px;
@@ -100,6 +102,7 @@ margin-right: 0px;
     width: 375px;
     letter-spacing: -0.1px;
     margin-bottom: 50px;
+    padding-right: 0;
   }
 
   @media (min-width: $dekstop) {

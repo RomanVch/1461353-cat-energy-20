@@ -86,7 +86,8 @@ letter-spacing: 0.1px;
   }
 
   @media (min-width: $dekstop) {
-    left: 620px;
+    position: static;
+    margin: 18px 0 0 80px;
   }
 }
 
@@ -100,16 +101,18 @@ letter-spacing: 0.1px;
   }
 
   @media (min-width: $dekstop) {
-    position: absolute;
-    top: 158px;
+    position: static;
+    grid-column-start: 1;
+    grid-column-end: -1;
   }
 }
 .form{
   margin-bottom: 30px;
     @media (min-width: $tablet) {
-        margin-bottom: 90px;
+        margin-bottom: 70px;
+        overflow: hidden;
     }
     @media (min-width: $dekstop) {
-      margin-bottom: 165px;
+      margin-bottom: 60px;
     }
 }

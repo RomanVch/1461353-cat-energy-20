@@ -8,10 +8,12 @@
   margin-bottom: 32px;
   position: relative;
   margin-left: -11px;
+  margin-top: 0;
+
   @media (min-width: $tablet) {
     font-size: 36px;
 line-height: 45px;
-margin-top: 66px;
+margin-top: 36px;
 margin-left: 36px;
 margin-bottom: 5px;
   }
@@ -266,6 +268,8 @@ left: calc((100vw - 100%) / -2);
 }
 
 .additionally {
+  overflow: hidden;
+
   @media (min-width: $dekstop) {
     display: flex;
   }
