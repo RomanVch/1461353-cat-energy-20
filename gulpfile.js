@@ -75,7 +75,7 @@ exports.images = images;
 const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
   .pipe(svgstore())
-  .pipe(rename(sprite.svg))
+  .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("source/img"));
 }
 
@@ -105,7 +105,7 @@ exports.clean = clean;
 //webp
 const webpic = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
-  .pipe(webp({quality:90}))
+  .pipe(webp({ality:90}))
   .pipe(gulp.dest("source/img"))
 }
 exports.webpic = webpic;
