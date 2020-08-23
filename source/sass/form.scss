@@ -36,25 +36,28 @@
 
   @media (min-width: $tablet) {
     width: 282px;
-    margin-left:21px;
+    margin-left: 21px;
     flex-shrink: 0;
     padding-top: 25px;
     padding-bottom: 27px;
     margin-top: 36px;
     font-size: 20px;
-line-height: 0px;
+    line-height: 0;
   }
 
   @media (min-width: $dekstop) {
     width: 568px;
   }
-  &:hover{
-    background-color: $basic_green-2
+
+  &:hover {
+    background-color: $basic_green-2;
   }
-  &:active{
-    color:rgba(255, 255, 255, 0.3)
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
-  &:focus{
+
+  &:focus {
     background-color: adjust-hue($basic_green-2, 10);
   }
 }
@@ -73,16 +76,17 @@ line-height: 0px;
   font-size: 14px;
   margin-left: 82px;
   letter-spacing: -0.2px;
+
   @media (min-width: $tablet) {
     margin-left: 51px;
     align-self: center;
     position: absolute;
-    top:52px;
+    top: 52px;
     left: 313px;
     width: 200px;
     font-size: 16px;
-line-height: 16px;
-letter-spacing: 0.1px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
   }
 
   @media (min-width: $dekstop) {
@@ -106,13 +110,16 @@ letter-spacing: 0.1px;
     grid-column-end: -1;
   }
 }
-.form{
+
+.form {
   margin-bottom: 30px;
-    @media (min-width: $tablet) {
-        margin-bottom: 70px;
-        overflow: hidden;
-    }
-    @media (min-width: $dekstop) {
-      margin-bottom: 60px;
-    }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 70px;
+    overflow: hidden;
+  }
+
+  @media (min-width: $dekstop) {
+    margin-bottom: 60px;
+  }
 }

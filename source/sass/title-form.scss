@@ -8,7 +8,7 @@
   margin-bottom: 37px;
   margin-left: -20px;
   text-align: center;
-    box-sizing: border-box;
+  box-sizing: border-box;
 
   @media (min-width: $tablet) {
     margin-top: 44px;
@@ -46,6 +46,7 @@
     margin-left: 70px;
     width: 350px;
   }
+
   @media (min-width: $dekstop) {
     margin-left: 40px;
   }
@@ -57,7 +58,8 @@
   margin: 0 auto;
   box-sizing: border-box;
   margin-top: 23px;
+
   @media (min-width: $tablet) {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }

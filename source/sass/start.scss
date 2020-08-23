@@ -1,5 +1,6 @@
 .start {
   margin-bottom: 22px;
+
   @media (min-width: $dekstop) {
     margin-top: -130px;
     margin-bottom: 85px;
@@ -13,15 +14,15 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  letter-spacing:-2px;
+  letter-spacing: -2px;
   font-stretch: extra-condensed;
 
   @media (max-width: $mobile) {
     padding-top: 25px;
     font-weight: 400;
-    width:270px;
+    width: 270px;
     margin-left: 25px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     padding-bottom: 2px;
   }
 
@@ -91,8 +92,7 @@
   background-color: $basic_green;
   text-align: center;
   margin-top: -1px;
-  letter-spacing:-1px;
-
+  letter-spacing: -1px;
 
   @media (max-width: $mobile) {
     margin-right: 20px;
@@ -107,19 +107,22 @@
     padding-bottom: 17px;
     margin-left: 92px;
     margin-top: 29px;
-    letter-spacing:0.2px;
+    letter-spacing: 0.2px;
   }
 
   @media (min-width: $dekstop) {
     margin-left: 170px;
   }
-  &:hover{
-    background-color: $basic_green-2
+
+  &:hover {
+    background-color: $basic_green-2;
   }
-  &:active{
-    color:rgba(255, 255, 255, 0.3)
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
-  &:focus{
+
+  &:focus {
     background-color: adjust-hue($basic_green-2, 10);
   }
 }
@@ -127,6 +130,7 @@
 .start__img {
   margin-top: 5px;
   margin-left: 20px;
+
   @media (min-width: $tablet) {
     display: block;
     align-self: center;
@@ -134,17 +138,14 @@
     width: 709px;
     height: 609px;
     z-index: 1;
-
   }
 
   @media (min-width: $dekstop) {
     display: block;
-
     align-self: center;
     order: 1;
     width: 552px;
     height: 499px;
-
   }
 }
 
@@ -168,29 +169,28 @@
   @media (min-width: $dekstop) {
     background: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 720px 0px  ;
+    background-position: 720px 0;
     padding-left: 20px;
     padding-right: 20px;
-    min-height:auto;
+    min-height: auto;
     padding-bottom: 50px;
   }
 }
 
-.start__picture{
-    @media (min-width: $tablet) {
-      position: absolute;
-      top:335px;
-      right: 32px;
-
-z-index: -1;
+.start__picture {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 335px;
+    right: 32px;
+    z-index: -1;
   }
-  @media (min-width: $dekstop) {
-  position: static;
-  order: 1;
-  align-self: center;
-  z-index: 0;
-  margin-top:-370px;
-  margin-left: 200px;
 
+  @media (min-width: $dekstop) {
+    position: static;
+    order: 1;
+    align-self: center;
+    z-index: 0;
+    margin-top: -370px;
+    margin-left: 200px;
   }
 }
