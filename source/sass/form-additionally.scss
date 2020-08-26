@@ -142,13 +142,17 @@
     vertical-align: middle;
     height: 2px;
     box-sizing: border-box;
-    width: 200vw;
+    width: 100vw;
     background: #6cbd83;
     border: solid #ffffff;
     border-width: 0 10px;
     position: absolute;
     top: 55%;
     z-index: -1;
+    left: calc((100vw - 100%) / -2);
+  }
+  @media(min-width: $tablet){
+    width: 200vw;
     left: calc((200vw - 100%) / -2);
   }
 }

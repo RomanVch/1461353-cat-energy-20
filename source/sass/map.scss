@@ -134,6 +134,7 @@
 .map__contact {
   display: flex;
   justify-content: space-around;
+  position: relative;
 
   @media (min-width: $tablet) {
     margin-top: 0;
@@ -149,6 +150,7 @@
     position: absolute;
     top: 97px;
     left: 110px;
+    z-index: 2;
   }
 
   &--margin {
@@ -210,6 +212,18 @@
   }
 }
 .map__frame{
-  margin-top: -400px
-  border : none;
+  z-index: 1;
+  position: absolute;
+  top:113px;
+  right: 0px;
+  width: 100%;
+  @media (min-width: $tablet) {
+    width: 100%;
+    height: 400px;
+    top:200px;
+  }
+  @media (min-width: $dekstop) {
+    top: 0px;
+    z-index: 1;
+  }
 }

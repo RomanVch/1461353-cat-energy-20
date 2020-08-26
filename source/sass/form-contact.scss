@@ -82,7 +82,6 @@ padding-left: 38px;
   font-size: 24px;
   line-height: 26px;
   margin-top: 25px;
-  margin-left: 20px;
   margin-bottom: 34px;
   position: relative;
   width: auto;
@@ -108,17 +107,19 @@ padding-left: 38px;
     vertical-align: middle;
     height: 2px;
     box-sizing: border-box;
-    width: 200vw;
+    width: 100vw;
     background: #6cbd83;
     border: solid #ffffff;
     border-width: 0 10px;
     position: absolute;
     top: 35%;
     z-index: -1;
-    left: calc((200vw - 100%) / -2);
+    left: calc((100vw - 100%) / -2);
 
     @media (min-width: $tablet) {
       top: 60%;
+      width: 200vw;
+      left: calc((200vw - 100%) / -2);
     }
   }
 }
