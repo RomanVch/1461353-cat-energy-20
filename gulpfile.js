@@ -54,7 +54,14 @@ const html = () => {
 }
 
 exports.html = html;
+// js.
+const js = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream())
+}
 
+exports.js = js;
 // images
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
@@ -82,7 +89,6 @@ const copy = () => {
   return gulp.src([
     "source/img/**",
     "source/fonts/*.{woff,woff2}",
-    "source/js/**",
     "source/*.ico"
   ],{
     base:"source"
@@ -96,6 +102,7 @@ exports.copy = copy;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/*.html", gulp.series(html));
+  gulp.watch("source/js/*.js", gulp.series(js));
 }
 
 //clean
@@ -116,9 +123,9 @@ exports.webpic = webpic;
 
 // Основное.
 
-const build = (done) => gulp.series(clean, copy, styles, html, images)(done);
+const build = (done) => gulp.series(clean, copy, styles, html, images,js)(done);
 exports.build = build;
 
 exports.default = gulp.series(
-  clean, copy, styles, html, server, watcher
+  clean, copy, styles, html, js, server, watcher
 );

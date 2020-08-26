@@ -176,6 +176,10 @@
       width: 436px;
     }
   }
+  &--error{
+    border: 2px solid #ff8282;
+  box-sizing: border-box;
+  }
 
   &:focus,
   &:hover {
@@ -321,4 +325,8 @@
   @media (min-width: $dekstop) {
     margin-left: 4px;
   }
+}
+.form__input-error{
+  border: 2px solid #ff8282;
+box-sizing: border-box;
 }

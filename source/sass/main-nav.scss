@@ -114,6 +114,21 @@
       }
     }
   }
+  &--active-index{
+    @media (min-width: $tablet) {
+border-bottom: 2px solid #68b738;
+    }
+
+    @media (min-width: $dekstop) {
+border-bottom: 2px solid #ffffff;
+    }
+  }
+  &--active-form{
+    @media (min-width: $tablet) {
+border-bottom: 2px solid #68b738;
+padding-bottom: 5px;
+    }
+  }
 }
 
 .main-nav__links-catalog {

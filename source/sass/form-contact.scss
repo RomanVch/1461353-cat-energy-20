@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet) {
     width: 544px;
-
+padding-left: 38px;
     br {
       display: none;
     }
@@ -93,12 +93,12 @@
     line-height: 36px;
     width: auto;
     margin-top: 74px;
-    margin-left: 49px;
+    margin-left: 30px;
     margin-bottom: 77px;
   }
 
   @media (min-width: $dekstop) {
-    margin-left: 20px;
+    margin-left: 1px;
     margin-top: 48px;
   }
 
@@ -108,14 +108,14 @@
     vertical-align: middle;
     height: 2px;
     box-sizing: border-box;
-    width: 100vw;
+    width: 200vw;
     background: #6cbd83;
     border: solid #ffffff;
     border-width: 0 10px;
     position: absolute;
     top: 35%;
     z-index: -1;
-    left: calc((100vw - 100%) / -2);
+    left: calc((200vw - 100%) / -2);
 
     @media (min-width: $tablet) {
       top: 60%;
