@@ -154,6 +154,16 @@
       margin-left: -25px;
     }
   }
+
+  &:focus,
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.4;
+  }
 }
 
 .page-footer__center {
@@ -237,6 +247,16 @@
     width: 29px;
     height: 17px;
   }
+
+  &:focus,
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.4;
+  }
 }
 
 .page-footer__inst {
@@ -244,11 +264,45 @@
     width: 23px;
     height: 23px;
   }
+
+  &:focus,
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.4;
+  }
 }
 
 .page-footer__fb {
   @media (min-width: $tablet) {
     width: 13px;
     height: 27px;
+  }
+
+  &:focus,
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.4;
+  }
+}
+
+.page-footer_logo-html {
+  fill: #666666;
+
+  &:focus,
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.4;
   }
 }

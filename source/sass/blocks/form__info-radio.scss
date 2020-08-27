@@ -58,8 +58,8 @@
   @media (min-width: $tablet) {
     width: 19px;
     height: 19px;
-    top: 14px;
-    left: 10px;
+    top: 15px;
+    left: 12px;
   }
 }
 
@@ -175,6 +175,11 @@
     @media (min-width: $dekstop) {
       width: 436px;
     }
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
+    box-sizing: border-box;
   }
 
   &:focus,
@@ -320,5 +325,22 @@
 
   @media (min-width: $dekstop) {
     margin-left: 4px;
+  }
+}
+
+.form__input-error {
+  border: 2px solid #ff8282;
+  box-sizing: border-box;
+}
+
+.form__center {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 23px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
   }
 }

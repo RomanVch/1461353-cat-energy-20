@@ -348,7 +348,7 @@
   }
 }
 
-.examle__cat {
+.example__cat {
   margin: auto auto auto 5px;
 
   @media (min-width: $tablet) {
@@ -384,7 +384,7 @@
   }
 }
 
-.examle__div-cat {
+.example__div-cat {
   background: $basic_grey_ea;
   display: flex;
   flex-direction: column;
@@ -405,7 +405,7 @@
   }
 }
 
-.examle__slider-wrapper {
+.example__slider-wrapper {
   display: none;
 
   @media (min-width: $tablet) {
@@ -416,7 +416,7 @@
   }
 }
 
-.examle__slider-js {
+.example__slider-js {
   display: none;
 
   @media (min-width: $tablet) {
@@ -430,7 +430,7 @@
   }
 }
 
-.examle__slider-handle {
+.example__slider-handle {
   display: none;
 
   @media (min-width: $tablet) {
@@ -447,7 +447,7 @@
   }
 }
 
-.examle__slider-handle::before {
+.example__slider-handle::before {
   display: none;
 
   @media (min-width: $tablet) {
@@ -463,7 +463,7 @@
   }
 }
 
-.pupkin {
+.example__wraper {
   display: none;
 
   @media (min-width: $tablet) {
@@ -479,11 +479,11 @@
   }
 }
 
-.examle__picture {
+.example__picture {
   position: relative;
 }
 
-.examle__div-cat-slim {
+.example__div-cat-slim {
   display: none;
 
   @media (min-width: $tablet) {
@@ -502,7 +502,7 @@
   }
 }
 
-.examle__div-cat-fat {
+.example__div-cat-fat {
   @media (min-width: $tablet) {
     overflow: hidden;
     width: 342px;

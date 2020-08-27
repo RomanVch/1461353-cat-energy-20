@@ -66,7 +66,7 @@
   }
 
   &--form {
-    margin-top: -10px;
+    margin-top: 0;
   }
 }
 
@@ -79,8 +79,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 30px;
-    left: 18px;
+    top: 0;
+    left: 0;
     width: 36px;
     height: 2px;
     background-color: #ffffff;
@@ -118,15 +118,13 @@
 }
 
 .main-nav--opened .page-header__toggle {
-  top: 0;
-  right: 40px;
+  top: 11px;
 
   &::after,
   &::before {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 18px;
+    left: 0;
     width: 24px;
     height: 2px;
     background-color: $basic_black;
@@ -216,4 +214,14 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.main-nav--closed .main-nav__list {
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.active-desktop-link {
+  border-bottom: 2px solid #ffffff;
 }

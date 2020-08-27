@@ -127,12 +127,12 @@
     font-size: 36px;
     line-height: 36px;
     margin-top: 66px;
-    margin-left: 50px;
+    margin-left: 32px;
     margin-bottom: 43px;
   }
 
   @media (min-width: $dekstop) {
-    margin-left: 20px;
+    margin-left: 1px;
     margin-top: 67px;
   }
 
@@ -150,5 +150,10 @@
     top: 55%;
     z-index: -1;
     left: calc((100vw - 100%) / -2);
+
+    @media (min-width: $tablet) {
+      width: 200vw;
+      left: calc((200vw - 100%) / -2);
+    }
   }
 }
