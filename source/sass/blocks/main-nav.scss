@@ -117,6 +117,7 @@
   &--active-index{
     @media (min-width: $tablet) {
 border-bottom: 2px solid #68b738;
+padding-bottom: 6px;
     }
 
     @media (min-width: $dekstop) {
@@ -157,6 +158,12 @@ padding-bottom: 5px;
 
   &:active {
     color: rgba($basic_black, 0.3);
+  }
+  &--active{
+    @media (min-width: $tablet) {
+border-bottom: 2px solid #68b738;
+padding-bottom: 5px;
+    }
   }
 }
 
