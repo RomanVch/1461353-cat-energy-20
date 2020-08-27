@@ -40,4 +40,3 @@ form.addEventListener("submit",function (evt) {
     tel.classList.remove("form__input--error")
   ;}
 });
-

@@ -69,7 +69,6 @@
   }
 
   @media (min-width: $dekstop) {
-
     height: 80px;
     margin-top: 25px;
     text-align: left;
@@ -211,20 +210,23 @@
     }
   }
 }
-.map__frame{
+
+.map__frame {
   z-index: 1;
   position: absolute;
-  top:113px;
-  right: 0px;
+  top: 113px;
+  right: 0;
   width: 100%;
-  border:0;
+  border: 0;
+
   @media (min-width: $tablet) {
     width: 100%;
     height: 400px;
-    top:200px;
+    top: 200px;
   }
+
   @media (min-width: $dekstop) {
-    top: 0px;
+    top: 0;
     z-index: 1;
   }
 }

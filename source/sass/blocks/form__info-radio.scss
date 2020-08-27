@@ -176,9 +176,10 @@
       width: 436px;
     }
   }
-  &--error{
+
+  &--error {
     border: 2px solid #ff8282;
-  box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   &:focus,
@@ -326,11 +327,13 @@
     margin-left: 4px;
   }
 }
-.form__input-error{
+
+.form__input-error {
   border: 2px solid #ff8282;
-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.form__center{
+
+.form__center {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;

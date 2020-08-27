@@ -77,7 +77,8 @@
     top: 56%;
     z-index: -1;
     left: calc((100vw - 100%) / -2);
-    @media(min-width: $tablet){
+
+    @media (min-width: $tablet) {
       width: 200vw;
       left: calc((200vw - 100%) / -2);
     }

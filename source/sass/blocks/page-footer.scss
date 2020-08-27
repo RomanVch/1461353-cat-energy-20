@@ -154,13 +154,16 @@
       margin-left: -25px;
     }
   }
-  &:hover,&:focus {
-      fill:$basic_green;
-    }
-    &:active{
-      fill:$basic_green;
-      opacity: 0.4;
-    }
+
+  &:focus,
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.4;
+  }
 }
 
 .page-footer__center {
@@ -227,7 +230,6 @@
   @media (min-width: $tablet) {
     margin-right: 0;
   }
-
 }
 
 .page-footer__copyright-academy {
@@ -245,13 +247,16 @@
     width: 29px;
     height: 17px;
   }
-  &:hover,&:focus {
-      fill:$basic_green;
-    }
-    &:active{
-      fill:$basic_green;
-      opacity: 0.4;
-    }
+
+  &:focus,
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.4;
+  }
 }
 
 .page-footer__inst {
@@ -259,13 +264,16 @@
     width: 23px;
     height: 23px;
   }
-  &:hover,&:focus {
-      fill:$basic_green;
-    }
-    &:active{
-      fill:$basic_green;
-      opacity: 0.4;
-    }
+
+  &:focus,
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.4;
+  }
 }
 
 .page-footer__fb {
@@ -273,22 +281,28 @@
     width: 13px;
     height: 27px;
   }
-  &:hover,&:focus {
-      fill:$basic_green;
-    }
-    &:active{
-      fill:$basic_green;
-      opacity: 0.4;
-    }
+
+  &:focus,
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.4;
+  }
 }
 
-.page-footer_logo-html{
-  fill:#666666;
-  &:hover,&:focus {
-      fill:$basic_green;
-    }
-    &:active{
-      fill:$basic_green;
-      opacity: 0.4;
-    }
+.page-footer_logo-html {
+  fill: #666666;
+
+  &:focus,
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    fill: $basic_green;
+    opacity: 0.4;
+  }
 }
