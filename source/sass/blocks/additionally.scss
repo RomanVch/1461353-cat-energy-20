@@ -197,14 +197,15 @@
   @media (min-width: $tablet) {
     width: 708px;
     display: flex;
-    justify-content: space-around;
-    margin-left: -5px;
-    margin-top: 5px;
+    margin-left: 89px;
+    margin-top: 0px;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $dekstop) {
     flex-direction: column;
     display: block;
+    margin-left: 0px;
   }
 }
 
@@ -215,7 +216,12 @@
   margin-bottom: 35px;
   display: flex;
   margin-top: 40px;
-
+  background-color: #6fb346;
+  @media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  background: url("../img/gift-photo-mobile@2x.jpg") no-repeat;
+  background-size: 280px 289px;
+}
   @media (min-width: $tablet) {
     flex-direction: row;
     margin-top: 68px;
@@ -226,6 +232,11 @@
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     margin-left: 10px;
     margin-bottom: 75px;
+    @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background: url("../img/gift-photo-tablet@2x.jpg") no-repeat;
+    background-size: 708px 200px;
+  }
   }
 
   @media (min-width: $dekstop) {
@@ -237,6 +248,11 @@
     background-repeat: no-repeat;
     margin-left: 99px;
     margin-top: 162px;
+    @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background: url("../img/gift-photo-desktop@2x.jpg") no-repeat;
+    background-size: 245px 289px;
+  }
   }
 }
 
@@ -253,15 +269,16 @@
   margin-left: 41px;
 
   @media (min-width: $tablet) {
-    margin-left: 62px;
+    margin-left: 275px;
+      margin-top: 28px;
     text-align: left;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
     width: 180px;
 
     @media (min-width: $dekstop) {
       text-align: center;
-      margin-top: 20px;
-      margin-left: 40px;
+      margin-left: 32px;
+      margin-top: 27px;
     }
   }
 }
@@ -279,7 +296,9 @@
 
 .additionally {
   overflow: hidden;
-
+  @media (min-width: $tablet) {
+margin-top: 30px;
+  }
   @media (min-width: $dekstop) {
     display: flex;
   }
@@ -314,9 +333,9 @@
 }
 
 .additionally_svg {
-  margin-left: 111px;
-  margin-top: 66px;
-  margin-bottom: 20px;
+  margin-left: 110px;
+  margin-top: 54px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet) {
     margin: 0;
@@ -324,10 +343,10 @@
   }
 
   @media (min-width: $dekstop) {
-    margin-left: 100px;
-    margin-top: 50px;
     margin-bottom: 20px;
     align-self: flex-start;
+    margin-left: 95px;
+    margin-top: 45px;
   }
 }
 

@@ -198,3 +198,83 @@
 .main-nav--nojs .page-header__toggle {
   display: none;
 }
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::after,
+  &:active::before {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+.main-nav--closed .page-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $basic_black;
+  box-shadow: 0 8px 0 0 $basic_black, 0 16px 0 0 $basic_black;
+}
+
+.main-nav--closed .page-header__toggle:active::before {
+  background-color: fade($basic_black, 30%);
+  box-shadow: 0 8px 0 0 fade($basic_black, 30%), 0 16px 0 0 fade($basic_black, 30%);
+}
+
+.main-nav--opened .page-header__toggle {
+  top: 11px;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic_black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::after,
+  &:active::before {
+    background-color: $basic_black;
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}

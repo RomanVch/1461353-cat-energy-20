@@ -32,8 +32,6 @@
   }
 
   input {
-    display: none;
-
     &:checked + .form__text-box {
       background-color: white;
 
@@ -80,7 +78,7 @@
   }
 }
 
-.form__text-box:hover {
+.form__text-box:hover,.form__text-box:focus {
   border-color: #bababa;
 }
 
