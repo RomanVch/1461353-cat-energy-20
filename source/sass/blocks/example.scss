@@ -201,7 +201,7 @@
   }
 }
 
-.example_switch {
+.example__switch {
   display: inline;
   height: 0;
   width: 0;
@@ -233,11 +233,11 @@
   transition: 0.3s;
 }
 
-.example_switch:checked + .example__checkbox {
+.example__switch:checked + .example__checkbox {
   background: $basic_white;
 }
 
-.example_switch:checked + .example__checkbox::after {
+.example__switch:checked + .example__checkbox::after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }

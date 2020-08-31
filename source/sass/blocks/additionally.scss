@@ -104,7 +104,6 @@
     margin-right: 37px;
     margin-top: 5px;
     width: 225px;
-    letter-spacing: 1px;
   }
 
   @media (min-width: $dekstop) {
@@ -332,7 +331,7 @@ margin-top: 30px;
   }
 }
 
-.additionally_svg {
+.additionally__svg {
   margin-left: 110px;
   margin-top: 54px;
   margin-bottom: 32px;
@@ -350,7 +349,7 @@ margin-top: 30px;
   }
 }
 
-.additionally_div-border {
+.additionally__div-border {
   @media (min-width: $dekstop) {
     width: 896px;
   }

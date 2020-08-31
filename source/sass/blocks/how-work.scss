@@ -19,7 +19,7 @@
   }
 }
 
-.how-work__block {
+.how-work__one-stage {
   font-style: normal;
   font-weight: normal;
   color: $special_dark-grey;
@@ -37,7 +37,7 @@
   }
 }
 
-.how-work_block-div {
+.how-work__svg-background {
   width: 60px;
   height: 60px;
   background-color: $basic_green;
@@ -95,7 +95,7 @@
   }
 }
 
-.how-work_ul {
+.how-work__stages-of-work {
   padding: 0;
   margin: 0;
 
@@ -110,6 +110,7 @@
   @media (min-width: $dekstop) {
     display: flex;
     grid-column-gap: 72px;
+     flex-wrap:wrap;
   }
 }
 

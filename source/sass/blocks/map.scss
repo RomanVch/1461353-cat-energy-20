@@ -104,7 +104,7 @@
   margin: 0;
 }
 
-.map_center {
+.map__center {
   position: relative;
   width: 100%;
   max-width: 1440px;
@@ -117,7 +117,7 @@
   }
 }
 
-.map_center-catalog {
+.map__center-catalog {
   position: relative;
   width: 100%;
   max-width: 1440px;
@@ -157,7 +157,7 @@
   }
 }
 
-.map_img {
+.map__img {
   @media (min-width: $tablet) {
     width: 100%;
     height: 400px;
