@@ -370,7 +370,7 @@
   }
 }
 
-.form__info-block-radio-radio {
+.form__info-block-radio {
   border-top: 1px solid $basic_grey_line;
   border-bottom: 1px solid $basic_grey_line;
   margin-top: 9px;
@@ -792,14 +792,11 @@ flex-wrap: wrap;
   border: 1px solid #bababa;
 }
 
-.form__checkbox-sugar:focus{
-    border: 1px solid #bababa;
-}
 .form__text-box:active {
   opacity: 0.3;
 }
 .form__checkbox-sugar:focus+.form__text-box{
-  border: 1px solid #bababa;
+  border: 1px solid  #000000;
 }
 
 .form__text-paragraph {
@@ -871,3 +868,4 @@ flex-wrap: wrap;
     }
   }
 }
+.form__checkbox1:focus +span{background: red}
