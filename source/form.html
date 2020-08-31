@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Cat Energy форма заказа</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preload" href="/fonts/oswald-v35-latin_cyrillic-500.woff2" as="font">
   <link rel="preload" href="/fonts/oswald-v35-latin_cyrillic-regular.woff2" as="font">
@@ -83,29 +83,29 @@
               <label class="visually-hidden" for="comment">Оставьте комментарий</label>
               <textarea  class="form__input-comment" placeholder="расскажите обо всех повадках кота" name="comment" id="comment"></textarea>
             </div>
-            <div class="form-additionally">
+            <div class="form__additionally">
               <h2 class="form__title-additionally"><span class="form__title-span form__title-span--add">Дополнительно</span></h2>
               <div class="form__checkbox">
                 <label class="form__text-checkbox " for="sugar">
-                  <input class="visually-hidden form__checkbox-sugar form__checkbox1" type="checkbox" name="option1" value="a1" checked id="sugar">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="option1" value="a1" checked id="sugar">
                   <span class="form__text-box"></span>
                   <span class="form__text-paragraph">сахарозаменитель</span>
                 </label>
 
                 <label class="form__text-checkbox" for="water">
-                  <input class="visually-hidden form__checkbox-sugar form__checkbox1" type="checkbox" name="option2" value="a2" id="water">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="option2" value="a2" id="water">
                   <span class="form__text-box"></span>
                   <span class="form__text-paragraph"> питьевая вода</span>
                 </label>
 
-                <label class="form__text-checkbox form__checkbox-sugar form__checkbox1" for="milk">
-                  <input class="visually-hidden" type="checkbox" name="option3" value="a3" id="milk">
+                <label class="form__text-checkbox " for="milk">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="option3" value="a3" id="milk">
                   <span class="form__text-box"></span>
                   <span class="form__text-paragraph"> молоко</span>
                 </label>
 
-                <label class="form__text-checkbox form__checkbox-sugar form__checkbox1" for="vitamin">
-                  <input class="visually-hidden" type="checkbox" name="option4" value="a4" id="vitamin">
+                <label class="form__text-checkbox " for="vitamin">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="option4" value="a4" id="vitamin">
                   <span class="form__text-box"></span>
                   <span class="form__text-paragraph"> витамины</span>
                 </label>
@@ -124,7 +124,7 @@
       <div class="map__center">
         <div class="map__contact map__contact--margin">
           <p class="map__paragraph map__paragraph--margin">приглашаем <br class="map__br">
-            к <br class="map__br--br1"> сотрудничеству дилеров!</p>
+            к <br class=" map__br map__br--br"> сотрудничеству дилеров!</p>
           <p class="map__paragraph-contact map__paragraph-contact--margin">ул. Большая
             Конюшенная, д. 19/8
             <span class="map__span">Санкт-Петербург</span></p>
@@ -152,21 +152,21 @@
       </a>
       <div class="page-footer__social page-footer__social--margin">
         <ul class="page-footer__list">
-          <li class="page-footer__item page-footer__item--margin1">
+          <li class="page-footer__item page-footer__item--vk">
             <a class="page-footer__link " href="#">
               <svg class="page-footer__vk" aria-label="вконтакте" width="22" height="12">
                 <use xlink:href="img/sprite.svg#icon-vk" />
               </svg>
             </a>
           </li>
-          <li class="page-footer__item page-footer__item--margin2">
+          <li class="page-footer__item page-footer__item--instagram">
             <a class="page-footer__link" href="#">
               <svg class="page-footer__inst" aria-label="инстаграмм" width="16" height="16">
                 <use xlink:href="img/sprite.svg#icon-insta" />
               </svg>
             </a>
           </li>
-          <li class="page-footer__item page-footer__item--margin3">
+          <li class="page-footer__item page-footer__item--facebook">
             <a class="page-footer__link" href="#">
               <svg class="page-footer__fb" aria-label="фэйсбук" width="10" height="18">
                 <use xlink:href="img/sprite.svg#icon-fb" />

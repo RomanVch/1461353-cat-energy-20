@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Cat Energy каталог товара.</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preload" href="/fonts/oswald-v35-latin_cyrillic-500.woff2" as="font">
   <link rel="preload" href="/fonts/oswald-v35-latin_cyrillic-regular.woff2" as="font">
@@ -69,7 +69,7 @@
                 <td class="catalog__table-left">Вкус</td>
                 <td class="catalog__table-right">Курица</td>
               </tr>
-              <tr class="catalog__characteristic">
+              <tr class="catalog__characteristic catalog__characteristic--margin">
                 <td class="catalog__table-left">Цена</td>
                 <td class="catalog__table-right">700 Р.</td>
               </tr>
@@ -217,7 +217,7 @@
               <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
-              <img class="catalog__img-size-big catalog__img-size-big--size" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="толстый кот" width="140" height="140">
+              <img class="catalog__img-size-big catalog__img-size-big--size1" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="толстый кот" width="160" height="160">
             </picture>
           </a>
           <div class="catalog__div-info catalog__div-info--margin4">
@@ -340,7 +340,7 @@
         </div>
         <div class="additionally__gift-block">
           <a class="additionally__link-gift" href="#">
-            <svg class="additionally__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="58" height="80"  viewBox="0 0 78 80" fill="white" style="enable-background:new 0 0 55.5 60;"
+            <svg class="additionally_svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="58" height="80"  viewBox="0 0 78 80" fill="white" style="enable-background:new 0 0 55.5 60;"
             xml:space="preserve">
               <use xlink:href="img/sprite.svg#icon-gift"/></svg>
             <p class="additionally__paragraphe-gift">Закажите все
@@ -354,8 +354,8 @@
       <div class="map__center-catalog">
         <div class="map__contact">
           <p class="map__paragraph">приглашаем <br class="map__br">
-            к <br class="map__br--br1"> сотрудничеству дилеров!</p>
-          <p class="map__paragraph-contact map__paragraph-contact--margin1">ул. Большая
+            к <br class=" map__br map__br--br"> сотрудничеству дилеров!</p>
+          <p class="map__paragraph-contact map__paragraph-contact--address">ул. Большая
             Конюшенная, д. 19/8
             <span class="map__span">Санкт-Петербург</span></p>
         </div>
@@ -382,19 +382,19 @@
       </a>
       <div class="page-footer__social">
         <ul class="page-footer__list">
-          <li class="page-footer__item page-footer__item--margin1">
+          <li class="page-footer__item page-footer__item--vk">
             <a class="page-footer__link " href="#">
               <svg class="page-footer__vk" aria-label="вконтакте" width="22" height="12">
                 <use xlink:href="img/sprite.svg#icon-vk" /></svg>
             </a>
           </li>
-          <li class="page-footer__item page-footer__item--margin2">
+          <li class="page-footer__item page-footer__item--instagram">
             <a class="page-footer__link" href="#">
               <svg class="page-footer__inst" aria-label="инстаграмм" width="16" height="16">
                 <use xlink:href="img/sprite.svg#icon-insta" /></svg>
             </a>
           </li>
-          <li class="page-footer__item page-footer__item--margin3">
+          <li class="page-footer__item page-footer__item--facebook">
             <a class="page-footer__link" href="#">
               <svg class="page-footer__fb" aria-label="фэйсбук" width="10" height="18">
                 <use xlink:href="img/sprite.svg#icon-fb" /></svg>
@@ -416,3 +416,4 @@
   <script src="js/menu.js"></script>
 </body>
 </html>
+

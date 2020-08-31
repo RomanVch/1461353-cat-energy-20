@@ -50,19 +50,19 @@
 .page-footer__item {
   list-style: none;
 
-  &--margin1 {
+  &--vk {
     @media (min-width: $tablet) {
       margin-right: 30px;
     }
   }
 
-  &--margin2 {
+  &--instagram {
     @media (min-width: $tablet) {
       margin-right: 30px;
     }
   }
 
-  &--margin3 {
+  &--facebook {
     @media (min-width: $tablet) {
       margin-top: -3px;
     }

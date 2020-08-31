@@ -7,7 +7,6 @@
   text-align: left;
   margin-bottom: 32px;
   position: relative;
-  margin-left: -11px;
   margin-top: 0;
 
   @media (min-width: $tablet) {
@@ -48,6 +47,7 @@
   border-bottom: 1px solid $special_grey;
   padding-top: 13px;
   padding-bottom: 15px;
+
 
   @media (min-width: $tablet) {
     display: flex;
@@ -104,6 +104,7 @@
     margin-right: 37px;
     margin-top: 5px;
     width: 225px;
+
   }
 
   @media (min-width: $dekstop) {
@@ -214,8 +215,10 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   margin-bottom: 35px;
   display: flex;
-  margin-top: 40px;
   background-color: #6fb346;
+  margin-left: auto;
+margin-top: 42px;
+  margin-right: auto;
   @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
   background: url("../img/gift-photo-mobile@2x.jpg") no-repeat;
@@ -307,8 +310,6 @@ margin-top: 30px;
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
   box-sizing: border-box;
 
   @media (min-width: $dekstop) {
@@ -317,11 +318,14 @@ margin-top: 30px;
 }
 
 .additionally__line-border {
+  padding-left: 20px;
+  padding-right: 20px;
   @media (min-width: $tablet) {
     border: 1px solid $special_grey;
     width: 708px;
     margin-top: 75px;
     margin-left: 10px;
+
   }
 
   @media (min-width: $dekstop) {
@@ -331,7 +335,7 @@ margin-top: 30px;
   }
 }
 
-.additionally__svg {
+.additionally_svg {
   margin-left: 110px;
   margin-top: 54px;
   margin-bottom: 32px;
@@ -349,14 +353,14 @@ margin-top: 30px;
   }
 }
 
-.additionally__div-border {
+.additionally_div-border {
   @media (min-width: $dekstop) {
     width: 896px;
   }
 }
 
 .additionally__price {
-  margin-top: 6px;
+  margin-top: 12px;
 
   @media (min-width: $tablet) {
     margin-top: 10px;
@@ -381,7 +385,7 @@ margin-top: 30px;
 
 .additionally__span {
   background-color: $basic_white;
-  padding-left: 10px;
+  padding-left: 19px;
   padding-right: 22px;
   position: absolute;
 

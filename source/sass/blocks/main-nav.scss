@@ -30,7 +30,7 @@
 
   &--catalog {
     @media (max-width: $mobile) {
-      padding-top: 24px;
+      padding-top: 25px;
       padding-left: 1px;
       padding-bottom: 15px;
     }
@@ -38,7 +38,7 @@
 
   &--catalog1 {
     @media (max-width: $mobile) {
-      padding-bottom: 18px;
+      padding-top: 28px;
     }
   }
 
@@ -58,7 +58,7 @@
 
   &--catalog2 {
     @media (max-width: $mobile) {
-      padding-top: 23px;
+      padding-top: 24px;
       padding-right: 1px;
       padding-bottom: 23px;
     }
