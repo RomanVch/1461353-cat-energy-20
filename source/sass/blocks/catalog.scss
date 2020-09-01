@@ -17,7 +17,7 @@
     width: 140px;
     text-align: center;
     margin-top: 30px;
-    margin-left: 92px;
+    margin-left: 95px;
     margin-bottom: 10px;
     font-size: 20px;
     line-height: 24px;
@@ -611,20 +611,24 @@
   }
 
   &--size1 {
-    margin: 0 -10px -11px 11px;
+    margin-left: 18px;
+    margin-top: 6px;
+    margin-bottom: -2px;
+    margin-right: -3px;
 
     @media (min-width: $tablet) {
       width: 321px;
       height: 201px;
       margin-left: -1px;
-      margin-top: -76px;
+      margin-top: -70px;
       margin-bottom: -7px;
     }
 
     @media (min-width: $dekstop) {
       width: 249px;
       height: 198px;
-      margin-left: -3px;
+      margin-top: -78px;
+      margin-bottom: -5px;
     }
   }
 }
