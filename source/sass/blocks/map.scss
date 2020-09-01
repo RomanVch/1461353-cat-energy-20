@@ -84,12 +84,22 @@
 
     @media (min-width: $tablet) {
       margin-top: 23px;
+      width: 177px;
     }
   }
 
   &--address {
+    @media (min-width: $tablet) {
+      width: 179px;
+    }
     @media (min-width: $dekstop) {
       margin-top: 22px;
+    }
+  }
+  &--index{
+    @media (min-width: $tablet) {
+  width: 179px;
+  margin-top: 24px;
     }
   }
 }

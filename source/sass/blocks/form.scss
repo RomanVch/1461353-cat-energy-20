@@ -169,11 +169,10 @@
   @media (min-width: $tablet) {
     width: 19px;
     height: 19px;
-    top: 15px;
-    left: 12px;
-  }
+    top: 14px;
+    left: 11px;
 }
-
+}
 .form__input-radio:not(:checked) + .form__text-radio::after {
   opacity: 0;
   transform: scale(0);
