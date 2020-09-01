@@ -92,14 +92,16 @@
     @media (min-width: $tablet) {
       width: 179px;
     }
+
     @media (min-width: $dekstop) {
       margin-top: 22px;
     }
   }
-  &--index{
+
+  &--index {
     @media (min-width: $tablet) {
-  width: 179px;
-  margin-top: 24px;
+      width: 179px;
+      margin-top: 24px;
     }
   }
 }

@@ -33,18 +33,19 @@
     border: solid #ffffff;
     border-width: 0 10px;
     left: calc((100vw - 100%) / -2);
-    @media (min-width: $tablet) {
-margin-top: -92px;
-width: 102%;
 
+    @media (min-width: $tablet) {
+      margin-top: -92px;
+      width: 102%;
     }
-      @media (min-width: $dekstop) {
-        position: absolute;
-        z-index: -1;
-        margin-top: 0px;
-       top:27px;
-       width: 150vw;
-      }
+
+    @media (min-width: $dekstop) {
+      position: absolute;
+      z-index: -1;
+      margin-top: 0;
+      top: 27px;
+      width: 150vw;
+    }
   }
 }
 
@@ -59,7 +60,6 @@ width: 102%;
   border-bottom: 1px solid $special_grey;
   padding-top: 13px;
   padding-bottom: 15px;
-
 
   @media (min-width: $tablet) {
     display: flex;
@@ -116,13 +116,13 @@ width: 102%;
     margin-right: 37px;
     margin-top: 5px;
     width: 225px;
-letter-spacing: 0.8px;
+    letter-spacing: 0.8px;
   }
 
   @media (min-width: $dekstop) {
     margin-top: -1px;
     width: 286px;
-margin-right: 38px;
+    margin-right: 38px;
   }
 
   &--size {
@@ -210,14 +210,14 @@ margin-right: 38px;
     width: 708px;
     display: flex;
     margin-left: 89px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 9px;
   }
 
   @media (min-width: $dekstop) {
     flex-direction: column;
     display: block;
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 
@@ -229,14 +229,14 @@ margin-right: 38px;
   display: flex;
   background-color: #6fb346;
   margin-left: auto;
-margin-top: 42px;
+  margin-top: 42px;
   margin-right: auto;
-  @media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-  background: url("../img/gift-photo-mobile@2x.jpg") no-repeat;
-  background-size: 280px 289px;
 
-}
+  @media (min-resolution: 192dpi) {
+    background: url("../img/gift-photo-mobile@2x.jpg") no-repeat;
+    background-size: 280px 289px;
+  }
+
   @media (min-width: $tablet) {
     flex-direction: row;
     margin-top: 68px;
@@ -248,11 +248,10 @@ margin-top: 42px;
     margin-left: 30px;
     margin-bottom: 75px;
 
-    @media (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
-    background: url("../img/gift-photo-tablet@2x.jpg") no-repeat;
-    background-size: 708px 200px;
-  }
+    @media (min-resolution: 192dpi) {
+      background: url("../img/gift-photo-tablet@2x.jpg") no-repeat;
+      background-size: 708px 200px;
+    }
   }
 
   @media (min-width: $dekstop) {
@@ -261,15 +260,15 @@ margin-top: 42px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
     margin-left: 104px;
-margin-top: 162px;
-padding-bottom: 0px;
-padding-top: 0px;
-margin-bottom: 89px;
-    @media (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi) {
-    background: url("../img/gift-photo-desktop@2x.jpg") no-repeat;
-    background-size: 245px 289px;
-  }
+    margin-top: 162px;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 89px;
+
+    @media (min-resolution: 192dpi) {
+      background: url("../img/gift-photo-desktop@2x.jpg") no-repeat;
+      background-size: 245px 289px;
+    }
   }
 }
 
@@ -287,9 +286,9 @@ margin-bottom: 89px;
 
   @media (min-width: $tablet) {
     margin-left: 275px;
-      margin-top: 28px;
+    margin-top: 28px;
     text-align: left;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     width: 180px;
 
     @media (min-width: $dekstop) {
@@ -313,9 +312,11 @@ margin-bottom: 89px;
 
 .additionally {
   overflow: hidden;
+
   @media (min-width: $tablet) {
-margin-top: 30px;
+    margin-top: 30px;
   }
+
   @media (min-width: $dekstop) {
     display: flex;
     margin-top: 25px;
@@ -327,9 +328,11 @@ margin-top: 30px;
   max-width: 1300px;
   margin: 0 auto;
   box-sizing: border-box;
+
   @media (min-width: $tablet) {
-margin: 0;
+    margin: 0;
   }
+
   @media (min-width: $dekstop) {
     display: flex;
     margin: 0 auto;
@@ -339,14 +342,14 @@ margin: 0;
 .additionally__line-border {
   padding-left: 20px;
   padding-right: 20px;
+
   @media (min-width: $tablet) {
     border: 1px solid $special_grey;
     width: 708px;
     margin-top: 30px;
     margin-left: 30px;
-    padding-left: 0px;
-    padding-right: 0px;
-
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: $dekstop) {
@@ -414,11 +417,11 @@ margin: 0;
   @media (min-width: $tablet) {
     padding-right: 35px;
     position: relative;
-padding-left: 37px;
-margin-left: 41px;
-  }
-  @media (min-width: $dekstop) {
-      margin-left: -9px;
+    padding-left: 37px;
+    margin-left: 41px;
   }
 
+  @media (min-width: $dekstop) {
+    margin-left: -9px;
+  }
 }

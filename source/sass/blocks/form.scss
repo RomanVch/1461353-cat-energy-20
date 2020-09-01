@@ -113,8 +113,10 @@
     margin-bottom: 60px;
   }
 }
+
 .form__info-block {
   align-items: flex-start;
+
   @media (min-width: $dekstop) {
     display: flex;
   }
@@ -171,8 +173,9 @@
     height: 19px;
     top: 14px;
     left: 11px;
+  }
 }
-}
+
 .form__input-radio:not(:checked) + .form__text-radio::after {
   opacity: 0;
   transform: scale(0);
@@ -333,8 +336,9 @@
 .form__input-radio + .form__text-radio:hover::before {
   border-color: $add_gray;
 }
+
 .form__input-radio:focus + .form__text-radio {
-  outline: 1px solid #000;
+  outline: 1px solid #000000;
 }
 
 .form__text-radio {
@@ -381,7 +385,7 @@
   @media (min-width: $dekstop) {
     border: 1px solid $basic_grey_line;
     margin-top: 0;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     margin-left: 20px;
     width: 540px;
     min-height: 154px;
@@ -457,6 +461,7 @@
     margin-top: 0;
   }
 }
+
 .form__title-span {
   background-color: $basic_white;
   display: table;
@@ -494,9 +499,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-flex-wrap: wrap;
-  @media (min-width: $tablet) {
+  flex-wrap: wrap;
 
+  @media (min-width: $tablet) {
     margin-left: 50px;
   }
 
@@ -566,7 +571,7 @@ flex-wrap: wrap;
     vertical-align: middle;
     height: 2px;
     box-sizing: border-box;
-    width: 100vw;
+    width: 200vw;
     background: #6cbd83;
     border: solid #ffffff;
     border-width: 0 10px;
@@ -611,6 +616,7 @@ flex-wrap: wrap;
     margin-right: 15px;
   }
 }
+
 .form__input-comment::placeholder {
   color: $special_dark-grey;
   opacity: 1;
@@ -682,7 +688,7 @@ flex-wrap: wrap;
     vertical-align: middle;
     height: 2px;
     box-sizing: border-box;
-    width: 100vw;
+    width: 200vw;
     background: #6cbd83;
     border: solid #ffffff;
     border-width: 0 10px;
@@ -697,6 +703,7 @@ flex-wrap: wrap;
     }
   }
 }
+
 .form__checkbox {
   display: flex;
   flex-direction: column;
@@ -839,7 +846,7 @@ flex-wrap: wrap;
     vertical-align: middle;
     height: 2px;
     box-sizing: border-box;
-    width: 100vw;
+    width: 200vw;
     background: #6cbd83;
     border: solid #ffffff;
     border-width: 0 10px;
@@ -854,4 +861,7 @@ flex-wrap: wrap;
     }
   }
 }
-.form__checkbox-input:focus +span{background: #c2c2c2}
+
+.form__checkbox-input:focus + span {
+  border: solid 1px $basic_black;
+}

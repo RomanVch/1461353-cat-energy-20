@@ -7,8 +7,8 @@
   color: $basic_black;
   width: 100%;
   margin: 0 auto;
-display: grid;
-grid-template-rows: (max-content 1fr max-content);
+  display: grid;
+  grid-template-rows: (max-content 1fr max-content);
 
   @media (min-width: $tablet) {
     width: 100%;
@@ -17,4 +17,8 @@ grid-template-rows: (max-content 1fr max-content);
   @media (min-width: $dekstop) {
     width: 100%;
   }
+}
+
+.page__main {
+  overflow: hidden;
 }
