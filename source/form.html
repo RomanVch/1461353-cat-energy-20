@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Cat Energy форма заказа</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preload" href="/fonts/oswald-v35-latin_cyrillic-500.woff2" as="font">
   <link rel="preload" href="/fonts/oswald-v35-latin_cyrillic-regular.woff2" as="font">
@@ -17,7 +17,7 @@
         <a href="index.html" class="page-header__logo">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="упаковка корма" width="190" height="38">
           </picture>
         </a>
@@ -41,7 +41,7 @@
       </nav>
     </div>
   </header>
-  <main>
+  <main class="page__main">
     <section class="title-form">
       <div class="title-form__center">
         <h1 class="title-form__title">Подбор программы</h1>
@@ -53,8 +53,8 @@
       <div class="form__info-radio">
         <div class="form__center">
           <form name="test" method="post" action="https://echo.htmlacademy.ru" class="form__tag">
-            <div class="form__div">
-              <div class="form__div-name">
+            <div class="form__info-block">
+              <div class="form__info-block-name">
                 <label class="form__text" for="name"><span class="form__span-name">имя:*</span>
                   <input class="form__input form__input--name" type="text" size="40" placeholder="Барсик" name="name" id="name"></label>
                 <label class="form__text" for="weight"><span class="form__span-name form__span-name--weight">вес (кг):*</span>
@@ -62,55 +62,56 @@
                 <label class="form__text" for="age"><span class="form__span-name form__span-name--age">возраст (лет):</span>
                   <input class="form__input form__input--age" type="text" size="40" placeholder="7" name="age" id="age"></label>
               </div>
-              <div class="form__div-radio">
-                <input class="form__input-radio" name="goal" id="weight-loss" type="radio" value="похудение" checked>
+              <div class="form__info-block-radio">
+                <input class="form__input-radio visually-hidden" name="goal" id="weight-loss" type="radio" value="похудение" checked>
                 <label class="form__text-radio" for="weight-loss"><span class="form__span-radio">Похудение</span></label>
-                <input class="form__input-radio" name="goal" id="weight_gain" type="radio" value="набор массы">
+                <input class="form__input-radio visually-hidden" name="goal" id="weight_gain" type="radio" value="набор массы">
                 <label class="form__text-radio" for="weight_gain"> <span class="form__span-radio form__span-radio--kg">Набор массы</span></label>
-                <input class="form__input-radio" name="goal" id="advice" type="radio" value="не знаю (нужен совет)">
+                <input class="form__input-radio visually-hidden" name="goal" id="advice" type="radio" value="не знаю (нужен совет)">
                 <label class="form__text-radio form__text-radio--form" for="advice"> <span class="form__span-radio form__span-radio--no">Не знаю (нужен ваш совет)</span></label>
               </div>
             </div>
             <div class="form-contact">
               <h2 class="form__title-contact"><span class="form__title-span">Контактные данные <br>(владельца кота)</span></h2>
-              <div class="form_div-contact">
+              <div class="form__div-contact">
                 <label class="form__text-login" for="login"><span class="form__span-mail">e-mail:*</span> <input class="form__input form__input--email" type="email" id="login" name="login" placeholder="kuklachev@gmail.com"></label>
                 <label class="form__text-login form__text-login--margin" for="tel"><span class="form__span-tel">телефон:*</span> <input class="form__input form__input--tel" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90"></label>
               </div>
             </div>
             <div class="form-comment">
               <h2 class="form__title-coment"><span class="form__title-span form__title-span--coment">Комментарий</span></h2>
-              <textarea class="form__input-comment" placeholder="расскажите обо всех повадках кота" name="comment"></textarea>
+              <label class="visually-hidden" for="comment">Оставьте комментарий</label>
+              <textarea class="form__input-comment" placeholder="расскажите обо всех повадках кота" name="comment" id="comment"></textarea>
             </div>
-            <div class="form-additionally">
+            <div class="form__additionally">
               <h2 class="form__title-additionally"><span class="form__title-span form__title-span--add">Дополнительно</span></h2>
               <div class="form__checkbox">
-                <label class="form__text-checkbox" for="sugar">
-                  <input type="checkbox" name="option1" value="a1" checked id="sugar">
+                <label class="form__text-checkbox " for="sugar">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="option1" value="a1" checked id="sugar">
                   <span class="form__text-box"></span>
                   <span class="form__text-paragraph">сахарозаменитель</span>
                 </label>
 
                 <label class="form__text-checkbox" for="water">
-                  <input type="checkbox" name="option2" value="a2" id="water">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="option2" value="a2" id="water">
                   <span class="form__text-box"></span>
                   <span class="form__text-paragraph"> питьевая вода</span>
                 </label>
 
-                <label class="form__text-checkbox" for="milk">
-                  <input type="checkbox" name="option3" value="a3" id="milk">
+                <label class="form__text-checkbox " for="milk">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="option3" value="a3" id="milk">
                   <span class="form__text-box"></span>
                   <span class="form__text-paragraph"> молоко</span>
                 </label>
 
-                <label class="form__text-checkbox" for="vitamin">
-                  <input type="checkbox" name="option4" value="a4" id="vitamin">
+                <label class="form__text-checkbox " for="vitamin">
+                  <input class="visually-hidden form__checkbox-input" type="checkbox" name="option4" value="a4" id="vitamin">
                   <span class="form__text-box"></span>
                   <span class="form__text-paragraph"> витамины</span>
                 </label>
                 <div class="form__button-div form__button-div--margin">
                   <button class="form__button" type="submit">отправить заявку</button>
-                  <small class="form_small">* — Обязательные поля</small>
+                  <small class="form__small">* — Обязательные поля</small>
                 </div>
               </div>
             </div>
@@ -120,10 +121,10 @@
 
     </section>
     <section class="map">
-      <div class="map_center">
+      <div class="map__center">
         <div class="map__contact map__contact--margin">
           <p class="map__paragraph map__paragraph--margin">приглашаем <br class="map__br">
-            к <br class="map__br--br1"> сотрудничеству дилеров!</p>
+            к <br class=" map__br map__br--br"> сотрудничеству дилеров!</p>
           <p class="map__paragraph-contact map__paragraph-contact--margin">ул. Большая
             Конюшенная, д. 19/8
             <span class="map__span">Санкт-Петербург</span></p>
@@ -134,7 +135,7 @@
           <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-          <img class="map_img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="карта" width="320" height="362">
+          <img class="map__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="карта" width="320" height="362">
         </picture>
 
         <iframe class="map__frame"
@@ -151,21 +152,21 @@
       </a>
       <div class="page-footer__social page-footer__social--margin">
         <ul class="page-footer__list">
-          <li class="page-footer__item page-footer__item--margin1">
+          <li class="page-footer__item page-footer__item--vk">
             <a class="page-footer__link " href="#">
               <svg class="page-footer__vk" aria-label="вконтакте" width="22" height="12">
                 <use xlink:href="img/sprite.svg#icon-vk" />
               </svg>
             </a>
           </li>
-          <li class="page-footer__item page-footer__item--margin2">
+          <li class="page-footer__item page-footer__item--instagram">
             <a class="page-footer__link" href="#">
               <svg class="page-footer__inst" aria-label="инстаграмм" width="16" height="16">
                 <use xlink:href="img/sprite.svg#icon-insta" />
               </svg>
             </a>
           </li>
-          <li class="page-footer__item page-footer__item--margin3">
+          <li class="page-footer__item page-footer__item--facebook">
             <a class="page-footer__link" href="#">
               <svg class="page-footer__fb" aria-label="фэйсбук" width="10" height="18">
                 <use xlink:href="img/sprite.svg#icon-fb" />
@@ -177,7 +178,7 @@
       <div class="page-footer__copyright page-footer__copyright--form">
         <a class="page-footer__copyright-link page-footer__copyright-link--form" href="img/https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="page-footer__copyright-academy" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="page-footer_logo-html" xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 0 60 60">
+          <svg class="page-footer__logo-html" xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 0 60 60">
             <path
               d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
           </svg>
