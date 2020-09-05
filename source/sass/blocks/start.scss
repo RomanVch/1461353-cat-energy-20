@@ -114,16 +114,12 @@
     margin-left: 170px;
   }
 
-  &:hover {
+  &:hover,&:focus {
     background-color: $basic_green-2;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-  }
-
-  &:focus {
-    background-color: adjust-hue($basic_green-2, 10);
   }
 }
 

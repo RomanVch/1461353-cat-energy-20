@@ -24,15 +24,12 @@
   font-weight: normal;
   color: $special_dark-grey;
   list-style: none;
-  display: flex;
-  flex-direction: row;
 
   @media (max-width: $mobile) {
     margin-bottom: 20px;
   }
 
   @media (min-width: $tablet) {
-    flex-direction: column;
     position: relative;
   }
 }
