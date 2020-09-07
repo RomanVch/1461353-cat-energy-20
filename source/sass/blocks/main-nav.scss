@@ -180,6 +180,7 @@
   @media (min-width: $tablet) {
     display: flex;
     margin-top: 9px;
+    flex-wrap: wrap;
   }
 
   &--margin {

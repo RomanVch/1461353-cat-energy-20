@@ -8,22 +8,27 @@
       background-size: 320px 305px;
     }
   }
-  @media (min-width: $tablet) {background: none;}
+
+  @media (min-width: $tablet) {
+    background: none;
+  }
+
   @media (min-width: $dekstop) {
     margin-top: -130px;
     margin-bottom: 85px;
+    background: url("../img/index-background-desktop@1x.jpg"), linear-gradient(90deg, transparent 0, transparent 50%, #6cb042 50%, #6cb042 100%);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 50% auto, 100% auto;
 
-      background: url("../img/index-background-desktop@1x.jpg"),  linear-gradient(90deg,transparent 0,transparent 50%,#6cb042 50%,#6cb042 100%);
-      background-repeat: no-repeat;
-      background-position: right center;
-      background-size: 50% auto, 100% auto;
-      @media (min-resolution: 192dpi) {
-        background: url("../img/index-background-desktop@2x.jpg") no-repeat;
-        background-size: 720px 696px;
-        background-position: 720px 0;
-      }
+    @media (min-resolution: 192dpi) {
+      background: url("../img/index-background-desktop@2x.jpg") no-repeat;
+      background-size: 720px 696px;
+      background-position: 720px 0;
+    }
+  }
 }
-}
+
 .start__title {
   margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
@@ -42,18 +47,16 @@
     margin-left: 25px;
     letter-spacing: 0;
     padding-bottom: 2px;
-
   }
 
   @media (min-width: $tablet) {
-    font-size: 54px;
     line-height: 60px;
     color: $basic_black;
     width: 500px;
     text-align: left;
     margin-top: 50px;
     margin-left: 97px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     font-size: 60px;
 
     br {
@@ -133,7 +136,8 @@
     margin-left: 170px;
   }
 
-  &:hover,&:focus {
+  &:focus,
+  &:hover {
     background-color: $basic_green-2;
   }
 
@@ -169,7 +173,6 @@
   max-width: 1440px;
   margin: 0 auto;
 
-
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
@@ -185,8 +188,7 @@
     padding-right: 20px;
     min-height: auto;
     padding-bottom: 50px;
-
-
+    margin-top: 127px;
   }
 }
 

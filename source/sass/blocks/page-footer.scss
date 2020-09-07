@@ -51,6 +51,7 @@
   list-style: none;
   margin-bottom: 5px;
   margin-right: 1px;
+
   @media (min-width: $tablet) {
     margin-right: 30px;
   }
@@ -66,7 +67,7 @@
   }
 }
 
-.page-footer__item:last-child{
+.page-footer__item:last-child {
   margin-right: 0;
 }
 
@@ -304,6 +305,6 @@
   }
 }
 
-.page-footer__copyright-link:hover + a svg{
-  fill:$basic_green;
+.page-footer__copyright-link:hover + a svg {
+  fill: $basic_green;
 }

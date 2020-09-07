@@ -2,12 +2,17 @@
   border-bottom: 1px solid $basic_grey_line;
   position: relative;
   z-index: 1;
+
   &--padding {
     padding-top: 11px;
 
     @media (min-width: $tablet) {
       padding-top: 25px;
       border: none;
+    }
+
+    @media (min-width: $dekstop) {
+      padding-top: 0;
     }
   }
 
@@ -16,7 +21,7 @@
   }
 
   @media (min-width: $dekstop) {
-    padding-top: 55px;
+    padding-top: 0;
     background-color: transparent;
   }
 
@@ -29,7 +34,8 @@
     }
 
     @media (min-width: $dekstop) {
-      margin-top: 30px;
+      margin-top: 0;
+      padding-top: 0;
     }
   }
 }
@@ -95,6 +101,8 @@
   @media (min-width: $dekstop) {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -100%;
+    padding-top: 55px;
   }
 }
 

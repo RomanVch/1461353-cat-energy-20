@@ -145,7 +145,7 @@
   background-image: url("../img/icon.svg");
   background-repeat: no-repeat;
   background-position: 101px 7px;
-  padding-right: 50px;
+  padding-right: 73px;
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -158,14 +158,26 @@
     padding-right: 70px;
   }
 
-  &:focus,&:hover {
-    background-image: url("../img/icon_arrow.svg");
-    background-size: 50px 50px;
+  &:focus,
+  &:hover {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-size: 34px 40px;
+    background-position: 132px -4px;
+
+    @media (max-width: $tablet) {
+      background-position: 99px -7px;
+    }
   }
 
   &:active {
     opacity: 0.3;
-    background-image: url("../img/icon_arrow.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-size: 34px 40px;
+    background-position: 132px -4px;
+
+    @media (max-width: $tablet) {
+      background-position: 99px -7px;
+    }
   }
 }
 

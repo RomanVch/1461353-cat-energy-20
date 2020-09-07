@@ -205,7 +205,9 @@
   }
 }
 
-.map {overflow: hidden;
+.map {
+  overflow: hidden;
+
   @media (min-width: $tablet) {
     background-color: $basic_grey;
   }
@@ -228,10 +230,10 @@
   right: 0;
   width: 100vw;
   border: 0;
-  left: calc((100vw - 100%)/-2);
+  left: calc((100vw - 100%) / -2);
 
   @media (min-width: $tablet) {
-      width: 100vw;
+    width: 100vw;
     height: 400px;
     top: 200px;
   }

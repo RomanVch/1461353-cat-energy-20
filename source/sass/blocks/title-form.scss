@@ -62,4 +62,8 @@
   @media (min-width: $tablet) {
     margin-top: 0;
   }
+
+  @media (min-width: $dekstop) {
+    padding-top: 132px;
+  }
 }
