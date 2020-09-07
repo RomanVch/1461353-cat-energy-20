@@ -1,6 +1,7 @@
 .page-header {
   border-bottom: 1px solid $basic_grey_line;
-
+  position: relative;
+  z-index: 1;
   &--padding {
     padding-top: 11px;
 

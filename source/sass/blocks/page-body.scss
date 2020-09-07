@@ -5,13 +5,13 @@
   font-size: 14px;
   line-height: 18px;
   color: $basic_black;
-  width: 100%;
+  width: 320px;
   margin: 0 auto;
   display: grid;
   grid-template-rows: (max-content 1fr max-content);
 
   @media (min-width: $tablet) {
-    width: 100%;
+    width: 768px;
   }
 
   @media (min-width: $dekstop) {
@@ -21,4 +21,5 @@
 
 .page__main {
   overflow: hidden;
+  position: relative;
 }

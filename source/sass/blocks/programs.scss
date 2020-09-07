@@ -158,12 +158,14 @@
     padding-right: 70px;
   }
 
-  &:focus {
-    opacity: 0.6;
+  &:focus,&:hover {
+    background-image: url("../img/icon_arrow.svg");
+    background-size: 50px 50px;
   }
 
   &:active {
     opacity: 0.3;
+    background-image: url("../img/icon_arrow.svg");
   }
 }
 
@@ -218,6 +220,7 @@
   @media (min-width: $dekstop) {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 40px;
   }

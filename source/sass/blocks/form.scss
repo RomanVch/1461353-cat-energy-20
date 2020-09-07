@@ -205,10 +205,6 @@
   }
 
   &--tel {
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 170px 10px;
-    background-size: 20px 20px;
     width: 205px;
     flex-shrink: 0;
 
@@ -226,10 +222,6 @@
   }
 
   &--email {
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 183px 10px;
-    background-size: 19px 19px;
     width: 220px;
     flex-shrink: 0;
 
@@ -291,13 +283,16 @@
     box-sizing: border-box;
   }
 
-  &:focus,
+
   &:hover {
     border-color: $special_grey;
   }
 
-  &:active {
+  &:focus {
     border-color: $special_dark-grey;
+    box-sizing: border-box;
+    //*box-shadow: 0px 0px 0px 2px rgb(0, 0, 0);
+    //*border: none;
   }
 }
 
@@ -529,10 +524,40 @@
   }
 
   &--margin {
+    position: relative;
     @media (min-width: $dekstop) {
       margin-left: 0;
+    }}
+    &--email{
+      position: relative;
     }
+
+}
+
+.form__svg-mail{
+position: absolute;
+top: 13px;
+left: 245px;
+@media (min-width: $tablet) {
+  top: 16px;
+  left: 593px;
+}
+@media (min-width: $dekstop) {
+  left: 533px;
+}
+
+&--tel{
+  position: absolute;
+  top: 13px;
+  left: 247px;
+  @media (min-width: $tablet) {
+    left: 594px;
+  top: 15px;
   }
+  @media (min-width: $dekstop) {
+left: 534px;
+  }
+}
 }
 
 .form__title-contact {
@@ -860,4 +885,11 @@
 
 .form__checkbox-input:focus + span {
   border: solid 1px $basic_black;
+}
+
+.form__input:focus + svg {
+  fill:$basic_green;
+}
+.form__input--error + svg {
+  fill:#ff8282;
 }

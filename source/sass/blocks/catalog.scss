@@ -241,7 +241,7 @@
   }
 
   &--margin4 {
-    margin-top: 9px;
+    margin-top: 12px;
 
     @media (min-width: $tablet) {
       margin-top: 35px;
@@ -388,7 +388,7 @@
   }
 
   &--margin {
-    padding-top: 26px;
+    padding-top: 23px;
     padding-bottom: 25px;
     margin-left: 10px;
   }
@@ -603,10 +603,10 @@
   }
 
   &--size1 {
-    margin-left: 18px;
-    margin-top: 6px;
-    margin-bottom: -2px;
-    margin-right: -3px;
+    margin-top: 1px;
+    margin-left: 11px;
+    margin-right: -10px;
+    margin-bottom: -13px;
 
     @media (min-width: $tablet) {
       width: 321px;

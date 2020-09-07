@@ -49,17 +49,10 @@
 
 .page-footer__item {
   list-style: none;
-
-  &--vk {
-    @media (min-width: $tablet) {
-      margin-right: 30px;
-    }
-  }
-
-  &--instagram {
-    @media (min-width: $tablet) {
-      margin-right: 30px;
-    }
+  margin-bottom: 5px;
+  margin-right: 1px;
+  @media (min-width: $tablet) {
+    margin-right: 30px;
   }
 
   &--facebook {
@@ -71,6 +64,10 @@
       margin-top: -4px;
     }
   }
+}
+
+.page-footer__item:last-child{
+  margin-right: 0;
 }
 
 .page-footer__social {
@@ -108,7 +105,7 @@
   flex-direction: row;
   padding: 0;
   margin-top: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   margin-left: 94px;
 
   @media (min-width: $tablet) {
@@ -305,4 +302,8 @@
     fill: $basic_green;
     opacity: 0.4;
   }
+}
+
+.page-footer__copyright-link:hover + a svg{
+  fill:$basic_green;
 }
