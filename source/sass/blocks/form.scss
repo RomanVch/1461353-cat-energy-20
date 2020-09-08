@@ -685,6 +685,14 @@
     margin-left: 40px;
     margin-top: 47px;
   }
+  &:hover {
+    border-color: $special_grey;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px #000000;
+  }
 }
 
 .form__title-coment {
