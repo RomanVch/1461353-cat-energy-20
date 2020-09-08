@@ -242,13 +242,16 @@
 
   &--name {
     width: 229px;
+    margin-top: 2px;
 
     @media (min-width: $tablet) {
       width: 567px;
+      margin-top: 2px;
     }
 
     @media (min-width: $dekstop) {
       width: 506px;
+      margin-top: 2px;
     }
   }
 
@@ -289,10 +292,8 @@
   }
 
   &:focus {
-    border-color: $special_dark-grey;
-    box-sizing: border-box;
     outline: none;
-    border-width:2px;
+    box-shadow: 0px 0px 0px 2px #000000;
   }
 }
 
