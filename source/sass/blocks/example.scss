@@ -300,8 +300,8 @@
     margin-right: 5px;
   }
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     border-bottom: 1px solid;
     border-color: rgba(0, 0, 0, 0.4);
   }
@@ -442,6 +442,16 @@
     background-color: white;
     top: -12px;
     transition: 0.2s;
+    border: 1px solid #cdcdcd;
+
+    &:focus,
+    &:hover {
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    }
+
+    &:active {
+      border: 1px solid #68b738;
+    }
   }
 }
 

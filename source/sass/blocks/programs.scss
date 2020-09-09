@@ -41,13 +41,15 @@
 
   @media (min-width: $tablet) {
     width: 191px;
+    height: 194px;
     margin-left: 5px;
     margin-top: -13px;
   }
 
   @media (min-width: $dekstop) {
     width: 95px;
-    margin-top: -7px;
+    height: 98px;
+    margin-top: -6px;
     margin-left: 4px;
   }
 }
