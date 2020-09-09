@@ -293,7 +293,7 @@
 
   &:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 2px #000000;
+    box-shadow: 0 0 0 2px #000000;
   }
 }
 
@@ -685,13 +685,14 @@
     margin-left: 40px;
     margin-top: 47px;
   }
+
   &:hover {
     border-color: $special_grey;
   }
 
   &:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 2px #000000;
+    box-shadow: 0 0 0 2px #000000;
   }
 }
 
@@ -824,7 +825,7 @@
   border: 1px solid #bababa;
 }
 
-.form__text-box:active + .form__text-paragraph{
+.form__text-box:active + .form__text-paragraph {
   opacity: 0.3;
 }
 

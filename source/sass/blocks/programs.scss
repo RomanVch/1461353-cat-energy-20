@@ -163,14 +163,14 @@
     background-image: url("../img/icon-right-arrow-verylong.svg");
     background-size: 34px 40px;
     background-position: 91px -7px;
+
     @media (min-width: $tablet) {
-    background-position: 120px -4px;
+      background-position: 120px -4px;
     }
 
     @media (min-width: $dekstop) {
       background-position: 125px -4px;
     }
-
   }
 
   &:active {
