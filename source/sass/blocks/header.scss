@@ -1,0 +1,133 @@
+.header{
+  @media (min-width: $tablet ) {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.header__button {
+  border: none;
+  background: none;
+  margin-right: 5%;
+  @media (min-width: $tablet ) {
+    visibility: hidden
+  }
+
+}
+
+.header__link {
+  text-decoration: none;
+  position: relative;
+  &:hover{
+    opacity: 0.7;
+  }
+  &--tel{
+    @media (min-width: $tablet ) {
+      margin-top: 12px;
+      text-decoration: none;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color:$basic_black;
+    }
+  }
+  &--telegram {
+    margin-right: 21px;
+  }
+
+  &--telegram::before {
+    content: "";
+    width: 1px;
+    height: 30px;
+    display: block;
+    background: $basic_black;
+    position: absolute;
+    left: 42px;
+  }
+}
+
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @media (min-width: $tablet ) {
+    display: block;
+    width: 50%;
+  }
+}
+
+.header__block-button {
+  margin-left: 5%;
+  text-align: right;
+  @media (min-width: $tablet ) {
+    margin-right: 18px;
+    text-align: right;
+  }
+}
+
+
+.header__logo_block {
+  display: flex;
+
+  @media (min-width: $tablet ) {
+
+    text-align: right;
+    width: 50%;
+    flex-wrap: wrap;
+    order: -1;
+  }
+}
+
+.header__logo {
+  margin: auto;
+  margin-bottom: 25px;
+  @media (min-width: $tablet ) {
+  margin-top: 24px;
+    margin-left: 15px;
+  }
+}
+
+.header__tel{
+  display: none;
+  @media (min-width:$tablet ) {
+    display: flex;
+    margin-right: 18px;
+    justify-content: flex-end;
+  }
+}
+.header__paragraph{
+  margin-right: 35px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 135%;
+  opacity: 0.8;
+}
+
+.header__dop-menu-li{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: lowercase;
+  color: #a9a9a9;
+  list-style: none;
+  margin-bottom: 12px;
+}
+.header__dop-menu-ul{
+  @media (max-width: $mobile){
+    display: none;
+  }
+margin-top: -60px;
+padding: 0;
+margin-left: 2%;}
+
+
+.header__button-svg{
+  &:hover{
+    fill-opacity: 0.7;
+  }
+}

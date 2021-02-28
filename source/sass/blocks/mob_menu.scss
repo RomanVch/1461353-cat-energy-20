@@ -1,23 +1,107 @@
-#logo{
-  width: 500px;
-  min-height: 500px;
-  border-radius: 50%;
-  background: red;
+.mob-menu{
+  width: 100%;
+  background-color: $basic_black ;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-bottom:25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: none;
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+}
+.openMobileMenu{
+  display: block;
+}
+.mob-menu__li{
+  color:white;
+  list-style: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing:0.5px;
+  margin-top:35px;
+  margin-left: 25%;
+  &--last{
+  margin-bottom: 52px;
+}
+  &:hover{
+    color:$basic_yellow
+  }
+
 }
 
-.audio{
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 65px;
-  @media (min-width: $tablet) {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  @media (min-width: $dekstop) {
-    width: 60%;
-    margin-left: 30%;
-    margin-right: 10%;
+.mob-menu__ul{
+  border-bottom: 1px solid white;
+  margin-top: 100px;
+}
+.mob-menu__close{
+  text-align: left;
+  background-color: $basic_black ;
+  border: none;
+  margin-left:auto;
+  width: 26px;
+  height: 26px;
+  margin-right: 20px;
+position: absolute;
+  top:35px;
+  right: 30px;
+}
+.mob-menu__tel{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 22px;
+  margin-left: 33%;
+  color: $basic_white;
+  &:hover{
+    color:$basic_yellow
   }
 }
+.mob-menu__order-call{
+  border: none;
+  background-color: $basic_black;
+  color:$basic_yellow;
+  width: 200px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  margin-left: 28%;
+  @media (min-width: 500px) {
+    margin-left: 29%;
+  }
+  @media (min-width: 627px) {
+    margin-left: 30%;
+  }
+  &:hover{
+    opacity: 0.7;
+  }
+}
+.mob-menu__logo{
+  margin-left: 23%;
+  @media (min-width: 500px) {
+    margin-left: 25%;
+  }
+  @media (min-width: 627px) {
+    margin-left: 27%;
+  }
+}
+
+.mob-menu__close-svg{
+  &:hover{
+   fill-opacity: 1;
+}
+}
+

@@ -1,23 +1,96 @@
-#logo{
-  width: 500px;
-  min-height: 500px;
-  border-radius: 50%;
-  background: red;
+.modal {
+  width: 290px;
+  height: 400px;
+  box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.31);
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  position: fixed;
+  top: 100px;
+  background: white;
+  left: 30vw;
+  z-index: 1;
+@media (min-width: $tablet) {
+  width: 590px;
+}
 }
 
-.audio{
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 65px;
+.modal__paragraph {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 135%;
+  padding-bottom: 14px;
+  border-bottom: 1px solid black;
   @media (min-width: $tablet) {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 409px;
+    margin-left: 80px;
   }
-  @media (min-width: $dekstop) {
-    width: 60%;
-    margin-left: 30%;
-    margin-right: 10%;
+
+}
+
+.modal__paragraph-span {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 135%;
+}
+
+.modal__input {
+  min-height: 61px;
+  width: 260px;
+  border: none;
+  background-color: #F0F2F4;
+  font-size: 25px;
+  line-height: 29px;
+  color: rgba(35, 35, 35, 0.3);
+  margin-top: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+  @media (min-width: $tablet) {
+    width: 409px;
+    margin-left: 80px;
+  }
+}
+
+.modal__close {
+  border: none;
+  background: none;
+  width: 26px;
+  height: 26px;
+  margin: 0 0 0 auto;
+}
+
+.modal__p {
+  margin: 0;
+}
+
+.modal__button {
+  min-height: 61px;
+  width: 260px;
+  border: none;
+  background: $basic_yellow;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 135%;
+  text-align: center;
+  @media (min-width: $tablet) {
+    width: 409px;
+    margin-left: 80px;
+  }
+}
+
+.modal__pers {
+  color: rgba(35, 35, 35, 0.3);
+  text-align: center;
+  @media (min-width: $tablet) {
+    width: 409px;
+    margin-left: 80px;
+  }
+}
+.modal__sale{
+  @media(min-width: $tablet){
+    font-weight: 900;
+    font-size: 28px;
   }
 }

@@ -1,0 +1,82 @@
+.btn__order{
+  border: none;
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1.5px solid black;
+  border-radius: 100px;
+  font-size: 16px;
+  margin-top: -14px;
+  margin-left: -21px;
+  font-size: 16px;
+  font-weight: 600;
+  filter: progid:DXImageTransform.Microsoft.DropShadow(offX=3, offY=3, color=#000000, positive=true);
+  text-shadow:1.5px 1.5px 0px rgba(0,0,0,0.20);
+  -webkit-text-shadow:1.5px 1.5px 0px rgba(0,0,0,0.20);
+  -moz-text-shadow:1.5px 1.5px 0px rgba(0,0,0,0.20);
+  &:hover{
+    font-weight: 700;
+  }
+}
+
+.btn__block{
+  border: none;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border: 14px solid $basic_yellow;
+  border-radius: 100px;
+  filter: progid:DXImageTransform.Microsoft.DropShadow(offX=3, offY=3, color=#000000, positive=true);
+  text-shadow:2px 2px 0px rgba(0,0,0,0.25);
+  -webkit-text-shadow:2px 2px 0px rgba(0,0,0,0.25);
+  -moz-text-shadow:2px 2px 0px rgba(0,0,0,0.25);
+  position: relative;
+  margin-left: 200px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 151px;
+&:hover{
+  border: 14px solid #F7E22D;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.3);
+}
+  @media (min-width: $tablet) {
+  position: absolute;
+  top: 231px;
+  left: 20px;}
+
+  &--slider{
+    @media (min-width: $tablet) {
+      position:static ;
+      margin-left: 20px;
+      margin-right: 0;
+    }
+  }
+}
+
+.btn__lid-magnit{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 115%;
+  text-align: center;
+  text-align: left;
+}
+.btn___lid-span{
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 135%;
+  display: block;
+  text-align: center;
+  padding: 0 ;
+  text-align:left;
+  margin-top: 10px;
+  margin-bottom: -6px;
+}
+.btn__sale{
+  position: absolute;
+  top:112px;
+  left:108px;
+  width: 95px;
+  transform: rotate(-35deg);
+  z-index: 1;
+}

@@ -124,7 +124,7 @@ exports.webpic = webpic;
 
 // Основное.
 
-const build = (done) => gulp.series(clean, copy, styles, html, images,js)(done);
+const build = (done) => gulp.series(clean, copy, styles, html, images,js, watcher )(done);
 exports.build = build;
 
 exports.default = gulp.series(

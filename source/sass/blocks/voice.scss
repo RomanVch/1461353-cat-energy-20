@@ -1,0 +1,23 @@
+#logo{
+  width: 500px;
+  min-height: 500px;
+  border-radius: 50%;
+  background: red;
+}
+
+.audio{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 65px;
+  @media (min-width: $tablet) {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  @media (min-width: $dekstop) {
+    width: 60%;
+    margin-left: 30%;
+    margin-right: 10%;
+  }
+}

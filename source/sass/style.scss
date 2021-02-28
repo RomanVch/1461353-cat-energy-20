@@ -1,18 +1,25 @@
 @import "normalize.scss";
 @import "variables.scss";
 @import "fonts.scss";
-@import "blocks/page-body.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/start.scss";
-@import "blocks/programs.scss";
-@import "blocks/how-work.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/catalog-page-main.scss";
 @import "blocks/visually-hidden.scss";
-@import "blocks/catalog.scss";
-@import "blocks/page-header.scss";
-@import "blocks/map.scss";
-@import "blocks/additionally.scss";
-@import "blocks/title-form.scss";
-@import "blocks/form.scss";
-@import "blocks/example.scss";
+@import "blocks/header.scss";
+@import "blocks/services.scss";
+@import "blocks/slider.scss";
+@import "blocks/btn_order.scss";
+@import "blocks/individual_approach.scss";
+@import "blocks/how-work.scss";
+@import "blocks/reviews.scss";
+@import "blocks/footer.scss";
+@import "blocks/order-title";
+@import "blocks/additional_information.scss";
+@import "blocks/audio.scss";
+@import "blocks/flickity.scss";
+@import "blocks/page-info.scss";
+@import "blocks/voice.scss";
+@import "blocks/modal.scss";
+@import "blocks/mob_menu.scss";
+
+body {
+  font-family: "montserrat", "Arial", sans-serif;
+}
+

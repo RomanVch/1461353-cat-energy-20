@@ -1,42 +1,58 @@
-var buttonss = document.querySelector(".form__button");
-var namess = document.querySelector(".form__input--name");
-var weight = document.querySelector(".form__input--weight");
-var email = document.querySelector(".form__input--email");
-var tel = document.querySelector(".form__input--tel");
-var form = document.querySelector(".form__tag");
+function $(id) { return document.getElementById(id); };
+const media = document.getElementById('audio');
 
-form.addEventListener("submit", function(evt) {
-  if (!namess.value) {
-    evt.preventDefault();
-    namess.classList.add("form__input--error");
-  } else {
-    namess.classList.remove("form__input--error");
-  }
-});
+let ui = {
+  play: 'playAudio',
+  audio: 'audio',
+  percentage: 'percentage',
+  seekObj: 'seekObj',
+  currentTime: 'currentTime'
+};
 
-form.addEventListener("submit", function(evt) {
-  if (!weight.value) {
-    evt.preventDefault();
-    weight.classList.add("form__input--error");
+function togglePlay() {
+  if (media.paused === false) {
+    media.pause();
+    $(ui.play).classList.remove('pause');
   } else {
-    weight.classList.remove("form__input--error");
+    media.play();
+    $(ui.play).classList.add('pause');
   }
-});
+}
 
-form.addEventListener("submit", function(evt) {
-  if (!email.value) {
-    evt.preventDefault();
-    email.classList.add("form__input--error");
-  } else {
-    email.classList.remove("form__input--error");
-  }
-});
+function calculatePercentPlayed() {
+  let percentage = (media.currentTime / media.duration).toFixed(2) * 100;
+  $(ui.percentage).style.width = `${percentage}%`;
+}
 
-form.addEventListener("submit", function(evt) {
-  if (!tel.value) {
-    evt.preventDefault();
-    tel.classList.add("form__input--error");
-  } else {
-    tel.classList.remove("form__input--error");
+function calculateCurrentValue(currentTime) {
+  const currentMinute = parseInt(currentTime / 60) % 60;
+  const currentSecondsLong = currentTime % 60;
+  const currentSeconds = currentSecondsLong.toFixed();
+  const currentTimeFormatted = `${currentMinute < 10 ? `0${currentMinute}` : currentMinute}:${
+    currentSeconds < 10 ? `0${currentSeconds}` : currentSeconds
+  }`;
+
+  return currentTimeFormatted;
+}
+
+function initProgressBar() {
+  const currentTime = calculateCurrentValue(media.currentTime);
+  $(ui.currentTime).innerHTML = currentTime;
+  $(ui.seekObj).addEventListener('click', seek);
+
+  media.onended = () => {
+    $(ui.play).classList.remove('pause');
+    $(ui.percentage).style.width = 0;
+    $(ui.currentTime).innerHTML = '00:00';
+  };
+
+  function seek(e) {
+    const percent = e.offsetX / this.offsetWidth;
+    media.currentTime = percent * media.duration;
   }
-});
+
+  calculatePercentPlayed();
+}
+
+$(ui.play).addEventListener('click', togglePlay)
+$(ui.audio).addEventListener('timeupdate', initProgressBar);

@@ -3,6 +3,7 @@
   "private": true,
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
+    "@babel/node": "^7.12.10",
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",
     "browser-sync": "^2.26.10",

@@ -1,0 +1,29 @@
+.order-title__title{
+  background: none;
+  border: none;
+  font-family: "montserrat", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 42px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1.2px #000000;
+  color: white;
+  margin-top: 12px;
+  padding-left: 0;
+  line-height: 27px;
+  text-align: center;
+}
+.order-title__soc-network{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  list-style: none;
+  margin-left: 5%;
+  opacity:1;
+}
+.order-title__soc-block{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background:$add_yellow;
+  padding-left: 0;
+}
